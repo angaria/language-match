@@ -9,6 +9,12 @@ install: /bin/true
 script:
   - mvn clean install
 
+after_failure:
+  - cat target/surefire-reports/*.txt
+
+after_success:
+  - cat target/surefire-reports/*.txt
+
 cache:
   directories:
     - '$HOME/.m2/repository'
