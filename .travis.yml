@@ -9,18 +9,15 @@ install: /bin/true
 script:
   - mvn clean install
 
+before_script:
+ - "echo $JAVA_OPTS"
+ - "export JAVA_OPTS=-Xmx512m"
+
 after_failure:
   - cat target/surefire-reports/*.txt
 
 after_success:
-  - cat target/surefire-reports/*.txt
-
-notifications:
-  email:
-    recipients:
-      - alex.bretet@gmail.com
-    on_success: always # default: change
-    on_failure: always # default: always
+  - bash <(curl -s https://codecov.io/bash)
 
 cache:
   directories:
