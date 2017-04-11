@@ -15,6 +15,13 @@ after_failure:
 after_success:
   - cat target/surefire-reports/*.txt
 
+notifications:
+  email:
+    recipients:
+      - alex.bretet@gmail.com
+    on_success: always # default: change
+    on_failure: always # default: always
+
 cache:
   directories:
     - '$HOME/.m2/repository'
