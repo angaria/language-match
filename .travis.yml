@@ -6,8 +6,7 @@ jdk:
 # Build everything in 'script' phase
 install: /bin/true
 
-script:
-  - mvn clean install
+script: "git log --format=%s HEAD~1..HEAD | grep -q 'fixes #' && mvn integration || mvn install"
 
 cache:
   directories:
