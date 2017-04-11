@@ -77,7 +77,10 @@ local.properties
 ## Plugin-specific files:
 
 # IntelliJ
-/out/
+*/out/**
+target/
+*/target/*
+*/target/**
 
 # mpeltonen/sbt-idea plugin
 .idea_modules/

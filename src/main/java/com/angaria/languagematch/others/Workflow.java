@@ -3,6 +3,7 @@ package com.angaria.languagematch.others;
 import com.angaria.languagematch.entities.SRTObject;
 import com.angaria.languagematch.entities.SubTitle;
 import com.angaria.languagematch.entities.SubTitleMatch;
+import com.angaria.languagematch.services.FileSystemService;
 import com.angaria.languagematch.util.WorkflowUtil;
 import org.apache.logging.log4j.Level;
 import org.apache.logging.log4j.LogManager;
@@ -17,13 +18,11 @@ public class Workflow {
 
     private static final Logger logger = LogManager.getLogger(Workflow.class.getName());
 
-    private final Set<File> srtFiles;
-
-    public Workflow(Set<File> srtFiles) {
-        this.srtFiles = srtFiles;
-    }
+    private Set<File> srtFiles;
+    private WorkflowUtil workflowUtil = new WorkflowUtil();
 
     public void start() {
+        this.srtFiles = workflowUtil.lookupFileSystemForSRTFiles();
         Set<SRTObject> srtObjects = buildSRTObjects(srtFiles);
         Set<SubTitleMatch> subTitleMatches = WorkflowUtil.extractMatches(srtObjects);
     }
