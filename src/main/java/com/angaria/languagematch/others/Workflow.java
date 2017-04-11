@@ -3,8 +3,7 @@ package com.angaria.languagematch.others;
 import com.angaria.languagematch.entities.SRTObject;
 import com.angaria.languagematch.entities.SubTitle;
 import com.angaria.languagematch.entities.SubTitleMatch;
-import com.angaria.languagematch.services.FileSystemService;
-import com.angaria.languagematch.util.WorkflowUtil;
+import com.angaria.languagematch.services.WorkflowService;
 import org.apache.logging.log4j.Level;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -18,13 +17,12 @@ public class Workflow {
 
     private static final Logger logger = LogManager.getLogger(Workflow.class.getName());
 
-    private Set<File> srtFiles;
-    private WorkflowUtil workflowUtil = new WorkflowUtil();
+    private final WorkflowService workflowService = new WorkflowService();
 
     public void start() {
-        this.srtFiles = workflowUtil.lookupFileSystemForSRTFiles();
+        Set<File> srtFiles = workflowService.lookupFileSystemForSRTFiles();
         Set<SRTObject> srtObjects = buildSRTObjects(srtFiles);
-        Set<SubTitleMatch> subTitleMatches = WorkflowUtil.extractMatches(srtObjects);
+        Set<SubTitleMatch> subTitleMatches = WorkflowService.extractMatches(srtObjects);
     }
 
     private static Set<SRTObject> buildSRTObjects(Collection<File> srtFilesAsFiles) {
@@ -71,7 +69,7 @@ public class Workflow {
         for(SRTObject targetSRTObject : otherSRTs){
 
             for(SubTitle subTitleReference : srtReferenceObject.getSubTitles()){
-                SubTitle match = WorkflowUtil.lookupForMatchingSubTitleFrame(targetSRTObject, subTitleReference);
+                SubTitle match = WorkflowService.lookupForMatchingSubTitleFrame(targetSRTObject, subTitleReference);
 
                 SubTitleMatch subTitleMatch = new SubTitleMatch(subTitleReference);
                 subTitleMatch.setTargetContent(match.getContent());

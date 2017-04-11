@@ -12,7 +12,6 @@ public class FileSystemService {
 
     public Collection<File> listFiles(String path){
         return FileUtils.listFiles(new File(path), null, false);
-        //return FileUtils.listFiles(new File("src/main/resources/"), null, false);
     }
 
 }

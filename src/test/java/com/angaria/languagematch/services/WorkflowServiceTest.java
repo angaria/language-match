@@ -1,6 +1,5 @@
-package com.angaria.languagematch.util;
+package com.angaria.languagematch.services;
 
-import com.angaria.languagematch.services.FileSystemService;
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.rules.ExpectedException;
@@ -20,13 +19,13 @@ import static org.mockito.Mockito.when;
 import static org.junit.Assert.*;
 
 @RunWith(MockitoJUnitRunner.class)
-public class WorkflowUtilTest {
+public class WorkflowServiceTest {
 
     @Mock
     private FileSystemService fileSystemService;
 
     @InjectMocks
-    private WorkflowUtil workflowUtil;
+    private WorkflowService workflowService;
 
     @Rule
     public ExpectedException expectedException = ExpectedException.none();
@@ -44,7 +43,7 @@ public class WorkflowUtilTest {
         expectedException.expectMessage("At least 2 SRT files needed for analysis!");
 
         when(fileSystemService.listFiles(any(String.class))).thenReturn(files);
-        workflowUtil.lookupFileSystemForSRTFiles();
+        workflowService.lookupFileSystemForSRTFiles();
     }
 
     @Test
@@ -54,7 +53,7 @@ public class WorkflowUtilTest {
         files.add(FILE_SRT_2);
 
         when(fileSystemService.listFiles(any(String.class))).thenReturn(files);
-        Set<File> results = workflowUtil.lookupFileSystemForSRTFiles();
+        Set<File> results = workflowService.lookupFileSystemForSRTFiles();
         assertEquals(results.size(), 2);
         assertTrue(results.contains(FILE_SRT_1));
         assertTrue(results.contains(FILE_SRT_2));
@@ -69,7 +68,7 @@ public class WorkflowUtilTest {
 
         when(fileSystemService.listFiles(any(String.class))).thenReturn(files);
 
-        Set<File> results = workflowUtil.lookupFileSystemForSRTFiles();
+        Set<File> results = workflowService.lookupFileSystemForSRTFiles();
         assertEquals(results.size(), 2);
         assertTrue(results.contains(FILE_SRT_1));
         assertTrue(results.contains(FILE_SRT_2));

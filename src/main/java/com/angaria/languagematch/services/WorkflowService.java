@@ -1,15 +1,11 @@
-package com.angaria.languagematch.util;
+package com.angaria.languagematch.services;
 
 import com.angaria.languagematch.entities.SRTObject;
 import com.angaria.languagematch.entities.SubTitle;
 import com.angaria.languagematch.entities.SubTitleMatch;
-import com.angaria.languagematch.services.FileSystemService;
-import org.apache.commons.io.FileSystemUtils;
-import org.apache.commons.io.FileUtils;
 import org.apache.logging.log4j.Level;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import org.springframework.beans.factory.annotation.Autowired;
 
 import java.io.File;
 import java.util.Collection;
@@ -20,9 +16,9 @@ import java.util.stream.Collectors;
 /**
  * Created by Alex on 10/04/2017.
  */
-public class WorkflowUtil {
+public class WorkflowService {
 
-    private static final Logger logger = LogManager.getLogger(WorkflowUtil.class.getName());
+    private static final Logger logger = LogManager.getLogger(WorkflowService.class.getName());
 
     private FileSystemService fileSystemService = new FileSystemService();
 
@@ -47,7 +43,7 @@ public class WorkflowUtil {
             }
         }
 
-        if(srtFiles.size() <= 1){
+        if(srtFiles.size() < 2){
             throw new Error("At least 2 SRT files needed for analysis!");
         }
 
