@@ -17,7 +17,7 @@ after_failure:
   - cat target/surefire-reports/*.txt
 
 after_success:
-  - bash <(curl -s https://codecov.io/bash)
+  - bash <(curl -s https://codecov.io/bash) -t 9d148108-d308-4881-8d64-0124ec90814d
 
 cache:
   directories:
