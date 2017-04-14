@@ -99,6 +99,6 @@ public class WorkflowServiceTest {
 
         assertEquals(Instant.parse("2017-04-08T23:02:28.344Z") , firstSubTitle.getStartDate().toInstant());
         assertEquals(Instant.parse("2017-04-08T23:02:29.261Z") , firstSubTitle.getEndDate().toInstant());
-        assertEquals(Instant.parse("Who's there?") , firstSubTitle.getContent());
+        assertEquals("Who's there?" , firstSubTitle.getContent());
     }
 }
