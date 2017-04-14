@@ -13,11 +13,13 @@ public class SubTitleMatch {
 
     private Date startDate;
     private Date endDate;
-
     private String referenceContent;
     private String targetContent;
-
     private String hashCode;
+
+    public String getTargetContent() {
+        return targetContent;
+    }
 
     @Override
     public String toString() {

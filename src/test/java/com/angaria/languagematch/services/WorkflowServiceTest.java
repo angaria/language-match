@@ -1,19 +1,21 @@
 package com.angaria.languagematch.services;
 
+import com.angaria.languagematch.entities.SRTObject;
+import com.angaria.languagematch.entities.SubTitle;
+import com.angaria.languagematch.entities.SubTitleMatch;
+import com.google.common.collect.Sets;
+import org.junit.Before;
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.rules.ExpectedException;
 import org.junit.runner.RunWith;
 
-import org.mockito.InjectMocks;
-import org.mockito.Mock;
+import static org.mockito.Mockito.*;
+
 import org.mockito.runners.MockitoJUnitRunner;
 
 import java.io.File;
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.List;
-import java.util.Set;
+import java.util.*;
 
 import static org.junit.Assert.*;
 import static org.mockito.Matchers.any;
@@ -26,14 +28,18 @@ public class WorkflowServiceTest {
     private static final File FILE_SRT_2 = new File("src/test/resources/fileTest2.vi.srt");
     private static final File FILE_NON_SRT = new File("src/test/resources/fileTest3.txt");
 
-    @Mock
     private FileSystemService fileSystemService;
-
-    @InjectMocks
     private WorkflowService workflowService;
 
     @Rule
     public ExpectedException expectedException = ExpectedException.none();
+
+    @Before
+    public void setup(){
+        fileSystemService = mock(FileSystemService.class);
+        workflowService = new WorkflowService();
+        workflowService.setFileSystemService(fileSystemService);
+    }
 
     @Test
     public void getSRTFilesFromFileSystem_noInputFiles() throws Exception {
@@ -55,5 +61,28 @@ public class WorkflowServiceTest {
         assertEquals(2 , results.size());
         assertTrue(results.contains(FILE_SRT_1));
         assertTrue(results.contains(FILE_SRT_2));
+    }
+
+    @Test
+    public void findMatchingSubTitles() throws Exception {
+        SubTitle subTitle = new SubTitle();
+        subTitle.setContent("English blah blah");
+        subTitle.setStartDate(new Date());
+        subTitle.setLanguage("en");
+        subTitle.setFileName(FILE_SRT_1.getName());
+
+        SubTitle subTitle2 = new SubTitle();
+        subTitle2.setContent("Vietnamese blah blah");
+        subTitle2.setStartDate(new Date());
+        subTitle2.setLanguage("vi");
+        subTitle2.setFileName(FILE_SRT_2.getName());
+
+        SRTObject srtRefObject = new SRTObject(FILE_SRT_1.getName(), "en", Sets.newHashSet(subTitle));
+        SRTObject srtTargetObject = new SRTObject(FILE_SRT_2.getName(), "vi", Sets.newHashSet(subTitle2));
+
+        Set<SubTitleMatch> subTitleMatches = workflowService.findMatchingSubTitles(srtRefObject, srtTargetObject);
+
+        assertEquals(1 , subTitleMatches.size());
+        assertEquals("Vietnamese blah blah", subTitleMatches.iterator().next().getTargetContent());
     }
 }

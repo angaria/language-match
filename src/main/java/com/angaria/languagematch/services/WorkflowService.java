@@ -45,7 +45,7 @@ public class WorkflowService {
                             .collect(Collectors.toSet());
     }
 
-    public Set<SubTitleMatch> extractMatchingSubTitles(SRTObject refSRT, SRTObject targetSRT) {
+    public Set<SubTitleMatch> findMatchingSubTitles(SRTObject refSRT, SRTObject targetSRT) {
         Preconditions.checkNotNull(refSRT, "Reference SRT file missing!");
         Preconditions.checkNotNull(targetSRT, "Second SRT file missing!");
 
@@ -61,6 +61,20 @@ public class WorkflowService {
         return matches;
     }
 
+    private SubTitle lookupForMatchingSubTitleFrame(SRTObject targetSRTObject, SubTitle subTitleReference) {
+
+        SubTitle previousSubTitleTarget = null;
+
+        for(SubTitle subTitleTarget : targetSRTObject.getSubTitles()){
+            if(subTitleTarget.getStartDate().after(subTitleReference.getStartDate())){
+                return previousSubTitleTarget;
+            }
+            previousSubTitleTarget = subTitleTarget;
+        }
+
+        return previousSubTitleTarget;
+    }
+
     public SRTObject getTargetLanguageSRT(Set<SRTObject> srtObjects) {
         return srtObjects.stream()
                 .filter(srt -> !srt.getLanguage().equals("en"))
@@ -73,17 +87,7 @@ public class WorkflowService {
                 .findFirst().get();
     }
 
-    public static SubTitle lookupForMatchingSubTitleFrame(SRTObject targetSRTObject, SubTitle subTitleReference) {
-
-        SubTitle previousSubTitleTarget = null;
-
-        for(SubTitle subTitleTarget : targetSRTObject.getSubTitles()){
-            if(subTitleTarget.getStartDate().after(subTitleReference.getStartDate())){
-                return previousSubTitleTarget;
-            }
-            previousSubTitleTarget = subTitleTarget;
-        }
-
-        return previousSubTitleTarget;
+    public void setFileSystemService(FileSystemService fileSystemService) {
+        this.fileSystemService = fileSystemService;
     }
 }

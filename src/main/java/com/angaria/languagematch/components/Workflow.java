@@ -27,6 +27,6 @@ public class Workflow {
         SRTObject refObject = workflowService.getReferenceSRT(srtObjects);
         SRTObject targetObject = workflowService.getTargetLanguageSRT(srtObjects);
 
-        Set<SubTitleMatch> subTitleMatches = workflowService.extractMatchingSubTitles(refObject , targetObject);
+        Set<SubTitleMatch> subTitleMatches = workflowService.findMatchingSubTitles(refObject , targetObject);
     }
 }

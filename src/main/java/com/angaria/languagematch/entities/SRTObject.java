@@ -11,11 +11,19 @@ public class SRTObject {
 
     private final String fileName;
     private final String language;
-    private final Set<SubTitle> subTitles = new TreeSet<>();
+    private final Set<SubTitle> subTitles;
+
+    //test only
+    public SRTObject(String fileName, String language, Set<SubTitle> subTitles){
+        this.fileName = fileName;
+        this.language = language;
+        this.subTitles = subTitles;
+    }
 
     public SRTObject(File file){
         this.fileName = file.getName();
         this.language = extractLanguage(fileName);
+        this.subTitles = new TreeSet<>();
         addSubTitlesFromSRTFile(file);
     }
 

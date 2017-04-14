@@ -12,10 +12,6 @@ import java.util.Collection;
 @Component
 public class FileSystemService {
 
-    public Collection<File> listFiles(String path){
-        return FileUtils.listFiles(new File(path), null, false);
-    }
-
     public Collection<File> listSRTFiles(String path){
         return FileUtils.listFiles(new File(path), new String[]{"srt"}, false);
     }

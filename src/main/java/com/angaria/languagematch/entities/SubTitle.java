@@ -12,13 +12,9 @@ public class SubTitle implements Comparable<SubTitle>{
     public static final String REFERENCE_DAY = "2017-04-09";
 
     private Date startDate;
-
     private Date endDate;
-
     private String language;
-
     private String fileName;
-
     private String content;
 
     public Date getStartDate() {
@@ -37,16 +33,8 @@ public class SubTitle implements Comparable<SubTitle>{
         this.endDate = endDate;
     }
 
-    public String getLanguage() {
-        return language;
-    }
-
     public void setLanguage(String language) {
         this.language = language;
-    }
-
-    public String getFileName() {
-        return fileName;
     }
 
     public void setFileName(String fileName) {
