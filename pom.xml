@@ -139,6 +139,12 @@
                     <artifactId>spring-aop</artifactId>
                     <version>${spring.version}</version>
                 </dependency>
+
+                <dependency>
+                    <groupId>com.google.guava</groupId>
+                    <artifactId>guava</artifactId>
+                    <version>21.0</version>
+                </dependency>
         </dependencies>
     </dependencyManagement>
 
@@ -208,6 +214,10 @@
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-aop</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.google.guava</groupId>
+            <artifactId>guava</artifactId>
         </dependency>
     </dependencies>
 

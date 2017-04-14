@@ -16,4 +16,7 @@ public class FileSystemService {
         return FileUtils.listFiles(new File(path), null, false);
     }
 
+    public Collection<File> listSRTFiles(String path){
+        return FileUtils.listFiles(new File(path), new String[]{"srt"}, false);
+    }
 }

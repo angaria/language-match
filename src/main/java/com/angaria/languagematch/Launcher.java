@@ -1,6 +1,7 @@
 package com.angaria.languagematch;
 
 import com.angaria.languagematch.components.Workflow;
+
 import org.apache.logging.log4j.Level;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -15,9 +16,17 @@ public class Launcher {
 
     public static void main(String[] args) {
         logger.log(Level.INFO, "---------- LANGUAGE MATCH v1 ----------");
+
         ApplicationContext context = new ClassPathXmlApplicationContext("context.xml");
 
-        Workflow workflow = (Workflow) context.getBean("workflow");
-        workflow.start();
+        handleWorkflow((Workflow) context.getBean("workflow"));
+    }
+
+    private static void handleWorkflow(Workflow workflow){
+        try {
+            workflow.start();
+        } catch (Exception e) {
+            logger.error(e.getMessage());
+        }
     }
 }

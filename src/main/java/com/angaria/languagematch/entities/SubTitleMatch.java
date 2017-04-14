@@ -4,10 +4,11 @@ import java.util.Date;
 
 public class SubTitleMatch {
 
-    public SubTitleMatch(SubTitle subTitleReference) {
+    public SubTitleMatch(SubTitle subTitleReference, String targetContent) {
         this.startDate = subTitleReference.getStartDate();
         this.endDate = subTitleReference.getEndDate();
         this.referenceContent = subTitleReference.getContent();
+        this.targetContent = targetContent;
     }
 
     private Date startDate;
@@ -17,46 +18,6 @@ public class SubTitleMatch {
     private String targetContent;
 
     private String hashCode;
-
-    public Date getStartDate() {
-        return startDate;
-    }
-
-    public void setStartDate(Date startDate) {
-        this.startDate = startDate;
-    }
-
-    public Date getEndDate() {
-        return endDate;
-    }
-
-    public void setEndDate(Date endDate) {
-        this.endDate = endDate;
-    }
-
-    public String getReferenceContent() {
-        return referenceContent;
-    }
-
-    public void setReferenceContent(String referenceContent) {
-        this.referenceContent = referenceContent;
-    }
-
-    public String getTargetContent() {
-        return targetContent;
-    }
-
-    public void setTargetContent(String targetContent) {
-        this.targetContent = targetContent;
-    }
-
-    public String getHashCode() {
-        return hashCode;
-    }
-
-    public void setHashCode(String hashCode) {
-        this.hashCode = hashCode;
-    }
 
     @Override
     public String toString() {
