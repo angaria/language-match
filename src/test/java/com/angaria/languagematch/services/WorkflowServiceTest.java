@@ -10,11 +10,14 @@ import org.junit.Test;
 import org.junit.rules.ExpectedException;
 import org.junit.runner.RunWith;
 
+import static com.angaria.languagematch.entities.SubTitle.COMPLETE_DATE_FORMAT;
+import static com.angaria.languagematch.entities.SubTitle.REFERENCE_DAY;
 import static org.mockito.Mockito.*;
 
 import org.mockito.runners.MockitoJUnitRunner;
 
 import java.io.File;
+import java.text.ParseException;
 import java.time.Instant;
 import java.util.*;
 
@@ -88,7 +91,7 @@ public class WorkflowServiceTest {
     }
 
     @Test
-    public void buildSRTObjects() {
+    public void buildSRTObjects() throws ParseException {
         Collection<SRTObject> srtObjects = workflowService.buildSRTObjects(Sets.newHashSet(FILE_SRT_1));
 
         SRTObject firstResult = srtObjects.iterator().next();
@@ -97,8 +100,8 @@ public class WorkflowServiceTest {
         assertEquals(1 , srtObjects.size());
         assertEquals(334 , firstResult.getSubTitles().size());
 
-        assertEquals(1491692548344L , firstSubTitle.getStartDate().getTime());
-        assertEquals(1491692549261L , firstSubTitle.getEndDate().getTime());
+        assertEquals(COMPLETE_DATE_FORMAT.parse(REFERENCE_DAY + " 00:02:28,344") , firstSubTitle.getStartDate());
+        assertEquals(COMPLETE_DATE_FORMAT.parse(REFERENCE_DAY + " 00:02:29,261") , firstSubTitle.getEndDate());
         assertEquals("Who's there?" , firstSubTitle.getContent());
     }
 }
