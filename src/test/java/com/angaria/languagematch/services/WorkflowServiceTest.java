@@ -3,6 +3,7 @@ package com.angaria.languagematch.services;
 import com.angaria.languagematch.entities.SRTObject;
 import com.angaria.languagematch.entities.SubTitle;
 import com.angaria.languagematch.entities.SubTitleMatch;
+import com.google.common.collect.Lists;
 import com.google.common.collect.Sets;
 import org.junit.Before;
 import org.junit.Rule;
@@ -29,13 +30,11 @@ public class WorkflowServiceTest {
 
     private static final File FILE_SRT_1 = new File("src/test/resources/fileTest1.srt");
     private static final File FILE_SRT_2 = new File("src/test/resources/fileTest2.vi.srt");
-    private static final File FILE_NON_SRT = new File("src/test/resources/fileTest3.txt");
 
     private SubTitle subTitle1;
     private SubTitle subTitle2;
     private SRTObject srtRefObject;
     private SRTObject srtTargetObject;
-
     private FileSystemService fileSystemService;
     private WorkflowService workflowService;
 
@@ -75,9 +74,7 @@ public class WorkflowServiceTest {
 
     @Test
     public void getSRTFilesFromFileSystem_positive2SRTFiles() throws Exception {
-        List<File> files = new ArrayList<>();
-        files.add(FILE_SRT_1);
-        files.add(FILE_SRT_2);
+        List<File> files = Lists.newArrayList(FILE_SRT_1, FILE_SRT_2);
 
         when(fileSystemService.listSRTFiles(any(String.class))).thenReturn(files);
         Collection<File> results = workflowService.getSRTFilesFromFileSystem();
@@ -88,7 +85,6 @@ public class WorkflowServiceTest {
 
     @Test
     public void findMatchingSubTitles() throws Exception {
-
         Set<SubTitleMatch> subTitleMatches = workflowService.findMatchingSubTitles(srtRefObject, srtTargetObject);
 
         assertEquals(1 , subTitleMatches.size());
