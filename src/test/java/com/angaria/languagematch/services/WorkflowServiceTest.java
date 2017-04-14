@@ -97,8 +97,8 @@ public class WorkflowServiceTest {
         assertEquals(1 , srtObjects.size());
         assertEquals(334 , firstResult.getSubTitles().size());
 
-        assertEquals(Instant.parse("2017-04-08T23:02:28.344Z") , firstSubTitle.getStartDate().toInstant());
-        assertEquals(Instant.parse("2017-04-08T23:02:29.261Z") , firstSubTitle.getEndDate().toInstant());
+        assertEquals(1491692548344L , firstSubTitle.getStartDate().getTime());
+        assertEquals(1491692549261L , firstSubTitle.getEndDate().getTime());
         assertEquals("Who's there?" , firstSubTitle.getContent());
     }
 }
