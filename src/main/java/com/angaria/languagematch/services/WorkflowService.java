@@ -23,6 +23,7 @@ public class WorkflowService {
     @Autowired
     private FileSystemService fileSystemService;
 
+    //COV
     public Collection<File> getSRTFilesFromFileSystem() throws Exception {
         logger.log(Level.INFO, "Lookup input directory...");
 
@@ -37,6 +38,7 @@ public class WorkflowService {
         }
     }
 
+    //COV
     public Set<SRTObject> buildSRTObjects(Collection<File> srtFiles) {
         logger.log(Level.INFO, "Creating subtitle Objects...");
 
@@ -45,6 +47,7 @@ public class WorkflowService {
                             .collect(Collectors.toSet());
     }
 
+    //COV
     public Set<SubTitleMatch> findMatchingSubTitles(SRTObject refSRT, SRTObject targetSRT) {
         Preconditions.checkNotNull(refSRT, "Reference SRT file missing!");
         Preconditions.checkNotNull(targetSRT, "Second SRT file missing!");
@@ -75,12 +78,14 @@ public class WorkflowService {
         return previousSubTitleTarget;
     }
 
+    //COV
     public SRTObject getTargetLanguageSRT(Set<SRTObject> srtObjects) {
         return srtObjects.stream()
                 .filter(srt -> !srt.getLanguage().equals("en"))
                 .findFirst().get();
     }
 
+    //COV
     public SRTObject getReferenceSRT(Set<SRTObject> srtObjects){
         return srtObjects.stream()
                 .filter(srt -> srt.getLanguage().equals("en"))

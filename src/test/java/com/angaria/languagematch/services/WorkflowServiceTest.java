@@ -18,7 +18,6 @@ import org.mockito.runners.MockitoJUnitRunner;
 
 import java.io.File;
 import java.text.ParseException;
-import java.time.Instant;
 import java.util.*;
 
 import static org.junit.Assert.*;
@@ -32,6 +31,11 @@ public class WorkflowServiceTest {
     private static final File FILE_SRT_2 = new File("src/test/resources/fileTest2.vi.srt");
     private static final File FILE_NON_SRT = new File("src/test/resources/fileTest3.txt");
 
+    private SubTitle subTitle1;
+    private SubTitle subTitle2;
+    private SRTObject srtRefObject;
+    private SRTObject srtTargetObject;
+
     private FileSystemService fileSystemService;
     private WorkflowService workflowService;
 
@@ -43,6 +47,21 @@ public class WorkflowServiceTest {
         fileSystemService = mock(FileSystemService.class);
         workflowService = new WorkflowService();
         workflowService.setFileSystemService(fileSystemService);
+
+        subTitle1 = new SubTitle();
+        subTitle1.setContent("English blah blah");
+        subTitle1.setStartDate(new Date());
+        subTitle1.setLanguage("en");
+        subTitle1.setFileName(FILE_SRT_1.getName());
+
+        subTitle2 = new SubTitle();
+        subTitle2.setContent("Vietnamese blah blah");
+        subTitle2.setStartDate(new Date());
+        subTitle2.setLanguage("vi");
+        subTitle2.setFileName(FILE_SRT_2.getName());
+
+        srtRefObject = new SRTObject(FILE_SRT_1.getName(), "en", Sets.newHashSet(subTitle1));
+        srtTargetObject = new SRTObject(FILE_SRT_2.getName(), "vi", Sets.newHashSet(subTitle2));
     }
 
     @Test
@@ -69,20 +88,6 @@ public class WorkflowServiceTest {
 
     @Test
     public void findMatchingSubTitles() throws Exception {
-        SubTitle subTitle = new SubTitle();
-        subTitle.setContent("English blah blah");
-        subTitle.setStartDate(new Date());
-        subTitle.setLanguage("en");
-        subTitle.setFileName(FILE_SRT_1.getName());
-
-        SubTitle subTitle2 = new SubTitle();
-        subTitle2.setContent("Vietnamese blah blah");
-        subTitle2.setStartDate(new Date());
-        subTitle2.setLanguage("vi");
-        subTitle2.setFileName(FILE_SRT_2.getName());
-
-        SRTObject srtRefObject = new SRTObject(FILE_SRT_1.getName(), "en", Sets.newHashSet(subTitle));
-        SRTObject srtTargetObject = new SRTObject(FILE_SRT_2.getName(), "vi", Sets.newHashSet(subTitle2));
 
         Set<SubTitleMatch> subTitleMatches = workflowService.findMatchingSubTitles(srtRefObject, srtTargetObject);
 
@@ -103,5 +108,23 @@ public class WorkflowServiceTest {
         assertEquals(COMPLETE_DATE_FORMAT.parse(REFERENCE_DAY + " 00:02:28,344") , firstSubTitle.getStartDate());
         assertEquals(COMPLETE_DATE_FORMAT.parse(REFERENCE_DAY + " 00:02:29,261") , firstSubTitle.getEndDate());
         assertEquals("Who's there?" , firstSubTitle.getContent());
+    }
+
+    @Test
+    public void getReferenceSRT(){
+        Set<SRTObject> srtObjects = Sets.newHashSet(srtRefObject, srtTargetObject);
+        SRTObject srtObject = workflowService.getReferenceSRT(srtObjects);
+
+        assertEquals("en", srtObject.getLanguage());
+        assertEquals(1, srtObject.getSubTitles().size());
+    }
+
+    @Test
+    public void getTargetLanguageSRT(){
+        Set<SRTObject> srtObjects = Sets.newHashSet(srtRefObject, srtTargetObject);
+        SRTObject srtObject = workflowService.getTargetLanguageSRT(srtObjects);
+
+        assertEquals("vi", srtObject.getLanguage());
+        assertEquals(1, srtObject.getSubTitles().size());
     }
 }
