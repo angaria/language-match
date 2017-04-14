@@ -15,6 +15,7 @@ import static org.mockito.Mockito.*;
 import org.mockito.runners.MockitoJUnitRunner;
 
 import java.io.File;
+import java.time.Instant;
 import java.util.*;
 
 import static org.junit.Assert.*;
@@ -84,5 +85,20 @@ public class WorkflowServiceTest {
 
         assertEquals(1 , subTitleMatches.size());
         assertEquals("Vietnamese blah blah", subTitleMatches.iterator().next().getTargetContent());
+    }
+
+    @Test
+    public void buildSRTObjects() {
+        Collection<SRTObject> srtObjects = workflowService.buildSRTObjects(Sets.newHashSet(FILE_SRT_1));
+
+        SRTObject firstResult = srtObjects.iterator().next();
+        SubTitle firstSubTitle = firstResult.getSubTitles().iterator().next();
+
+        assertEquals(1 , srtObjects.size());
+        assertEquals(334 , firstResult.getSubTitles().size());
+
+        assertEquals(Instant.parse("2017-04-08T23:02:28.344Z") , firstSubTitle.getStartDate().toInstant());
+        assertEquals(Instant.parse("2017-04-08T23:02:29.261Z") , firstSubTitle.getEndDate().toInstant());
+        assertEquals(Instant.parse("Who's there?") , firstSubTitle.getContent());
     }
 }
