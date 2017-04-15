@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7341ea8a-f4b6-4e61-bef6-fb82947b47bc" name="Default" comment="">
+    <list default="true" id="7341ea8a-f4b6-4e61-bef6-fb82947b47bc" name="Default" comment="Cleanup">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/com/angaria/languagematch/entities/SRTObjectTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/angaria/languagematch/entities/SRTObject.java" afterPath="$PROJECT_DIR$/src/main/java/com/angaria/languagematch/entities/SRTObject.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/angaria/languagematch/entities/SubTitle.java" afterPath="$PROJECT_DIR$/src/main/java/com/angaria/languagematch/entities/SubTitle.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/angaria/languagematch/services/WorkflowService.java" afterPath="$PROJECT_DIR$/src/main/java/com/angaria/languagematch/services/WorkflowService.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/angaria/languagematch/services/WorkflowServiceTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/angaria/languagematch/services/WorkflowServiceTest.java" />
     </list>
@@ -24,8 +27,8 @@
       <file leaf-file-name="Launcher.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/angaria/languagematch/Launcher.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+            <state relative-caret-position="150">
+              <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -33,23 +36,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="WorkflowServiceTest.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="WorkflowServiceTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/angaria/languagematch/services/WorkflowServiceTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="292">
-              <caret line="120" column="0" lean-forward="true" selection-start-line="120" selection-start-column="0" selection-end-line="120" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="WorkflowService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/angaria/languagematch/services/WorkflowService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="307">
-              <caret line="94" column="19" lean-forward="true" selection-start-line="94" selection-start-column="19" selection-end-line="94" selection-end-column="19" />
+            <state relative-caret-position="162">
+              <caret line="91" column="5" lean-forward="true" selection-start-line="91" selection-start-column="5" selection-end-line="91" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -60,8 +51,8 @@
       <file leaf-file-name="Workflow.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/angaria/languagematch/components/Workflow.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="423">
-              <caret line="29" column="109" lean-forward="false" selection-start-line="29" selection-start-column="109" selection-end-line="29" selection-end-column="109" />
+            <state relative-caret-position="113">
+              <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -69,12 +60,66 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="SRTObject.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/angaria/languagematch/entities/SRTObject.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="158">
+              <caret line="81" column="0" lean-forward="true" selection-start-line="81" selection-start-column="0" selection-end-line="81" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#2855#2856#0" expanded="true" />
+                <element signature="e#2895#2896#0" expanded="true" />
+                <element signature="e#2954#2955#0" expanded="true" />
+                <element signature="e#3019#3020#0" expanded="true" />
+                <element signature="e#4967#4968#0" expanded="true" />
+                <element signature="e#5011#5012#0" expanded="true" />
+                <element signature="e#5270#5271#0" expanded="true" />
+                <element signature="e#5299#5300#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SRTObjectTest.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/angaria/languagematch/entities/SRTObjectTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="125">
+              <caret line="92" column="5" lean-forward="true" selection-start-line="92" selection-start-column="5" selection-end-line="92" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="fileTest1.srt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/resources/fileTest1.srt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="245">
+              <caret line="1432" column="0" lean-forward="false" selection-start-line="1432" selection-start-column="0" selection-end-line="1433" selection-end-column="17" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="SubTitle.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/angaria/languagematch/entities/SubTitle.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="89" column="58" lean-forward="true" selection-start-line="89" selection-start-column="58" selection-end-line="89" selection-end-column="79" />
+            <state relative-caret-position="57">
+              <caret line="99" column="34" lean-forward="true" selection-start-line="99" selection-start-column="34" selection-end-line="99" selection-end-column="34" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="WorkflowService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/angaria/languagematch/services/WorkflowService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="222">
+              <caret line="54" column="30" lean-forward="false" selection-start-line="54" selection-start-column="30" selection-end-line="54" selection-end-column="30" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -93,6 +138,7 @@
       <find>log4j.version</find>
       <find>extractMatches</find>
       <find>lookupFileSystemForSRTFiles</find>
+      <find>generateSubTitles</find>
     </findStrings>
     <replaceStrings>
       <replace>getSRTFilesFromFileSystem</replace>
@@ -129,11 +175,12 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/angaria/languagematch/components/Workflow.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/angaria/languagematch/services/FileSystemService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/angaria/languagematch/entities/SRTObject.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/angaria/languagematch/entities/SubTitle.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/angaria/languagematch/entities/SubTitleMatch.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/angaria/languagematch/services/WorkflowServiceTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/angaria/languagematch/services/WorkflowService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/angaria/languagematch/entities/SubTitle.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/angaria/languagematch/services/WorkflowServiceTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/angaria/languagematch/entities/SRTObjectTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/angaria/languagematch/entities/SRTObject.java" />
       </list>
     </option>
   </component>
@@ -145,9 +192,12 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="y" value="24" />
-    <option name="width" value="1280" />
-    <option name="height" value="732" />
+    <option name="y" value="23" />
+    <option name="width" value="1281" />
+    <option name="height" value="734" />
+  </component>
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -220,6 +270,114 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="languagematch" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="services" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="LanguageMatch" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="LanguageMatch" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="languagematch" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="entities" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="LanguageMatch" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="LanguageMatch" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="LanguageMatch" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="LanguageMatch" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="languagematch" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="LanguageMatch" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="LanguageMatch" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="languagematch" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="services" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -239,6 +397,48 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="languagematch" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="entities" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="LanguageMatch" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="LanguageMatch" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="languagematch" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="components" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -265,7 +465,7 @@
       <recent name="$PROJECT_DIR$/src/test/resources" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.WorkflowServiceTest">
+  <component name="RunManager" selected="JUnit.SRTObjectTest.generateSubTitles_negative">
     <configuration default="false" name="WorkflowServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -292,19 +492,19 @@
       <patterns />
       <method />
     </configuration>
-    <configuration default="false" name="WorkflowServiceTest.getSRTFilesFromFileSystem_positive2SRTFiles_1NonSRTFile" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="SRTObjectTest.generateSubTitles_positive" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="com.angaria.languagematch.services.*" />
+          <option name="PATTERN" value="com.angaria.languagematch.entities.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <module name="LanguageMatch" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.angaria.languagematch.services" />
-      <option name="MAIN_CLASS_NAME" value="com.angaria.languagematch.services.WorkflowServiceTest" />
-      <option name="METHOD_NAME" value="getSRTFilesFromFileSystem_positive2SRTFiles_1NonSRTFile" />
+      <option name="PACKAGE_NAME" value="com.angaria.languagematch.entities" />
+      <option name="MAIN_CLASS_NAME" value="com.angaria.languagematch.entities.SRTObjectTest" />
+      <option name="METHOD_NAME" value="generateSubTitles_positive" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -318,19 +518,19 @@
       <patterns />
       <method />
     </configuration>
-    <configuration default="false" name="WorkflowServiceTest.getSRTFilesFromFileSystem_positive2SRTFiles" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="SRTObjectTest.getLastSubTitle" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="com.angaria.languagematch.services.*" />
+          <option name="PATTERN" value="com.angaria.languagematch.entities.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <module name="LanguageMatch" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.angaria.languagematch.services" />
-      <option name="MAIN_CLASS_NAME" value="com.angaria.languagematch.services.WorkflowServiceTest" />
-      <option name="METHOD_NAME" value="getSRTFilesFromFileSystem_positive2SRTFiles" />
+      <option name="PACKAGE_NAME" value="com.angaria.languagematch.entities" />
+      <option name="MAIN_CLASS_NAME" value="com.angaria.languagematch.entities.SRTObjectTest" />
+      <option name="METHOD_NAME" value="getLastSubTitle" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -344,20 +544,20 @@
       <patterns />
       <method />
     </configuration>
-    <configuration default="false" name="WorkflowServiceTest.findMatchingSubTitles" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="SRTObjectTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="com.angaria.languagematch.services.*" />
+          <option name="PATTERN" value="com.angaria.languagematch.entities.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <module name="LanguageMatch" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.angaria.languagematch.services" />
-      <option name="MAIN_CLASS_NAME" value="com.angaria.languagematch.services.WorkflowServiceTest" />
-      <option name="METHOD_NAME" value="findMatchingSubTitles" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="PACKAGE_NAME" value="com.angaria.languagematch.entities" />
+      <option name="MAIN_CLASS_NAME" value="com.angaria.languagematch.entities.SRTObjectTest" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
@@ -370,19 +570,19 @@
       <patterns />
       <method />
     </configuration>
-    <configuration default="false" name="WorkflowServiceTest.buildSRTObjects" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="SRTObjectTest.generateSubTitles_negative" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="com.angaria.languagematch.services.*" />
+          <option name="PATTERN" value="com.angaria.languagematch.entities.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <module name="LanguageMatch" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.angaria.languagematch.services" />
-      <option name="MAIN_CLASS_NAME" value="com.angaria.languagematch.services.WorkflowServiceTest" />
-      <option name="METHOD_NAME" value="buildSRTObjects" />
+      <option name="PACKAGE_NAME" value="com.angaria.languagematch.entities" />
+      <option name="MAIN_CLASS_NAME" value="com.angaria.languagematch.entities.SRTObjectTest" />
+      <option name="METHOD_NAME" value="generateSubTitles_negative" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -547,18 +747,18 @@
     </configuration>
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="JUnit.WorkflowServiceTest" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.WorkflowServiceTest.getSRTFilesFromFileSystem_positive2SRTFiles_1NonSRTFile" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.WorkflowServiceTest.getSRTFilesFromFileSystem_positive2SRTFiles" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.WorkflowServiceTest.findMatchingSubTitles" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.WorkflowServiceTest.buildSRTObjects" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.SRTObjectTest.generateSubTitles_positive" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.SRTObjectTest.getLastSubTitle" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.SRTObjectTest" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.SRTObjectTest.generateSubTitles_negative" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.WorkflowServiceTest" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.WorkflowServiceTest.buildSRTObjects" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.WorkflowServiceTest.findMatchingSubTitles" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.WorkflowServiceTest.getSRTFilesFromFileSystem_positive2SRTFiles_1NonSRTFile" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.WorkflowServiceTest.getSRTFilesFromFileSystem_positive2SRTFiles" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.SRTObjectTest.generateSubTitles_negative" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.SRTObjectTest" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.SRTObjectTest.getLastSubTitle" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.SRTObjectTest.generateSubTitles_positive" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.WorkflowServiceTest" />
       </list>
     </recent_temporary>
   </component>
@@ -695,62 +895,76 @@
       <option name="project" value="LOCAL" />
       <updated>1492211574886</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Added Unit Tests">
+      <created>1492212506135</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1492212506135</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Cleanup">
+      <created>1492212749308</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1492212749308</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="WorkflowServiceTest - 2017.04.14 at 23h 51m 33s.xml">
-      <configuration name="WorkflowServiceTest" configurationId="JUnit" />
+    <history-entry file="SRTObjectTest_generateSubTitles_negative - 2017.04.15 at 15h 37m 33s.xml">
+      <configuration name="SRTObjectTest.generateSubTitles_negative" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="WorkflowServiceTest - 2017.04.14 at 23h 51m 55s.xml">
-      <configuration name="WorkflowServiceTest" configurationId="JUnit" />
+    <history-entry file="SRTObjectTest_generateSubTitles_negative - 2017.04.15 at 15h 39m 17s.xml">
+      <configuration name="SRTObjectTest.generateSubTitles_negative" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="WorkflowServiceTest - 2017.04.14 at 23h 52m 06s.xml">
-      <configuration name="WorkflowServiceTest" configurationId="JUnit" />
+    <history-entry file="SRTObjectTest_generateSubTitles_negative - 2017.04.15 at 15h 39m 39s.xml">
+      <configuration name="SRTObjectTest.generateSubTitles_negative" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="WorkflowServiceTest - 2017.04.14 at 23h 54m 21s.xml">
-      <configuration name="WorkflowServiceTest" configurationId="JUnit" />
+    <history-entry file="SRTObjectTest_generateSubTitles_negative - 2017.04.15 at 15h 44m 22s.xml">
+      <configuration name="SRTObjectTest.generateSubTitles_negative" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="WorkflowServiceTest - 2017.04.15 at 00h 12m 43s.xml">
-      <configuration name="WorkflowServiceTest" configurationId="JUnit" />
+    <history-entry file="SRTObjectTest_generateSubTitles_negative - 2017.04.15 at 15h 45m 38s.xml">
+      <configuration name="SRTObjectTest.generateSubTitles_negative" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="WorkflowServiceTest - 2017.04.15 at 00h 27m 13s.xml">
-      <configuration name="WorkflowServiceTest" configurationId="JUnit" />
+    <history-entry file="SRTObjectTest_generateSubTitles_negative - 2017.04.15 at 15h 46m 03s.xml">
+      <configuration name="SRTObjectTest.generateSubTitles_negative" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="WorkflowServiceTest_buildSRTObjects - 2017.04.14 at 23h 55m 52s.xml">
-      <configuration name="WorkflowServiceTest.buildSRTObjects" configurationId="JUnit" />
+    <history-entry file="SRTObjectTest_generateSubTitles_negative - 2017.04.15 at 15h 46m 32s.xml">
+      <configuration name="SRTObjectTest.generateSubTitles_negative" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="WorkflowServiceTest_buildSRTObjects - 2017.04.14 at 23h 56m 25s.xml">
-      <configuration name="WorkflowServiceTest.buildSRTObjects" configurationId="JUnit" />
+    <history-entry file="SRTObjectTest_generateSubTitles_negative - 2017.04.15 at 15h 47m 11s.xml">
+      <configuration name="SRTObjectTest.generateSubTitles_negative" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="WorkflowServiceTest_buildSRTObjects - 2017.04.14 at 23h 56m 43s.xml">
-      <configuration name="WorkflowServiceTest.buildSRTObjects" configurationId="JUnit" />
+    <history-entry file="SRTObjectTest_generateSubTitles_negative - 2017.04.15 at 15h 48m 48s.xml">
+      <configuration name="SRTObjectTest.generateSubTitles_negative" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="WorkflowServiceTest_findMatchingSubTitles - 2017.04.14 at 23h 51m 49s.xml">
-      <configuration name="WorkflowServiceTest.findMatchingSubTitles" configurationId="JUnit" />
+    <history-entry file="SRTObjectTest_generateSubTitles_negative - 2017.04.15 at 16h 06m 25s.xml">
+      <configuration name="SRTObjectTest.generateSubTitles_negative" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="24" width="1280" height="732" extended-state="6" />
+    <frame x="0" y="23" width="1281" height="734" extended-state="6" />
     <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.328125" sideWeight="0.49676898" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3271028" sideWeight="0.49394673" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33125" sideWeight="0.33279485" order="10" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.5155763" sideWeight="0.3567393" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296875" sideWeight="0.49676898" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33125" sideWeight="0.66720515" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.5155763" sideWeight="0.6432607" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3515625" sideWeight="0.16235864" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21163167" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.140625" sideWeight="0.49353796" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23890235" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.11214953" sideWeight="0.49071833" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24959612" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4546875" sideWeight="0.6615509" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39875388" sideWeight="0.637611" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -771,7 +985,9 @@
     <MESSAGE value="Added Spring" />
     <MESSAGE value="Cleaning code" />
     <MESSAGE value="Fixing broken test" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixing broken test" />
+    <MESSAGE value="Added Unit Tests" />
+    <MESSAGE value="Cleanup" />
+    <option name="LAST_COMMIT_MESSAGE" value="Cleanup" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -783,13 +999,25 @@
           <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/angaria/languagematch/services/WorkflowService.java</url>
-          <line>68</line>
+          <url>file://$PROJECT_DIR$/src/test/java/com/angaria/languagematch/services/WorkflowServiceTest.java</url>
+          <line>121</line>
           <properties />
-          <option name="timeStamp" value="6" />
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/angaria/languagematch/entities/SRTObjectTest.java</url>
+          <line>80</line>
+          <properties />
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/angaria/languagematch/entities/SRTObjectTest.java</url>
+          <line>81</line>
+          <properties />
+          <option name="timeStamp" value="14" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="9" />
+      <option name="time" value="16" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -798,15 +1026,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/angaria/languagematch/entities/SubTitle.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="38" column="0" lean-forward="false" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/angaria/languagematch/others/Workflow.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/angaria/languagematch/services/FileSystemService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
@@ -1081,16 +1300,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/angaria/languagematch/components/Workflow.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="423">
-          <caret line="29" column="109" lean-forward="false" selection-start-line="29" selection-start-column="109" selection-end-line="29" selection-end-column="109" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/commons-io/commons-io/1.3.2/commons-io-1.3.2-sources.jar!/org/apache/commons/io/FileUtils.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="235">
@@ -1128,48 +1337,54 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/src.zip!/java/io/FileNotFoundException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="42" column="13" lean-forward="false" selection-start-line="42" selection-start-column="13" selection-end-line="42" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/angaria/languagematch/entities/SubTitle.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="89" column="58" lean-forward="true" selection-start-line="89" selection-start-column="58" selection-end-line="89" selection-end-column="79" />
+        <state relative-caret-position="57">
+          <caret line="99" column="34" lean-forward="true" selection-start-line="99" selection-start-column="34" selection-end-line="99" selection-end-column="34" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/fileTest1.srt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="17" lean-forward="false" selection-start-line="1" selection-start-column="17" selection-end-line="1" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/angaria/languagematch/entities/SRTObject.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="101" column="0" lean-forward="true" selection-start-line="101" selection-start-column="0" selection-end-line="101" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#4135#4136#0" expanded="true" />
-            <element signature="e#4179#4180#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/angaria/languagematch/services/WorkflowService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="307">
-          <caret line="94" column="19" lean-forward="true" selection-start-line="94" selection-start-column="19" selection-end-line="94" selection-end-column="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/angaria/languagematch/Launcher.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+        <state relative-caret-position="150">
+          <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/fileTest1.srt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="245">
+          <caret line="1432" column="0" lean-forward="false" selection-start-line="1432" selection-start-column="0" selection-end-line="1433" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/angaria/languagematch/services/WorkflowService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="222">
+          <caret line="54" column="30" lean-forward="false" selection-start-line="54" selection-start-column="30" selection-end-line="54" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/angaria/languagematch/components/Workflow.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="113">
+          <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1178,8 +1393,36 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/angaria/languagematch/services/WorkflowServiceTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="292">
-          <caret line="120" column="0" lean-forward="true" selection-start-line="120" selection-start-column="0" selection-end-line="120" selection-end-column="0" />
+        <state relative-caret-position="162">
+          <caret line="91" column="5" lean-forward="true" selection-start-line="91" selection-start-column="5" selection-end-line="91" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/angaria/languagematch/entities/SRTObject.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="158">
+          <caret line="81" column="0" lean-forward="true" selection-start-line="81" selection-start-column="0" selection-end-line="81" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2855#2856#0" expanded="true" />
+            <element signature="e#2895#2896#0" expanded="true" />
+            <element signature="e#2954#2955#0" expanded="true" />
+            <element signature="e#3019#3020#0" expanded="true" />
+            <element signature="e#4967#4968#0" expanded="true" />
+            <element signature="e#5011#5012#0" expanded="true" />
+            <element signature="e#5270#5271#0" expanded="true" />
+            <element signature="e#5299#5300#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/angaria/languagematch/entities/SRTObjectTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="92" column="5" lean-forward="true" selection-start-line="92" selection-start-column="5" selection-end-line="92" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

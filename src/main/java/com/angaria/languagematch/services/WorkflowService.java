@@ -39,43 +39,33 @@ public class WorkflowService {
     }
 
     //COV
-    public Set<SRTObject> buildSRTObjects(Collection<File> srtFiles) {
+    public Set<SRTObject> buildSRTObjects(Collection<File> srtFiles){
         logger.log(Level.INFO, "Creating subtitle Objects...");
 
         return srtFiles.stream()
-                            .map(f -> new SRTObject(f))
+                            .map(f -> {
+                                SRTObject srtObject = new SRTObject(f);
+                                srtObject.generateSubTitles();
+                                return srtObject;
+                            })
                             .collect(Collectors.toSet());
     }
 
     //COV
     public Set<SubTitleMatch> findMatchingSubTitles(SRTObject refSRT, SRTObject targetSRT) {
-        Preconditions.checkNotNull(refSRT, "Reference SRT file missing!");
-        Preconditions.checkNotNull(targetSRT, "Second SRT file missing!");
+        Preconditions.checkArgument(refSRT != null, "Reference SRT file missing!");
+        Preconditions.checkArgument(targetSRT != null, "Second SRT file missing!");
 
         Set<SubTitleMatch> matches = refSRT.getSubTitles()
                                                 .stream()
                                                 .map(subTitleRef ->  {
-                                                    SubTitle match = lookupForMatchingSubTitleFrame(targetSRT, subTitleRef);
+                                                    SubTitle match = targetSRT.lookupForMatchingSubTitleFrame(subTitleRef);
                                                     return new SubTitleMatch(subTitleRef, match.getContent());
                                                 })
                                                 .collect(Collectors.toSet());
 
         logger.log(Level.INFO, matches);
         return matches;
-    }
-
-    private SubTitle lookupForMatchingSubTitleFrame(SRTObject targetSRTObject, SubTitle subTitleReference) {
-
-        SubTitle previousSubTitleTarget = null;
-
-        for(SubTitle subTitleTarget : targetSRTObject.getSubTitles()){
-            if(subTitleTarget.getStartDate().after(subTitleReference.getStartDate())){
-                return previousSubTitleTarget;
-            }
-            previousSubTitleTarget = subTitleTarget;
-        }
-
-        return previousSubTitleTarget;
     }
 
     //COV

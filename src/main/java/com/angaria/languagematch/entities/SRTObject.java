@@ -1,103 +1,117 @@
 package com.angaria.languagematch.entities;
 
+import com.google.common.base.Preconditions;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 import java.io.*;
 import java.text.ParseException;
-import java.util.Arrays;
-import java.util.Locale;
-import java.util.Set;
-import java.util.TreeSet;
+import java.util.*;
 
 public class SRTObject {
 
+    private final File file;
     private final String fileName;
     private final String language;
     private final Set<SubTitle> subTitles;
-
-    //test only
-    public SRTObject(String fileName, String language, Set<SubTitle> subTitles){
-        this.fileName = fileName;
-        this.language = language;
-        this.subTitles = subTitles;
-    }
+    private SubTitle subTitle = null;
+    private boolean previousLineWasAboutTiming = false;
+    private String line;
+    private Set<Exception> errors = new LinkedHashSet<>();
+    private static final String LINE_SEPARATOR = "\r\n";
+    private static final Logger logger = LogManager.getLogger(SRTObject.class.getName());
 
     public SRTObject(File file){
         this.fileName = file.getName();
         this.language = extractLanguage(fileName);
         this.subTitles = new TreeSet<>();
-        addSubTitlesFromSRTFile(file);
+        this.file = file;
     }
 
-    private void addSubTitlesFromSRTFile(File file) {
+    private static String cleanupLine(String line){
+        if(line == null) {
+            return null;
+        }
 
-        SubTitle subTitle = null;
-        boolean previousLineWasAboutTiming = false;
+        line = line.replace("\u0000", ""); // removes NUL chars
+        line = line.replace("\\u0000", ""); // removes backslash+u0000
+        return line.trim();
+    }
 
-        try {
+    public void generateSubTitles() {
+        try (BufferedReader br = new BufferedReader(
+                new InputStreamReader(new FileInputStream(file),"UTF-8"))) {
+            generateSubTitlesBody(br);
+        }
+        catch(Exception e){
+            handleException(e);
+        }
+    }
 
-            BufferedReader br  = new BufferedReader(
-                    new InputStreamReader(new FileInputStream(file),"UTF-8"));
+    private void generateSubTitlesBody(BufferedReader br) throws IOException {
 
-            String currentLine = null;
+        while ((line = cleanupLine(br.readLine())) != null) {
 
-            while ((currentLine = br.readLine()) != null) {
-
-                //cleanup
-                currentLine = currentLine.replace("\u0000", ""); // removes NUL chars
-                currentLine = currentLine.replace("\\u0000", ""); // removes backslash+u0000
-
-                if(currentLine.contains(SubTitle.SRT_DATE_SEPARATOR)){
-
-                    if(subTitle != null){
-                        this.addSubTitle(subTitle);
-                    }
-
-                    subTitle = new SubTitle();
-                    subTitle.setLanguage(language);
-                    subTitle.setFileName(fileName);
-
-                    try {
-                        subTitle.setStartDateFromLine(currentLine);
-                        subTitle.setEndDateFromLine(currentLine);
-                    } catch (ParseException e) {
-                        throw new Error("The line content: '"+currentLine+"' caused a problem while parsing the dates!");
-                    }
-
-                    previousLineWasAboutTiming = true;
-                    continue;
-                }
-
+            if(isTimingRelated(line)){
+                storeLastSubTitle(subTitle);
+                subTitle = buildSubTitleFromTiming(line);
+                previousLineWasAboutTiming = true;
+            }
+            else{
                 if(previousLineWasAboutTiming){
-                    subTitle.setContent(currentLine);
+                    subTitle.setContent(line);
                     previousLineWasAboutTiming = false;
-                    continue;
                 }
-                else{
-                    if(isNumeric(currentLine) || currentLine.trim().isEmpty()){
-                        continue;
-                    }
-                    else if(subTitle!= null){
-                        if(subTitle.getContent().trim().isEmpty()){
-                            subTitle.setContent(currentLine);
-                        }
-                        else{
-                            subTitle.setContent(subTitle.getContent() + "\r\n" + currentLine);
-                        }
+                else if(!isNumeric(line) && !line.isEmpty() && subTitle != null) {
+                    if (subTitle.getContent().trim().isEmpty()) {
+                        subTitle.setContent(line);
+                    } else {
+                        subTitle.setContent(subTitle.getContent() + LINE_SEPARATOR + line);
                     }
                 }
             }
-
-            br.close();
-
-        } catch (FileNotFoundException e) {
-            System.out.println( "File " + file.getAbsolutePath()+ "not found for Scanning!");
-        } catch (IOException e) {
-            e.printStackTrace();
         }
 
+        storeLastSubTitle(subTitle);
+    }
+
+    private void handleException(Exception e) {
+        if(file == null){
+            e = new NullPointerException("File must be set before in order to generate the SubTitles!");
+        }
+
+        errors.add(e);
+        logger.info("An error happened during SubTitles generation of:" + this);
+        logger.error(e.getMessage());
+    }
+
+    public boolean hasErrors(){
+        return !errors.isEmpty();
+    }
+
+    private static boolean isTimingRelated(String line) {
+        return line.contains(SubTitle.SRT_DATE_SEPARATOR);
+    }
+
+    private void storeLastSubTitle(SubTitle subTitle) {
         if(subTitle != null){
             this.addSubTitle(subTitle);
         }
+    }
 
+    private SubTitle buildSubTitleFromTiming(String line) {
+        SubTitle subTitle = new SubTitle();
+        subTitle.setLanguage(language);
+        subTitle.setFileName(fileName);
+
+        try {
+            subTitle.setStartDateFromLine(line);
+            subTitle.setEndDateFromLine(line);
+        } catch (ParseException e) {
+            throw new Error("The line content: '"+line+"' caused a problem while parsing the dates!");
+        }
+
+        return subTitle;
     }
 
     private static boolean isNumeric(String s) {
@@ -120,6 +134,21 @@ public class SRTObject {
         return fileNameWithNoExt.substring(fileNameWithNoExt.lastIndexOf(".")+1).toLowerCase();
     }
 
+    //COV
+    public SubTitle lookupForMatchingSubTitleFrame(SubTitle stReference) {
+        return subTitles.stream()
+                    .filter(s -> s.getStartDate().after(stReference.getStartDate()))
+                    .findFirst()
+                    .orElse(getLastSubTitle());
+
+    }
+
+    //COV
+    public SubTitle getLastSubTitle(){
+        return subTitles.stream()
+                .reduce((first, second) -> second).get();
+    }
+
     public String getLanguage() {
         return language;
     }
@@ -130,6 +159,17 @@ public class SRTObject {
 
     public void addSubTitle(SubTitle subTitle) {
         this.subTitles.add(subTitle);
+    }
+
+    public SRTObject(String fileName, String language, Set<SubTitle> subTitles){
+        this.fileName = fileName;
+        this.language = language;
+        this.subTitles = subTitles;
+        this.file = null;
+    }
+
+    public Set<Exception> getErrors() {
+        return errors;
     }
 
     @Override

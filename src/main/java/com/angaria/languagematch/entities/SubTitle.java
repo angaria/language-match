@@ -99,4 +99,15 @@ public class SubTitle implements Comparable<SubTitle>{
         Date parsedEndDate = COMPLETE_DATE_FORMAT.parse(REFERENCE_DAY + " " + line.substring(line.indexOf(SRT_DATE_SEPARATOR) + SRT_DATE_SEPARATOR.length(), line.length()));
         setEndDate(parsedEndDate);
     }
+
+    @Override
+    public String toString() {
+        return "SubTitle{" +
+                "startDate=" + startDate +
+                ", endDate=" + endDate +
+                ", language='" + language + '\'' +
+                ", fileName='" + fileName + '\'' +
+                ", content='" + content + '\'' +
+                '}';
+    }
 }

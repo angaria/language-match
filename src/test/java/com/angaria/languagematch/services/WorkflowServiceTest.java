@@ -92,6 +92,22 @@ public class WorkflowServiceTest {
     }
 
     @Test
+    public void findMatchingSubTitles_negative1() throws Exception {
+        expectedException.expect(IllegalArgumentException.class);
+        expectedException.expectMessage("Reference SRT file missing!");
+
+        Set<SubTitleMatch> subTitleMatches = workflowService.findMatchingSubTitles(null, srtTargetObject);
+    }
+
+    @Test
+    public void findMatchingSubTitles_negative2() throws Exception {
+        expectedException.expect(IllegalArgumentException.class);
+        expectedException.expectMessage("Second SRT file missing!");
+
+        Set<SubTitleMatch> subTitleMatches = workflowService.findMatchingSubTitles(srtRefObject, null);
+    }
+
+    @Test
     public void buildSRTObjects() throws ParseException {
         Collection<SRTObject> srtObjects = workflowService.buildSRTObjects(Sets.newHashSet(FILE_SRT_1));
 
