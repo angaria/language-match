@@ -58,6 +58,7 @@ public class SRTObjectTest extends EntityTest {
 
     private void assertSubTitlesContain(Collection<SubTitle> subTitles, SubTitle[] elements) {
         Arrays.asList(elements).stream().forEach( e -> {
+            logger.debug(e);
             assertTrue(subTitles.stream().filter(s -> s.equals(e)).findAny().isPresent());
         });
     }
@@ -87,12 +88,12 @@ public class SRTObjectTest extends EntityTest {
     @Override
     protected void prepareExpectationObjects() throws ParseException {
         subTitleEN1 = SubTitleBuilder.getInstance()
-                                        .content("Who's there?")
-                                        .startDate(COMPLETE_DATE_FORMAT.parse(REFERENCE_DAY + " 00:02:28,344"))
-                                        .endDate(COMPLETE_DATE_FORMAT.parse(REFERENCE_DAY + " 00:02:29,261"))
-                                        .language("en")
-                                        .fileName(FILE_SRT_1.getName())
-                                        .build();
+                .content("Who's there?")
+                .startDate(COMPLETE_DATE_FORMAT.parse(REFERENCE_DAY + " 00:02:28,344"))
+                .endDate(COMPLETE_DATE_FORMAT.parse(REFERENCE_DAY + " 00:02:29,261"))
+                .language("en")
+                .fileName(FILE_SRT_1.getName())
+                .build();
 
         subTitleEN2 = SubTitleBuilder.getInstance()
                 .content("they keep the shape\r\nof a cherry tree.")

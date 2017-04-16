@@ -21,6 +21,7 @@ public class SubTitle implements Comparable<SubTitle>{
 
     public SubTitle(Date startDate, Date endDate, String language, String fileName, String content){
         this.startDate = startDate;
+        this.endDate = endDate;
         this.language = language;
         this.fileName = fileName;
         this.content = content;
