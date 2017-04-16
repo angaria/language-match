@@ -53,10 +53,10 @@ public class SRTObjectTest extends EntityTest {
     public void generateSubTitles_inDetailGenerationCheck() throws ParseException {
         srtObject = new SRTObject(FILE_SRT_1);
         srtObject.generateSubTitles();
-        assertSubTitlesContain(srtObject.getSubTitles(), new SubTitle[]{subTitleEN1, subTitleEN2});
+        assertCollectionContains(srtObject.getSubTitles(), new SubTitle[]{subTitleEN1, subTitleEN2});
     }
 
-    private void assertSubTitlesContain(Collection<SubTitle> subTitles, SubTitle[] elements) {
+    private void assertCollectionContains(Collection<SubTitle> subTitles, SubTitle[] elements) {
         Arrays.asList(elements).stream().forEach( e -> {
             logger.debug(e);
             assertTrue(subTitles.stream().filter(s -> s.equals(e)).findAny().isPresent());

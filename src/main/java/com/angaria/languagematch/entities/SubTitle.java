@@ -99,8 +99,7 @@ public class SubTitle implements Comparable<SubTitle>{
             throw new IllegalArgumentException("parsing a line which is not a timing line!");
         }
 
-        Date parsedStartDate = COMPLETE_DATE_FORMAT.parse(REFERENCE_DAY + " " + line.substring(0, line.indexOf(SRT_DATE_SEPARATOR)));
-        setStartDate(parsedStartDate);
+        startDate = COMPLETE_DATE_FORMAT.parse(REFERENCE_DAY + " " + line.substring(0, line.indexOf(SRT_DATE_SEPARATOR)));
     }
 
     public void setEndDateFromLine(String line) throws ParseException {
@@ -108,8 +107,7 @@ public class SubTitle implements Comparable<SubTitle>{
             throw new IllegalArgumentException("parsing a line which is not a timing line!");
         }
 
-        Date parsedEndDate = COMPLETE_DATE_FORMAT.parse(REFERENCE_DAY + " " + line.substring(line.indexOf(SRT_DATE_SEPARATOR) + SRT_DATE_SEPARATOR.length(), line.length()));
-        setEndDate(parsedEndDate);
+        endDate = COMPLETE_DATE_FORMAT.parse(REFERENCE_DAY + " " + line.substring(line.indexOf(SRT_DATE_SEPARATOR) + SRT_DATE_SEPARATOR.length(), line.length()));
     }
 
     @Override
