@@ -83,7 +83,7 @@ public class SRTObjectEntityTest extends EntityTest {
     }
 
     @Override
-    public void prepareExpectationObjects() throws ParseException {
+    protected void prepareExpectationObjects() throws ParseException {
         subTitleEN1 = new SubTitle();
         subTitleEN1.setContent("Who's there?");
         subTitleEN1.setStartDate(COMPLETE_DATE_FORMAT.parse(REFERENCE_DAY + " 00:02:28,344"));

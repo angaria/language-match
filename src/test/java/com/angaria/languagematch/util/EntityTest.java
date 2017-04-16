@@ -4,6 +4,6 @@ import java.text.ParseException;
 
 public abstract class EntityTest {
 
-    public abstract void prepareExpectationObjects() throws ParseException;
+    protected abstract void prepareExpectationObjects() throws ParseException;
 
 }
