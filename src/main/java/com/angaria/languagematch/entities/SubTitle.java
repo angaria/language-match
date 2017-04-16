@@ -11,8 +11,8 @@ public class SubTitle implements Comparable<SubTitle>{
     public static final DateFormat COMPLETE_DATE_FORMAT = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss,SSS");
     public static final String REFERENCE_DAY = "2017-04-09";
 
-    private Date startDate;
-    private Date endDate;
+    private Date startDate = new Date();
+    private Date endDate = new Date();
     private String language;
     private String fileName;
     private String content;
@@ -57,8 +57,10 @@ public class SubTitle implements Comparable<SubTitle>{
         SubTitle subTitle = (SubTitle) o;
 
         if (!startDate.equals(subTitle.startDate)) return false;
+        if (!endDate.equals(subTitle.endDate)) return false;
         if (!language.equals(subTitle.language)) return false;
-        return fileName.equals(subTitle.fileName);
+        if (!fileName.equals(subTitle.fileName)) return false;
+        return content != null ? content.equals(subTitle.content) : subTitle.content == null;
     }
 
     @Override
