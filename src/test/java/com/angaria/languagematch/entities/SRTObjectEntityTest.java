@@ -20,17 +20,15 @@ import static org.junit.Assert.assertTrue;
 public class SRTObjectEntityTest extends EntityTest {
 
     private static final Logger logger = LogManager.getLogger(SRTObjectEntityTest.class.getName());
-
     private static final File FILE_SRT_1 = new File("src/test/resources/fileTest1.srt");
     private static final File FILE_SRT_2 = new File("src/test/resources/fileTest2.vi.srt");
+    private TestUtility<SubTitle> testUtil = new TestUtility<>();
     private SubTitle subTitleEN1;
     private SubTitle subTitleEN2;
     private SubTitle subTitleVI1;
     private SubTitle subTitleVI2;
     private SRTObject srtObject;
     private SRTObject srtTargetObject;
-
-    private TestUtility<SubTitle> testUtil;
 
     @Before
     public void setup() throws ParseException {
