@@ -34,8 +34,6 @@ public class SRTObjectEntityTest extends EntityTest {
     public void setup() throws ParseException {
         prepareExpectationObjects();
         srtObject = new SRTObject(FILE_SRT_1);
-        Set<SubTitle> subTitlesVI = new HashSet<>();
-        subTitlesVI.add(subTitleVI1);
         srtTargetObject = new SRTObject(FILE_SRT_2.getName(), "vi", Sets.newHashSet(subTitleVI1));
     }
 
