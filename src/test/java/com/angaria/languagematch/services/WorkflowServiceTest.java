@@ -2,6 +2,7 @@ package com.angaria.languagematch.services;
 
 import com.angaria.languagematch.entities.SRTObject;
 import com.angaria.languagematch.entities.SubTitle;
+import com.angaria.languagematch.entities.SubTitleBuilder;
 import com.angaria.languagematch.entities.SubTitleMatch;
 import com.google.common.collect.Lists;
 import com.google.common.collect.Sets;
@@ -43,24 +44,33 @@ public class WorkflowServiceTest {
 
     @Before
     public void setup(){
+        setupMocks();
+        prepareExpectationObjects();
+    }
+
+    private void prepareExpectationObjects() {
+        subTitle1 = SubTitleBuilder.getInstance()
+                .content("English blah blah")
+                .startDate(new Date())
+                .language("en")
+                .fileName(FILE_SRT_1.getName())
+                .build();
+
+        subTitle2 = SubTitleBuilder.getInstance()
+                .content("Vietnamese blah blah")
+                .startDate(new Date())
+                .language("vi")
+                .fileName(FILE_SRT_2.getName())
+                .build();
+
+        srtRefObject = new SRTObject(FILE_SRT_1.getName(), "en", Sets.newHashSet(subTitle1), null);
+        srtTargetObject = new SRTObject(FILE_SRT_2.getName(), "vi", Sets.newHashSet(subTitle2), null);
+    }
+
+    private void setupMocks() {
         fileSystemService = mock(FileSystemService.class);
         workflowService = new WorkflowService();
         workflowService.setFileSystemService(fileSystemService);
-
-        subTitle1 = new SubTitle();
-        subTitle1.setContent("English blah blah");
-        subTitle1.setStartDate(new Date());
-        subTitle1.setLanguage("en");
-        subTitle1.setFileName(FILE_SRT_1.getName());
-
-        subTitle2 = new SubTitle();
-        subTitle2.setContent("Vietnamese blah blah");
-        subTitle2.setStartDate(new Date());
-        subTitle2.setLanguage("vi");
-        subTitle2.setFileName(FILE_SRT_2.getName());
-
-        srtRefObject = new SRTObject(FILE_SRT_1.getName(), "en", Sets.newHashSet(subTitle1));
-        srtTargetObject = new SRTObject(FILE_SRT_2.getName(), "vi", Sets.newHashSet(subTitle2));
     }
 
     @Test
@@ -96,7 +106,7 @@ public class WorkflowServiceTest {
         expectedException.expect(IllegalArgumentException.class);
         expectedException.expectMessage("Reference SRT file missing!");
 
-        Set<SubTitleMatch> subTitleMatches = workflowService.findMatchingSubTitles(null, srtTargetObject);
+        workflowService.findMatchingSubTitles(null, srtTargetObject);
     }
 
     @Test
@@ -104,7 +114,7 @@ public class WorkflowServiceTest {
         expectedException.expect(IllegalArgumentException.class);
         expectedException.expectMessage("Second SRT file missing!");
 
-        Set<SubTitleMatch> subTitleMatches = workflowService.findMatchingSubTitles(srtRefObject, null);
+        workflowService.findMatchingSubTitles(srtRefObject, null);
     }
 
     @Test

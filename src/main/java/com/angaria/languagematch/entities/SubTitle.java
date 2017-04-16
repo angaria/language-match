@@ -11,11 +11,20 @@ public class SubTitle implements Comparable<SubTitle>{
     public static final DateFormat COMPLETE_DATE_FORMAT = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss,SSS");
     public static final String REFERENCE_DAY = "2017-04-09";
 
-    private Date startDate = new Date();
-    private Date endDate = new Date();
-    private String language;
-    private String fileName;
-    private String content;
+    protected Date startDate = new Date();
+    protected Date endDate = new Date();
+    protected String language;
+    protected String fileName;
+    protected String content;
+
+    public SubTitle(){}
+
+    public SubTitle(Date startDate, Date endDate, String language, String fileName, String content){
+        this.startDate = startDate;
+        this.language = language;
+        this.fileName = fileName;
+        this.content = content;
+    }
 
     public Date getStartDate() {
         return startDate;

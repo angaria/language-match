@@ -37,7 +37,7 @@ public class SRTObjectTest extends EntityTest {
 
     @Test
     public void lookupForMatchingSubTitleFrame_assertResult(){
-        srtTargetObject = new SRTObject(FILE_SRT_2.getName(), "vi", Sets.newHashSet(subTitleVI1));
+        srtTargetObject = new SRTObject(FILE_SRT_2.getName(), "vi", Sets.newHashSet(subTitleVI1), null);
         SubTitle subTitleResult = srtTargetObject.lookupForMatchingSubTitleFrame(subTitleEN1);
         assertEquals(subTitleVI1, subTitleResult);
     }
@@ -64,14 +64,14 @@ public class SRTObjectTest extends EntityTest {
 
     @Test
     public void generateSubTitles_requiredFileAttachment_raisesErrorFlag() throws ParseException {
-        srtTargetObject = new SRTObject(FILE_SRT_2.getName(), "vi", Sets.newHashSet(subTitleVI1));
+        srtTargetObject = new SRTObject(FILE_SRT_2.getName(), "vi", Sets.newHashSet(subTitleVI1), null);
         srtTargetObject.generateSubTitles();
         assertTrue(srtTargetObject.hasErrors());
     }
 
     @Test
     public void generateSubTitles_requiredFileAttachment_errorMessage() throws ParseException {
-        srtTargetObject = new SRTObject(FILE_SRT_2.getName(), "vi", Sets.newHashSet(subTitleVI1));
+        srtTargetObject = new SRTObject(FILE_SRT_2.getName(), "vi", Sets.newHashSet(subTitleVI1), null);
         srtTargetObject.generateSubTitles();
 
         String errorMessage = srtTargetObject.getErrors().iterator().next().getMessage();
@@ -80,38 +80,42 @@ public class SRTObjectTest extends EntityTest {
 
     @Test
     public void getLastSubTitle(){
-        srtTargetObject = new SRTObject(FILE_SRT_2.getName(), "vi", testUtil.newTreeSet(subTitleVI1, subTitleVI2));
+        srtTargetObject = new SRTObject(FILE_SRT_2.getName(), "vi", testUtil.newTreeSet(subTitleVI1, subTitleVI2), null);
         assertEquals(subTitleVI2, srtTargetObject.getLastSubTitle());
     }
 
     @Override
     protected void prepareExpectationObjects() throws ParseException {
-        subTitleEN1 = new SubTitle();
-        subTitleEN1.setContent("Who's there?");
-        subTitleEN1.setStartDate(COMPLETE_DATE_FORMAT.parse(REFERENCE_DAY + " 00:02:28,344"));
-        subTitleEN1.setEndDate(COMPLETE_DATE_FORMAT.parse(REFERENCE_DAY + " 00:02:29,261"));
-        subTitleEN1.setLanguage("en");
-        subTitleEN1.setFileName(FILE_SRT_1.getName());
+        subTitleEN1 = SubTitleBuilder.getInstance()
+                                        .content("Who's there?")
+                                        .startDate(COMPLETE_DATE_FORMAT.parse(REFERENCE_DAY + " 00:02:28,344"))
+                                        .endDate(COMPLETE_DATE_FORMAT.parse(REFERENCE_DAY + " 00:02:29,261"))
+                                        .language("en")
+                                        .fileName(FILE_SRT_1.getName())
+                                        .build();
 
-        subTitleEN2 = new SubTitle();
-        subTitleEN2.setContent("they keep the shape\r\nof a cherry tree.");
-        subTitleEN2.setStartDate(COMPLETE_DATE_FORMAT.parse(REFERENCE_DAY + " 01:40:32,884"));
-        subTitleEN2.setEndDate(COMPLETE_DATE_FORMAT.parse(REFERENCE_DAY + " 01:40:35,971"));
-        subTitleEN2.setLanguage("en");
-        subTitleEN2.setFileName(FILE_SRT_1.getName());
+        subTitleEN2 = SubTitleBuilder.getInstance()
+                .content("they keep the shape\r\nof a cherry tree.")
+                .startDate(COMPLETE_DATE_FORMAT.parse(REFERENCE_DAY + " 01:40:32,884"))
+                .endDate(COMPLETE_DATE_FORMAT.parse(REFERENCE_DAY + " 01:40:35,971"))
+                .language("en")
+                .fileName(FILE_SRT_1.getName())
+                .build();
 
-        subTitleVI1 = new SubTitle();
-        subTitleVI1.setContent("Vietnamese blah blah");
-        subTitleVI1.setStartDate(COMPLETE_DATE_FORMAT.parse(REFERENCE_DAY + " 00:02:28,344"));
-        subTitleVI1.setEndDate(COMPLETE_DATE_FORMAT.parse(REFERENCE_DAY + " 00:02:29,261"));
-        subTitleVI1.setLanguage("vi");
-        subTitleVI1.setFileName(FILE_SRT_2.getName());
+        subTitleVI1 = SubTitleBuilder.getInstance()
+                .content("Vietnamese blah blah")
+                .startDate(COMPLETE_DATE_FORMAT.parse(REFERENCE_DAY + " 00:02:28,344"))
+                .endDate(COMPLETE_DATE_FORMAT.parse(REFERENCE_DAY + " 00:02:29,261"))
+                .language("vi")
+                .fileName(FILE_SRT_2.getName())
+                .build();
 
-        subTitleVI2 = new SubTitle();
-        subTitleVI2.setContent("Vietnamese blah blah 2");
-        subTitleEN2.setStartDate(COMPLETE_DATE_FORMAT.parse(REFERENCE_DAY + " 01:40:32,884"));
-        subTitleEN2.setEndDate(COMPLETE_DATE_FORMAT.parse(REFERENCE_DAY + " 01:40:35,971"));
-        subTitleVI2.setLanguage("vi");
-        subTitleVI2.setFileName(FILE_SRT_2.getName());
+        subTitleVI2 = SubTitleBuilder.getInstance()
+                .content("Vietnamese blah blah 2")
+                .startDate(COMPLETE_DATE_FORMAT.parse(REFERENCE_DAY + " 01:40:32,884"))
+                .endDate(COMPLETE_DATE_FORMAT.parse(REFERENCE_DAY + " 01:40:35,971"))
+                .language("vi")
+                .fileName(FILE_SRT_2.getName())
+                .build();
     }
 }

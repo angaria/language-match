@@ -1,6 +1,5 @@
 package com.angaria.languagematch.entities;
 
-import com.google.common.base.Preconditions;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -10,10 +9,10 @@ import java.util.*;
 
 public class SRTObject {
 
-    private final File file;
-    private final String fileName;
-    private final String language;
-    private final Set<SubTitle> subTitles;
+    protected File file;
+    protected String fileName;
+    protected String language;
+    protected Set<SubTitle> subTitles;
     private SubTitle subTitle = null;
     private boolean previousLineWasAboutTiming = false;
     private String line;
@@ -28,14 +27,14 @@ public class SRTObject {
         this.file = file;
     }
 
-    private static String cleanupLine(String line){
-        if(line == null) {
-            return null;
-        }
+    public SRTObject(){
+    }
 
-        line = line.replace("\u0000", ""); // removes NUL chars
-        line = line.replace("\\u0000", ""); // removes backslash+u0000
-        return line.trim();
+    public SRTObject(String fileName, String language, Set<SubTitle> subTitles, File file){
+        this.fileName = fileName;
+        this.language = language;
+        this.subTitles = subTitles;
+        this.file = file;
     }
 
     public void generateSubTitles() {
@@ -46,6 +45,16 @@ public class SRTObject {
         catch(Exception e){
             handleException(e);
         }
+    }
+
+    private void handleException(Exception e) {
+        if(file == null){
+            e = new NullPointerException("File must be set before in order to generate the SubTitles!");
+        }
+
+        errors.add(e);
+        logger.info("An error happened during SubTitles generation of:" + this);
+        logger.error(e.getMessage());
     }
 
     private void generateSubTitlesBody(BufferedReader br) throws IOException {
@@ -75,28 +84,18 @@ public class SRTObject {
         storeLastSubTitle(subTitle);
     }
 
-    private void handleException(Exception e) {
-        if(file == null){
-            e = new NullPointerException("File must be set before in order to generate the SubTitles!");
+    private static String cleanupLine(String line){
+        if(line == null) {
+            return null;
         }
 
-        errors.add(e);
-        logger.info("An error happened during SubTitles generation of:" + this);
-        logger.error(e.getMessage());
-    }
-
-    public boolean hasErrors(){
-        return !errors.isEmpty();
+        line = line.replace("\u0000", ""); // removes NUL chars
+        line = line.replace("\\u0000", ""); // removes backslash+u0000
+        return line.trim();
     }
 
     private static boolean isTimingRelated(String line) {
         return line.contains(SubTitle.SRT_DATE_SEPARATOR);
-    }
-
-    private void storeLastSubTitle(SubTitle subTitle) {
-        if(subTitle != null){
-            this.addSubTitle(subTitle);
-        }
     }
 
     private SubTitle buildSubTitleFromTiming(String line) {
@@ -114,6 +113,12 @@ public class SRTObject {
         return subTitle;
     }
 
+    private void storeLastSubTitle(SubTitle subTitle) {
+        if(subTitle != null){
+            this.addSubTitle(subTitle);
+        }
+    }
+
     private static boolean isNumeric(String s) {
         try {
             Integer.parseInt(s);
@@ -121,6 +126,10 @@ public class SRTObject {
         } catch (Exception e) {
             return false;
         }
+    }
+
+    public boolean hasErrors(){
+        return !errors.isEmpty();
     }
 
     private String extractLanguage(String fileName) {
@@ -159,13 +168,6 @@ public class SRTObject {
 
     public void addSubTitle(SubTitle subTitle) {
         this.subTitles.add(subTitle);
-    }
-
-    public SRTObject(String fileName, String language, Set<SubTitle> subTitles){
-        this.fileName = fileName;
-        this.language = language;
-        this.subTitles = subTitles;
-        this.file = null;
     }
 
     public Set<Exception> getErrors() {

@@ -20,8 +20,8 @@ public class WorkflowTest {
 
     private static final File FILE_SRT_1 = new File("src/test/resources/fileTest1.srt");
     private static final File FILE_SRT_2 = new File("src/test/resources/fileTest2.vi.srt");
-    private SRTObject srtRefObject = new SRTObject(FILE_SRT_1.getName(), "en", null);
-    private SRTObject srtTargetObject = new SRTObject(FILE_SRT_2.getName(), "vi", null);
+    private SRTObject srtRefObject = new SRTObject(FILE_SRT_1.getName(), "en", null, null);
+    private SRTObject srtTargetObject = new SRTObject(FILE_SRT_2.getName(), "vi", null, null);
 
     @Mock
     private WorkflowService workflowService;
