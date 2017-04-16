@@ -37,49 +37,6 @@ public class SRTObjectEntityTest extends EntityTest {
         srtTargetObject = new SRTObject(FILE_SRT_2.getName(), "vi", Sets.newHashSet(subTitleVI1));
     }
 
-    @Test
-    public void lookupForMatchingSubTitleFrame(){
-        SubTitle subTitleResult = srtTargetObject.lookupForMatchingSubTitleFrame(subTitleEN1);
-        assertEquals(subTitleVI1, subTitleResult);
-    }
-
-    @Test
-    public void generateSubTitles_generationSize() throws ParseException {
-        srtObject.generateSubTitles();
-        assertEquals(334 , srtObject.getSubTitles().size());
-    }
-
-    @Test
-    public void generateSubTitles_inDetailsGenerationCheck() throws ParseException {
-        srtObject.generateSubTitles();
-        assertSubTitlesContain(srtObject.getSubTitles(), new SubTitle[]{subTitleEN1, subTitleEN2});
-    }
-
-    private void assertSubTitlesContain(Collection<SubTitle> subTitles, SubTitle[] elements) {
-        Arrays.asList(elements).stream().forEach( e -> {
-            assertTrue(subTitles.stream().filter(s -> s.equals(e)).findAny().isPresent());
-        });
-    }
-
-    @Test
-    public void generateSubTitles_requiredFileAttachment_raisesErrorFlag() throws ParseException {
-        srtTargetObject.generateSubTitles();
-        assertTrue(srtTargetObject.hasErrors());
-    }
-
-    @Test
-    public void generateSubTitles_requiredFileAttachment_errorMessage() throws ParseException {
-        srtTargetObject.generateSubTitles();
-        assertEquals("File must be set before in order to generate the SubTitles!" , srtTargetObject.getErrors().iterator().next().getMessage());
-    }
-
-    @Test
-    public void getLastSubTitle(){
-        srtTargetObject = new SRTObject(FILE_SRT_2.getName(), "vi",
-                            testUtil.newTreeSet(new SubTitle[]{subTitleVI1, subTitleVI2}));
-        assertEquals(subTitleVI2, srtTargetObject.getLastSubTitle());
-    }
-
     @Override
     protected void prepareExpectationObjects() throws ParseException {
         subTitleEN1 = new SubTitle();
@@ -108,5 +65,49 @@ public class SRTObjectEntityTest extends EntityTest {
         subTitleVI2.setStartDate(new Date());
         subTitleVI2.setLanguage("vi");
         subTitleVI2.setFileName(FILE_SRT_2.getName());
+    }
+
+    @Test
+    public void lookupForMatchingSubTitleFrame_assertResult(){
+        SubTitle subTitleResult = srtTargetObject.lookupForMatchingSubTitleFrame(subTitleEN1);
+        assertEquals(subTitleVI1, subTitleResult);
+    }
+
+    @Test
+    public void generateSubTitles_generationSize() throws ParseException {
+        srtObject.generateSubTitles();
+        assertEquals(334 , srtObject.getSubTitles().size());
+    }
+
+    @Test
+    public void generateSubTitles_inDetailGenerationCheck() throws ParseException {
+        srtObject.generateSubTitles();
+        assertSubTitlesContain(srtObject.getSubTitles(), new SubTitle[]{subTitleEN1, subTitleEN2});
+    }
+
+    private void assertSubTitlesContain(Collection<SubTitle> subTitles, SubTitle[] elements) {
+        Arrays.asList(elements).stream().forEach( e -> {
+            assertTrue(subTitles.stream().filter(s -> s.equals(e)).findAny().isPresent());
+        });
+    }
+
+    @Test
+    public void generateSubTitles_requiredFileAttachment_raisesErrorFlag() throws ParseException {
+        srtTargetObject.generateSubTitles();
+        assertTrue(srtTargetObject.hasErrors());
+    }
+
+    @Test
+    public void generateSubTitles_requiredFileAttachment_errorMessage() throws ParseException {
+        srtTargetObject.generateSubTitles();
+        String errorMessage = srtTargetObject.getErrors().iterator().next().getMessage();
+
+        assertEquals("File must be set before in order to generate the SubTitles!" , errorMessage);
+    }
+
+    @Test
+    public void getLastSubTitle(){
+        srtTargetObject = new SRTObject(FILE_SRT_2.getName(), "vi", testUtil.newTreeSet(subTitleVI1, subTitleVI2));
+        assertEquals(subTitleVI2, srtTargetObject.getLastSubTitle());
     }
 }
