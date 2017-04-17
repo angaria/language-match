@@ -21,16 +21,17 @@ public class SRTObject {
     private static final Logger logger = LogManager.getLogger(SRTObject.class.getName());
 
     public SRTObject(File file){
+        super();
         this.fileName = file.getName();
         this.language = extractLanguage(fileName);
         this.subTitles = new TreeSet<>();
         this.file = file;
     }
 
-    public SRTObject(){
-    }
+    public SRTObject(){}
 
     public SRTObject(String fileName, String language, Set<SubTitle> subTitles, File file){
+        super();
         this.fileName = fileName;
         this.language = language;
         this.subTitles = subTitles;
