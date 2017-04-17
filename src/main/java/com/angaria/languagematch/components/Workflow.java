@@ -1,7 +1,5 @@
 package com.angaria.languagematch.components;
 
-import com.angaria.languagematch.entities.SRTObject;
-import com.angaria.languagematch.entities.SubTitleMatch;
 import com.angaria.languagematch.services.WorkflowService;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -10,7 +8,6 @@ import org.springframework.stereotype.Component;
 
 import java.io.File;
 import java.util.Collection;
-import java.util.Set;
 
 @Component
 public class Workflow {
@@ -22,11 +19,8 @@ public class Workflow {
 
     public void start() throws Exception {
         Collection<File> srtFiles = workflowService.getSRTFilesFromFileSystem();
-        Set<SRTObject> srtObjects = workflowService.buildSRTObjects(srtFiles);
+        SRTObjects srtObjects = workflowService.buildSRTObjects(srtFiles);
 
-        SRTObject refObject = workflowService.getReferenceSRT(srtObjects);
-        SRTObject targetObject = workflowService.getTargetLanguageSRT(srtObjects);
-
-        Set<SubTitleMatch> subTitleMatches = workflowService.findMatchingSubTitles(refObject , targetObject);
+        workflowService.findMatchingSubTitles(srtObjects.getReferenceSRTObject() , srtObjects.getSecondarySRTObject());
     }
 }

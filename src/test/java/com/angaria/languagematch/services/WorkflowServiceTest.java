@@ -1,5 +1,6 @@
 package com.angaria.languagematch.services;
 
+import com.angaria.languagematch.components.SRTObjects;
 import com.angaria.languagematch.entities.SRTObject;
 import com.angaria.languagematch.entities.SubTitle;
 import com.angaria.languagematch.entities.SubTitleBuilder;
@@ -118,35 +119,14 @@ public class WorkflowServiceTest {
     }
 
     @Test
-    public void buildSRTObjects() throws ParseException {
-        Collection<SRTObject> srtObjects = workflowService.buildSRTObjects(Sets.newHashSet(FILE_SRT_1));
-
-        SRTObject firstResult = srtObjects.iterator().next();
-        SubTitle firstSubTitle = firstResult.getSubTitles().iterator().next();
-
-        assertEquals(1 , srtObjects.size());
-        assertEquals(334 , firstResult.getSubTitles().size());
-
-        assertEquals(COMPLETE_DATE_FORMAT.parse(REFERENCE_DAY + " 00:02:28,344") , firstSubTitle.getStartDate());
-        assertEquals(COMPLETE_DATE_FORMAT.parse(REFERENCE_DAY + " 00:02:29,261") , firstSubTitle.getEndDate());
-        assertEquals("Who's there?" , firstSubTitle.getContent());
+    public void buildSRTObjects_resultSize() throws ParseException {
+        SRTObjects srtObjects = workflowService.buildSRTObjects(Sets.newHashSet(FILE_SRT_1));
+        assertEquals(1, srtObjects.getSrtObjects().size());
     }
 
     @Test
-    public void getReferenceSRT(){
-        Set<SRTObject> srtObjects = Sets.newHashSet(srtRefObject, srtTargetObject);
-        SRTObject srtObject = workflowService.getReferenceSRT(srtObjects);
-
-        assertEquals("en", srtObject.getLanguage());
-        assertEquals(1, srtObject.getSubTitles().size());
-    }
-
-    @Test
-    public void getTargetLanguageSRT(){
-        Set<SRTObject> srtObjects = Sets.newHashSet(srtRefObject, srtTargetObject);
-        SRTObject srtObject = workflowService.getTargetLanguageSRT(srtObjects);
-
-        assertEquals("vi", srtObject.getLanguage());
-        assertEquals(1, srtObject.getSubTitles().size());
+    public void buildSRTObjects_resultSize2() throws ParseException {
+        SRTObjects srtObjects = workflowService.buildSRTObjects(Sets.newHashSet(FILE_SRT_1, FILE_SRT_2));
+        assertEquals(2, srtObjects.getSrtObjects().size());
     }
 }

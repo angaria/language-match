@@ -2,7 +2,6 @@ package com.angaria.languagematch.components;
 
 import com.angaria.languagematch.entities.SRTObject;
 import com.angaria.languagematch.services.WorkflowService;
-import com.google.common.collect.Sets;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -32,6 +31,7 @@ public class WorkflowTest {
     @Before
     public void setup(){
         MockitoAnnotations.initMocks(this);
+        when(workflowService.buildSRTObjects(any(Collection.class))).thenReturn(new SRTObjects(srtRefObject, srtTargetObject));
     }
 
     @Test
@@ -43,14 +43,12 @@ public class WorkflowTest {
 
     @Test
     public void start_buildsSRTObjects() throws Exception {
-        when(workflowService.buildSRTObjects(any(Collection.class))).thenReturn(Sets.newHashSet(srtRefObject, srtTargetObject));
         workflow.start();
         verify(workflowService, atLeastOnce()).buildSRTObjects(any(Collection.class));
     }
 
     @Test
     public void start_looksForSubTitleMatches() throws Exception {
-        when(workflowService.findMatchingSubTitles(any(SRTObject.class), any(SRTObject.class))).thenReturn(null);
         workflow.start();
         verify(workflowService, atLeastOnce()).findMatchingSubTitles(any(SRTObject.class), any(SRTObject.class));
     }

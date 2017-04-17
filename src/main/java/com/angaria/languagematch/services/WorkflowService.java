@@ -1,5 +1,6 @@
 package com.angaria.languagematch.services;
 
+import com.angaria.languagematch.components.SRTObjects;
 import com.angaria.languagematch.entities.SRTObject;
 import com.angaria.languagematch.entities.SubTitle;
 import com.angaria.languagematch.entities.SubTitleMatch;
@@ -39,16 +40,18 @@ public class WorkflowService {
     }
 
     //COV
-    public Set<SRTObject> buildSRTObjects(Collection<File> srtFiles){
+    public SRTObjects buildSRTObjects(Collection<File> srtFiles){
         logger.log(Level.INFO, "Creating subtitle Objects...");
 
-        return srtFiles.stream()
-                            .map(f -> {
-                                SRTObject srtObject = new SRTObject(f);
-                                srtObject.generateSubTitles();
-                                return srtObject;
-                            })
-                            .collect(Collectors.toSet());
+        Set<SRTObject> srtObjects = srtFiles.stream()
+                                            .map(f -> {
+                                                SRTObject srtObject = new SRTObject(f);
+                                                srtObject.generateSubTitles();
+                                                return srtObject;
+                                            })
+                                            .collect(Collectors.toSet());
+
+        return new SRTObjects(srtObjects);
     }
 
     //COV
@@ -66,20 +69,6 @@ public class WorkflowService {
 
         logger.log(Level.INFO, matches);
         return matches;
-    }
-
-    //COV
-    public SRTObject getTargetLanguageSRT(Set<SRTObject> srtObjects) {
-        return srtObjects.stream()
-                .filter(srt -> !srt.getLanguage().equals("en"))
-                .findFirst().get();
-    }
-
-    //COV
-    public SRTObject getReferenceSRT(Set<SRTObject> srtObjects){
-        return srtObjects.stream()
-                .filter(srt -> srt.getLanguage().equals("en"))
-                .findFirst().get();
     }
 
     public void setFileSystemService(FileSystemService fileSystemService) {

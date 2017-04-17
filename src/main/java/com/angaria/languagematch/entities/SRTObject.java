@@ -174,6 +174,18 @@ public class SRTObject {
         return errors;
     }
 
+    public File getFile() {
+        return file;
+    }
+
+    public String getFileName() {
+        return fileName;
+    }
+
+    public SubTitle getSubTitle() {
+        return subTitle;
+    }
+
     @Override
     public String toString() {
         return "SRTObject{" +

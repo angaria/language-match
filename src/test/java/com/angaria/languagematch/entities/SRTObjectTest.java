@@ -85,6 +85,24 @@ public class SRTObjectTest extends EntityTest {
         assertEquals(subTitleVI2, srtTargetObject.getLastSubTitle());
     }
 
+    @Test
+    public void constructorFromFile_setsLanguage(){
+        srtTargetObject = new SRTObject(FILE_SRT_2);
+        assertEquals("vi", srtTargetObject.getLanguage());
+    }
+
+    @Test
+    public void constructorFromFile_setsFileName(){
+        srtTargetObject = new SRTObject(FILE_SRT_2);
+        assertEquals("fileTest2.vi.srt", srtTargetObject.getFileName());
+    }
+
+    @Test
+    public void constructorFromFile_initializesSubTitles(){
+        srtTargetObject = new SRTObject(FILE_SRT_2);
+        assertTrue(srtTargetObject.getSubTitles().isEmpty());
+    }
+
     @Override
     protected void prepareExpectationObjects() throws ParseException {
         subTitleEN1 = SubTitleBuilder.getInstance()
