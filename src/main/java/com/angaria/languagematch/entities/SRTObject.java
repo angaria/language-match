@@ -72,11 +72,7 @@ public class SRTObject {
                     previousLineWasAboutTiming = false;
                 }
                 else if(!isNumeric(line) && !line.isEmpty() && subTitle != null) {
-                    if (subTitle.getContent().trim().isEmpty()) {
-                        subTitle.setContent(line);
-                    } else {
-                        subTitle.setContent(subTitle.getContent() + LINE_SEPARATOR + line);
-                    }
+                    subTitle.setContent(subTitle.getContent() + LINE_SEPARATOR + line);
                 }
             }
         }

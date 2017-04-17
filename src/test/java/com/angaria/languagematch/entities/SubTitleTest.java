@@ -1,17 +1,13 @@
 package com.angaria.languagematch.entities;
 
-import org.junit.Rule;
 import org.junit.Test;
-import org.junit.rules.ExpectedException;
 import java.text.ParseException;
 import static com.angaria.languagematch.entities.SubTitle.COMPLETE_DATE_FORMAT;
 import static com.angaria.languagematch.entities.SubTitle.REFERENCE_DAY;
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.fail;
 
 public class SubTitleTest {
-
-    @Rule
-    public ExpectedException expectedException = ExpectedException.none();
 
     @Test
     public void setStartDateFromLine_positive() throws ParseException {
@@ -21,11 +17,24 @@ public class SubTitleTest {
     }
 
     @Test
-    public void setStartDateFromLine_negative() throws ParseException {
-        SubTitle subTitle = new SubTitle();
-        expectedException.expect(IllegalArgumentException.class);
-        expectedException.expectMessage("parsing a line which is not a timing line!");
-        subTitle.setStartDateFromLine("another random content");
+    public void setStartDateFromLine_inputBadContent_ExceptionType() throws ParseException {
+        try{
+            new SubTitle().setStartDateFromLine("another random content");
+            fail();
+        }
+        catch(Exception e){
+            assertEquals(IllegalArgumentException.class, e.getClass());
+        }
+    }
+
+    @Test
+    public void setStartDateFromLine_inputBadContent_ExceptionMessage() throws ParseException {
+        try{
+            new SubTitle().setStartDateFromLine("another random content");
+        }
+        catch(Exception e){
+            assertEquals("parsing a line which is not a timing line!", e.getMessage());
+        }
     }
 
     @Test
@@ -36,10 +45,23 @@ public class SubTitleTest {
     }
 
     @Test
-    public void setEndDateFromLine_negative() throws ParseException {
-        SubTitle subTitle = new SubTitle();
-        expectedException.expect(IllegalArgumentException.class);
-        expectedException.expectMessage("parsing a line which is not a timing line!");
-        subTitle.setEndDateFromLine("another random content");
+    public void setEndDateFromLine_inputBadContent_ExceptionType() throws ParseException {
+        try{
+            new SubTitle().setEndDateFromLine("another random content");
+            fail();
+        }
+        catch(Exception e){
+            assertEquals(IllegalArgumentException.class, e.getClass());
+        }
+    }
+
+    @Test
+    public void setEndDateFromLine_inputBadContent_ExceptionMessage() throws ParseException {
+        try{
+            new SubTitle().setEndDateFromLine("another random content");
+        }
+        catch(Exception e){
+            assertEquals("parsing a line which is not a timing line!", e.getMessage());
+        }
     }
 }

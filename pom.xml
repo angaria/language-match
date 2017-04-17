@@ -53,6 +53,11 @@
                         <check />
                     </configuration>
                 </plugin>
+                <plugin>
+                    <groupId>com.atlassian.maven.plugins</groupId>
+                    <artifactId>maven-clover2-plugin</artifactId>
+                    <version>4.0.6</version>
+                </plugin>
             </plugins>
         </pluginManagement>
     </build>
@@ -145,6 +150,7 @@
                     <artifactId>guava</artifactId>
                     <version>21.0</version>
                 </dependency>
+
         </dependencies>
     </dependencyManagement>
 

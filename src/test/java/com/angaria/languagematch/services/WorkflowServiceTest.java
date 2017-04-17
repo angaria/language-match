@@ -8,24 +8,16 @@ import com.angaria.languagematch.entities.SubTitleMatch;
 import com.google.common.collect.Lists;
 import com.google.common.collect.Sets;
 import org.junit.Before;
-import org.junit.Rule;
 import org.junit.Test;
-import org.junit.rules.ExpectedException;
 import org.junit.runner.RunWith;
-
-import static com.angaria.languagematch.entities.SubTitle.COMPLETE_DATE_FORMAT;
-import static com.angaria.languagematch.entities.SubTitle.REFERENCE_DAY;
-import static org.mockito.Mockito.*;
-
 import org.mockito.runners.MockitoJUnitRunner;
-
 import java.io.File;
 import java.text.ParseException;
 import java.util.*;
 
 import static org.junit.Assert.*;
 import static org.mockito.Matchers.any;
-import static org.mockito.Mockito.when;
+import static org.mockito.Mockito.*;
 
 @RunWith(MockitoJUnitRunner.class)
 public class WorkflowServiceTest {
@@ -39,9 +31,6 @@ public class WorkflowServiceTest {
     private SRTObject srtTargetObject;
     private FileSystemService fileSystemService;
     private WorkflowService workflowService;
-
-    @Rule
-    public ExpectedException expectedException = ExpectedException.none();
 
     @Before
     public void setup(){
@@ -75,12 +64,27 @@ public class WorkflowServiceTest {
     }
 
     @Test
-    public void getSRTFilesFromFileSystem_noInputFiles() throws Exception {
-        expectedException.expect(Exception.class);
-        expectedException.expectMessage("No input file found!");
-
+    public void getSRTFilesFromFileSystem_noInputFilesExceptionType() throws Exception {
         when(fileSystemService.listSRTFiles(any(String.class))).thenReturn(new ArrayList<>());
-        workflowService.getSRTFilesFromFileSystem();
+        try{
+            workflowService.getSRTFilesFromFileSystem();
+            fail();
+        }
+        catch(Exception e){
+            assertEquals(Exception.class, e.getClass());
+        }
+    }
+
+    @Test
+    public void getSRTFilesFromFileSystem_noInputFilesExceptionMessage() throws Exception {
+        when(fileSystemService.listSRTFiles(any(String.class))).thenReturn(new ArrayList<>());
+        try{
+            workflowService.getSRTFilesFromFileSystem();
+            fail();
+        }
+        catch(Exception e){
+            assertEquals("No input file found!", e.getMessage());
+        }
     }
 
     @Test
@@ -103,19 +107,47 @@ public class WorkflowServiceTest {
     }
 
     @Test
-    public void findMatchingSubTitles_negative1() throws Exception {
-        expectedException.expect(IllegalArgumentException.class);
-        expectedException.expectMessage("Reference SRT file missing!");
-
-        workflowService.findMatchingSubTitles(null, srtTargetObject);
+    public void findMatchingSubTitles_ReferenceFileMissing_ExceptionMessage() throws Exception {
+        try{
+            workflowService.findMatchingSubTitles(null, srtTargetObject);
+            fail();
+        }
+        catch(Exception e){
+            assertEquals("Reference SRT file missing!", e.getMessage());
+        }
     }
 
     @Test
-    public void findMatchingSubTitles_negative2() throws Exception {
-        expectedException.expect(IllegalArgumentException.class);
-        expectedException.expectMessage("Second SRT file missing!");
+    public void findMatchingSubTitles_ReferenceFileMissing_ExceptionType() throws Exception {
+        try{
+            workflowService.findMatchingSubTitles(null, srtTargetObject);
+            fail();
+        }
+        catch(Exception e){
+            assertEquals(IllegalArgumentException.class, e.getClass());
+        }
+    }
 
-        workflowService.findMatchingSubTitles(srtRefObject, null);
+    @Test
+    public void findMatchingSubTitles_SecondFileMissing_ExceptionType() throws Exception {
+        try{
+            workflowService.findMatchingSubTitles(srtRefObject, null);
+            fail();
+        }
+        catch(Exception e){
+            assertEquals(IllegalArgumentException.class, e.getClass());
+        }
+    }
+
+    @Test
+    public void findMatchingSubTitles_SecondFileMissing_ExceptionMessage() throws Exception {
+        try{
+            workflowService.findMatchingSubTitles(srtRefObject, null);
+            fail();
+        }
+        catch(Exception e){
+            assertEquals("Second SRT file missing!", e.getMessage());
+        }
     }
 
     @Test
