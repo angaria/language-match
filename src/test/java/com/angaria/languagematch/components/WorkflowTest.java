@@ -2,6 +2,7 @@ package com.angaria.languagematch.components;
 
 import com.angaria.languagematch.entities.SRTObject;
 import com.angaria.languagematch.services.WorkflowService;
+import com.angaria.languagematch.wrappers.SRTObjects;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;

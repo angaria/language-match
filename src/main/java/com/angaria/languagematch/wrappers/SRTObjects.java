@@ -1,11 +1,9 @@
-package com.angaria.languagematch.components;
+package com.angaria.languagematch.wrappers;
 
 import com.angaria.languagematch.entities.SRTObject;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-
 import java.util.Arrays;
-import java.util.HashSet;
 import java.util.LinkedHashSet;
 import java.util.Set;
 
@@ -36,14 +34,12 @@ public class SRTObjects {
         return srtObjects.size();
     }
 
-    //COV
     public SRTObject getSecondarySRTObject() {
         return srtObjects.stream()
                 .filter(srt -> !srt.getLanguage().equals(REF_LANGUAGE))
                 .findFirst().get();
     }
 
-    //COV
     public SRTObject getReferenceSRTObject(){
         return srtObjects.stream()
                 .filter(srt -> srt.getLanguage().equals(REF_LANGUAGE))

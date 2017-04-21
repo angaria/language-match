@@ -1,11 +1,11 @@
 package com.angaria.languagematch.components;
 
 import com.angaria.languagematch.services.WorkflowService;
+import com.angaria.languagematch.wrappers.SRTObjects;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
-
 import java.io.File;
 import java.util.Collection;
 

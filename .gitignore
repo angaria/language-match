@@ -119,3 +119,8 @@ release.properties
 dependency-reduced-pom.xml
 buildNumber.properties
 .mvn/timing.properties
+
+out/
+.clover/
+report/
+report/html/

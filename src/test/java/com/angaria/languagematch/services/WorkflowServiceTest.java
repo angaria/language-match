@@ -1,6 +1,6 @@
 package com.angaria.languagematch.services;
 
-import com.angaria.languagematch.components.SRTObjects;
+import com.angaria.languagematch.wrappers.SRTObjects;
 import com.angaria.languagematch.entities.SRTObject;
 import com.angaria.languagematch.entities.SubTitle;
 import com.angaria.languagematch.entities.SubTitleBuilder;
@@ -43,14 +43,14 @@ public class WorkflowServiceTest {
                 .content("English blah blah")
                 .startDate(new Date())
                 .language("en")
-                .fileName(FILE_SRT_1.getName())
+                .srtObject(srtRefObject)
                 .build();
 
         subTitle2 = SubTitleBuilder.getInstance()
                 .content("Vietnamese blah blah")
                 .startDate(new Date())
                 .language("vi")
-                .fileName(FILE_SRT_2.getName())
+                .srtObject(srtTargetObject)
                 .build();
 
         srtRefObject = new SRTObject(FILE_SRT_1.getName(), "en", Sets.newHashSet(subTitle1), null);

@@ -3,22 +3,46 @@ package com.angaria.languagematch.entities;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+import javax.persistence.*;
 import java.io.*;
 import java.text.ParseException;
 import java.util.*;
 
+import static javax.persistence.GenerationType.AUTO;
+
+@Entity
+@Table(name="srt_files")
 public class SRTObject {
 
-    protected File file;
-    protected String fileName;
-    protected String language;
-    protected Set<SubTitle> subTitles;
-    private SubTitle subTitle = null;
-    private boolean previousLineWasAboutTiming = false;
-    private String line;
-    private Set<Exception> errors = new LinkedHashSet<>();
     private static final String LINE_SEPARATOR = "\r\n";
     private static final Logger logger = LogManager.getLogger(SRTObject.class.getName());
+
+    @Id
+    @Column(name="file_name")
+    protected String fileName;
+
+    protected String language;
+
+    @OneToMany(mappedBy = "srtObject", cascade = { CascadeType.ALL }, orphanRemoval=true, fetch=FetchType.LAZY)
+    protected Set<SubTitle> subTitles = new LinkedHashSet<>();
+
+    @OneToMany(mappedBy = "srtReferenceObject", cascade = { CascadeType.ALL }, orphanRemoval=true, fetch=FetchType.LAZY)
+    protected Set<SubTitleMatch> matches = new LinkedHashSet<>();
+
+    @Transient
+    private SubTitle tempSubTitle = null;
+
+    @Transient
+    private boolean previousLineWasAboutTiming = false;
+
+    @Transient
+    private String line;
+
+    @Transient
+    private Set<Exception> errors = new LinkedHashSet<>();
+
+    @Transient
+    protected File file;
 
     public SRTObject(File file){
         this();
@@ -63,22 +87,22 @@ public class SRTObject {
         while ((line = cleanupLine(br.readLine())) != null) {
 
             if(isTimingRelated(line)){
-                storeLastSubTitle(subTitle);
-                subTitle = buildSubTitleFromTiming(line);
+                storeLastSubTitle(tempSubTitle);
+                tempSubTitle = buildSubTitleFromTiming(line);
                 previousLineWasAboutTiming = true;
             }
             else{
                 if(previousLineWasAboutTiming){
-                    subTitle.setContent(line);
+                    tempSubTitle.setContent(line);
                     previousLineWasAboutTiming = false;
                 }
-                else if(!isNumeric(line) && !line.isEmpty() && subTitle != null) {
-                    subTitle.setContent(subTitle.getContent() + LINE_SEPARATOR + line);
+                else if(!isNumeric(line) && !line.isEmpty() && tempSubTitle != null) {
+                    tempSubTitle.setContent(tempSubTitle.getContent() + LINE_SEPARATOR + line);
                 }
             }
         }
 
-        storeLastSubTitle(subTitle);
+        storeLastSubTitle(tempSubTitle);
     }
 
     private static String cleanupLine(String line){
@@ -98,7 +122,7 @@ public class SRTObject {
     private SubTitle buildSubTitleFromTiming(String line) {
         SubTitle subTitle = new SubTitle();
         subTitle.setLanguage(language);
-        subTitle.setFileName(fileName);
+        subTitle.setSRTObject(this);
 
         try {
             subTitle.setStartDateFromLine(line);
@@ -140,7 +164,6 @@ public class SRTObject {
         return fileNameWithNoExt.substring(fileNameWithNoExt.lastIndexOf(".")+1).toLowerCase();
     }
 
-    //COV
     public SubTitle lookupForMatchingSubTitleFrame(SubTitle stReference) {
         return subTitles.stream()
                     .filter(s -> s.getStartDate().after(stReference.getStartDate()))
@@ -149,7 +172,6 @@ public class SRTObject {
 
     }
 
-    //COV
     public SubTitle getLastSubTitle(){
         return subTitles.stream()
                 .reduce((first, second) -> second).get();
@@ -177,10 +199,6 @@ public class SRTObject {
 
     public String getFileName() {
         return fileName;
-    }
-
-    public SubTitle getSubTitle() {
-        return subTitle;
     }
 
     @Override

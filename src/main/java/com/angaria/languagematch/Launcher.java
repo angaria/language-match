@@ -17,7 +17,7 @@ public class Launcher {
     public static void main(String[] args) {
         logger.log(Level.INFO, "---------- LANGUAGE MATCH v1 ----------");
 
-        ApplicationContext context = new ClassPathXmlApplicationContext("context.xml");
+        ApplicationContext context = new ClassPathXmlApplicationContext("META-INF/context.xml");
 
         handleWorkflow((Workflow) context.getBean("workflow"));
     }

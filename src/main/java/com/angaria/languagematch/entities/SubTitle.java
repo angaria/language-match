@@ -1,29 +1,47 @@
 package com.angaria.languagematch.entities;
 
+import javax.persistence.*;
 import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
+import static javax.persistence.GenerationType.AUTO;
+
+@Entity
+@Table(name="subtitles")
 public class SubTitle implements Comparable<SubTitle>{
 
     public static final String SRT_DATE_SEPARATOR = " --> ";
     public static final DateFormat COMPLETE_DATE_FORMAT = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss,SSS");
     public static final String REFERENCE_DAY = "2017-04-09";
 
+    @Id
+    @GeneratedValue(strategy = AUTO)
+    protected Long id;
+
+    @Temporal(TemporalType.TIMESTAMP)
+    @Column(name = "start")
     protected Date startDate = new Date();
+
+    @Temporal(TemporalType.TIMESTAMP)
+    @Column(name = "end")
     protected Date endDate = new Date();
-    protected String language;
-    protected String fileName;
+
+    @ManyToOne(fetch = FetchType.EAGER)
+    @JoinColumn(name = "srt_file")
+    protected SRTObject srtObject;
+
     protected String content;
+    protected String language;
 
     public SubTitle(){}
 
-    public SubTitle(Date startDate, Date endDate, String language, String fileName, String content){
+    public SubTitle(Date startDate, Date endDate, String language, SRTObject srtObject, String content){
         this.startDate = startDate;
         this.endDate = endDate;
         this.language = language;
-        this.fileName = fileName;
+        this.srtObject = srtObject;
         this.content = content;
     }
 
@@ -39,8 +57,8 @@ public class SubTitle implements Comparable<SubTitle>{
         this.language = language;
     }
 
-    public void setFileName(String fileName) {
-        this.fileName = fileName;
+    public void setSRTObject(SRTObject srtObject) {
+        this.srtObject = srtObject;
     }
 
     public String getContent() {
@@ -58,19 +76,12 @@ public class SubTitle implements Comparable<SubTitle>{
 
         SubTitle subTitle = (SubTitle) o;
 
-        if (!startDate.equals(subTitle.startDate)) return false;
-        if (!endDate.equals(subTitle.endDate)) return false;
-        if (!language.equals(subTitle.language)) return false;
-        if (!fileName.equals(subTitle.fileName)) return false;
-        return content != null ? content.equals(subTitle.content) : subTitle.content == null;
+        return id != null ? id.equals(subTitle.id) : subTitle.id == null;
     }
 
     @Override
     public int hashCode() {
-        int result = startDate.hashCode();
-        result = 31 * result + language.hashCode();
-        result = 31 * result + fileName.hashCode();
-        return result;
+        return id != null ? id.hashCode() : 0;
     }
 
     @Override
@@ -108,8 +119,8 @@ public class SubTitle implements Comparable<SubTitle>{
                 "startDate=" + startDate +
                 ", endDate=" + endDate +
                 ", language='" + language + '\'' +
-                ", fileName='" + fileName + '\'' +
+                ", srtObjectName='" + srtObject.getFileName() + '\'' +
                 ", content='" + content + '\'' +
-                '}';
+                "}";
     }
 }

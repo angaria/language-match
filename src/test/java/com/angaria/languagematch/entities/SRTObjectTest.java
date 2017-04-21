@@ -105,12 +105,15 @@ public class SRTObjectTest extends EntityTest {
 
     @Override
     protected void prepareExpectationObjects() throws ParseException {
+        srtObject = new SRTObject(FILE_SRT_1);
+        srtTargetObject = new SRTObject(FILE_SRT_2);
+
         subTitleEN1 = SubTitleBuilder.getInstance()
                 .content("Who's there?")
                 .startDate(COMPLETE_DATE_FORMAT.parse(REFERENCE_DAY + " 00:02:28,344"))
                 .endDate(COMPLETE_DATE_FORMAT.parse(REFERENCE_DAY + " 00:02:29,261"))
                 .language("en")
-                .fileName(FILE_SRT_1.getName())
+                .srtObject(srtObject)
                 .build();
 
         subTitleEN2 = SubTitleBuilder.getInstance()
@@ -118,7 +121,7 @@ public class SRTObjectTest extends EntityTest {
                 .startDate(COMPLETE_DATE_FORMAT.parse(REFERENCE_DAY + " 01:40:32,884"))
                 .endDate(COMPLETE_DATE_FORMAT.parse(REFERENCE_DAY + " 01:40:35,971"))
                 .language("en")
-                .fileName(FILE_SRT_1.getName())
+                .srtObject(srtObject)
                 .build();
 
         subTitleVI1 = SubTitleBuilder.getInstance()
@@ -126,7 +129,7 @@ public class SRTObjectTest extends EntityTest {
                 .startDate(COMPLETE_DATE_FORMAT.parse(REFERENCE_DAY + " 00:02:28,344"))
                 .endDate(COMPLETE_DATE_FORMAT.parse(REFERENCE_DAY + " 00:02:29,261"))
                 .language("vi")
-                .fileName(FILE_SRT_2.getName())
+                .srtObject(srtTargetObject)
                 .build();
 
         subTitleVI2 = SubTitleBuilder.getInstance()
@@ -134,7 +137,7 @@ public class SRTObjectTest extends EntityTest {
                 .startDate(COMPLETE_DATE_FORMAT.parse(REFERENCE_DAY + " 01:40:32,884"))
                 .endDate(COMPLETE_DATE_FORMAT.parse(REFERENCE_DAY + " 01:40:35,971"))
                 .language("vi")
-                .fileName(FILE_SRT_2.getName())
+                .srtObject(srtTargetObject)
                 .build();
     }
 }

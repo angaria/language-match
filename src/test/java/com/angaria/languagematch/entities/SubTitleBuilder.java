@@ -23,8 +23,8 @@ public class SubTitleBuilder extends SubTitle {
         return this;
     }
 
-    public SubTitleBuilder fileName(String fileName){
-        this.fileName = fileName;
+    public SubTitleBuilder srtObject(SRTObject srtObject){
+        this.srtObject = srtObject;
         return this;
     }
 
@@ -34,6 +34,6 @@ public class SubTitleBuilder extends SubTitle {
     }
 
     public SubTitle build(){
-        return new SubTitle(startDate , endDate , language, fileName, content);
+        return new SubTitle(startDate , endDate , language, srtObject, content);
     }
 }

@@ -1,6 +1,6 @@
 package com.angaria.languagematch.services;
 
-import com.angaria.languagematch.components.SRTObjects;
+import com.angaria.languagematch.wrappers.SRTObjects;
 import com.angaria.languagematch.entities.SRTObject;
 import com.angaria.languagematch.entities.SubTitle;
 import com.angaria.languagematch.entities.SubTitleMatch;
@@ -24,7 +24,6 @@ public class WorkflowService {
     @Autowired
     private FileSystemService fileSystemService;
 
-    //COV
     public Collection<File> getSRTFilesFromFileSystem() throws Exception {
         logger.log(Level.INFO, "Lookup input directory...");
 
@@ -39,7 +38,6 @@ public class WorkflowService {
         }
     }
 
-    //COV
     public SRTObjects buildSRTObjects(Collection<File> srtFiles){
         logger.log(Level.INFO, "Creating subtitle Objects...");
 
@@ -54,7 +52,6 @@ public class WorkflowService {
         return new SRTObjects(srtObjects);
     }
 
-    //COV
     public Set<SubTitleMatch> findMatchingSubTitles(SRTObject refSRT, SRTObject targetSRT) {
         Preconditions.checkArgument(refSRT != null, "Reference SRT file missing!");
         Preconditions.checkArgument(targetSRT != null, "Second SRT file missing!");

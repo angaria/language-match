@@ -1,6 +1,7 @@
 package com.angaria.languagematch.components;
 
 import com.angaria.languagematch.entities.SRTObject;
+import com.angaria.languagematch.wrappers.SRTObjects;
 import com.google.common.collect.Sets;
 import org.junit.Before;
 import org.junit.Test;
