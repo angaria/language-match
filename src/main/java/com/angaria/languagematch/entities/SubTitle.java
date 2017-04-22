@@ -196,4 +196,8 @@ public class SubTitle implements Comparable<SubTitle>{
                 ", content='" + content + '\'' +
                 "}";
     }
+
+    public boolean hasOnlyOnePersonTalking() {
+        return !content.startsWith("-");
+    }
 }

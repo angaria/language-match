@@ -61,6 +61,7 @@ public class WorkflowService {
 
         Set<SubTitleMatch> matches = refSRT.getSubTitles()
                                                 .stream()
+                                                .filter(s -> s.hasOnlyOnePersonTalking())
                                                 .map(subTitleRef ->  {
                                                     SubTitle match = targetSRT.lookupForMatchingSubTitleFrame(subTitleRef);
                                                     if(match == null){

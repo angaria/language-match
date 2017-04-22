@@ -1,18 +1,15 @@
 package com.angaria.languagematch.entities;
 
 import com.angaria.languagematch.components.CharsetDetector;
-import org.apache.commons.lang3.StringEscapeUtils;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.jsoup.Jsoup;
 
 import javax.persistence.*;
 import java.io.*;
 import java.nio.charset.Charset;
 import java.text.ParseException;
-import java.time.Duration;
 import java.util.*;
-
-import static javax.persistence.GenerationType.AUTO;
 
 @Entity
 @Table(name="srt_files")
@@ -116,7 +113,7 @@ public class SRTObject {
 
         line = line.replace("\u0000", ""); // removes NUL chars
         line = line.replace("\\u0000", ""); // removes backslash+u0000
-        line = StringEscapeUtils.unescapeHtml4(line);
+        line = Jsoup.parse(line).text();
 
         return line.trim();
     }
@@ -173,12 +170,10 @@ public class SRTObject {
     public SubTitle lookupForMatchingSubTitleFrame(SubTitle stReference) {
         return subTitles.stream()
                     .filter(s -> s.isOverlappingEnoughWith(stReference))
+                    .filter(s -> s.hasOnlyOnePersonTalking())
                     .findFirst()
                     .orElse(null);
     }
-
-
-
 
     public SubTitle getLastSubTitle(){
         return subTitles.stream()
