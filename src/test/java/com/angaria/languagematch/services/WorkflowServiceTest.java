@@ -5,6 +5,7 @@ import com.angaria.languagematch.entities.SRTObject;
 import com.angaria.languagematch.entities.SubTitle;
 import com.angaria.languagematch.entities.SubTitleBuilder;
 import com.angaria.languagematch.entities.SubTitleMatch;
+import com.angaria.languagematch.wrappers.SubTitleMatches;
 import com.google.common.collect.Lists;
 import com.google.common.collect.Sets;
 import org.junit.Before;
@@ -100,10 +101,10 @@ public class WorkflowServiceTest {
 
     @Test
     public void findMatchingSubTitles() throws Exception {
-        Set<SubTitleMatch> subTitleMatches = workflowService.findMatchingSubTitles(srtRefObject, srtTargetObject);
+        SubTitleMatches matches = workflowService.findMatchingSubTitles(srtRefObject, srtTargetObject);
 
-        assertEquals(1 , subTitleMatches.size());
-        assertEquals("Vietnamese blah blah", subTitleMatches.iterator().next().getTargetContent());
+        assertEquals(1 , matches.size());
+        assertEquals("Vietnamese blah blah", matches.next().getTargetContent());
     }
 
     @Test

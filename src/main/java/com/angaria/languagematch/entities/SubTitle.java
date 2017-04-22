@@ -69,6 +69,14 @@ public class SubTitle implements Comparable<SubTitle>{
         this.content = content;
     }
 
+    public String getLanguage() {
+        return language;
+    }
+
+    public String getFileName() {
+        return srtObject != null ? srtObject.getFileName() : null;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;

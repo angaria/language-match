@@ -26,9 +26,6 @@ public class SRTObject {
     @OneToMany(mappedBy = "srtObject", cascade = { CascadeType.ALL }, orphanRemoval=true, fetch=FetchType.LAZY)
     protected Set<SubTitle> subTitles = new LinkedHashSet<>();
 
-    @OneToMany(mappedBy = "srtReferenceObject", cascade = { CascadeType.ALL }, orphanRemoval=true, fetch=FetchType.LAZY)
-    protected Set<SubTitleMatch> matches = new LinkedHashSet<>();
-
     @Transient
     private SubTitle tempSubTitle = null;
 

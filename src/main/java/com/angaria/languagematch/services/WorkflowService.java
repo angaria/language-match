@@ -4,6 +4,7 @@ import com.angaria.languagematch.wrappers.SRTObjects;
 import com.angaria.languagematch.entities.SRTObject;
 import com.angaria.languagematch.entities.SubTitle;
 import com.angaria.languagematch.entities.SubTitleMatch;
+import com.angaria.languagematch.wrappers.SubTitleMatches;
 import com.google.common.base.Preconditions;
 import org.apache.logging.log4j.Level;
 import org.apache.logging.log4j.LogManager;
@@ -11,11 +12,13 @@ import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
+import javax.transaction.Transactional;
 import java.io.*;
 import java.util.*;
 import java.util.stream.Collectors;
 
 @Component
+@Transactional
 public class WorkflowService {
 
     private static final Logger logger = LogManager.getLogger(WorkflowService.class.getName());
@@ -52,7 +55,7 @@ public class WorkflowService {
         return new SRTObjects(srtObjects);
     }
 
-    public Set<SubTitleMatch> findMatchingSubTitles(SRTObject refSRT, SRTObject targetSRT) {
+    public SubTitleMatches findMatchingSubTitles(SRTObject refSRT, SRTObject targetSRT) {
         Preconditions.checkArgument(refSRT != null, "Reference SRT file missing!");
         Preconditions.checkArgument(targetSRT != null, "Second SRT file missing!");
 
@@ -60,12 +63,12 @@ public class WorkflowService {
                                                 .stream()
                                                 .map(subTitleRef ->  {
                                                     SubTitle match = targetSRT.lookupForMatchingSubTitleFrame(subTitleRef);
-                                                    return new SubTitleMatch(subTitleRef, match.getContent());
+                                                    return new SubTitleMatch(subTitleRef, match);
                                                 })
                                                 .collect(Collectors.toSet());
 
         logger.log(Level.INFO, matches);
-        return matches;
+        return new SubTitleMatches(matches);
     }
 
     public void setFileSystemService(FileSystemService fileSystemService) {

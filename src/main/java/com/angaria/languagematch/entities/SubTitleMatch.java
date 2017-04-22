@@ -26,18 +26,26 @@ public class SubTitleMatch {
     @Column(name = "target_content")
     private String targetContent;
 
+    @Column(name = "ref_language")
+    private String referenceLanguage;
+
+    @Column(name = "target_language")
+    private String targetLanguage;
+
     @Column(name = "hash_code")
     private String hashCode;
 
-    @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "ref_file")
-    private SRTObject srtReferenceObject;
+    @Column(name = "ref_file")
+    private String referenceFileName;
 
-    public SubTitleMatch(SubTitle subTitleReference, String targetContent) {
+    public SubTitleMatch(SubTitle subTitleReference, SubTitle subTitleTarget) {
         this.startDate = subTitleReference.getStartDate();
         this.endDate = subTitleReference.getEndDate();
         this.referenceContent = subTitleReference.getContent();
-        this.targetContent = targetContent;
+        this.targetContent = subTitleTarget.getContent();
+        this.targetLanguage = subTitleTarget.getLanguage();
+        this.referenceLanguage = subTitleReference.getLanguage();
+        this.referenceFileName = subTitleReference.getFileName();
     }
 
     public String getTargetContent() {
@@ -47,10 +55,15 @@ public class SubTitleMatch {
     @Override
     public String toString() {
         return "SubTitleMatch{" +
-                "startDate=" + startDate +
+                "id=" + id +
+                ", startDate=" + startDate +
+                ", endDate=" + endDate +
                 ", referenceContent='" + referenceContent + '\'' +
                 ", targetContent='" + targetContent + '\'' +
+                ", referenceLanguage='" + referenceLanguage + '\'' +
+                ", targetLanguage='" + targetLanguage + '\'' +
                 ", hashCode='" + hashCode + '\'' +
+                ", referenceFileName='" + referenceFileName + '\'' +
                 '}';
     }
 }

@@ -1,8 +1,11 @@
 package com.angaria.languagematch.components;
 
 import com.angaria.languagematch.entities.SRTObject;
+import com.angaria.languagematch.services.SRTObjectsService;
+import com.angaria.languagematch.services.SubTitleMatchesService;
 import com.angaria.languagematch.services.WorkflowService;
 import com.angaria.languagematch.wrappers.SRTObjects;
+import com.angaria.languagematch.wrappers.SubTitleMatches;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -25,6 +28,12 @@ public class WorkflowTest {
 
     @Mock
     private WorkflowService workflowService;
+
+    @Mock
+    private SRTObjectsService srtObjectsService;
+
+    @Mock
+    private SubTitleMatchesService subTitleMatchesService;
 
     @InjectMocks
     private Workflow workflow;
@@ -49,8 +58,20 @@ public class WorkflowTest {
     }
 
     @Test
+    public void start_persistsSRTObjects() throws Exception {
+        workflow.start();
+        verify(srtObjectsService, atLeastOnce()).persist(any(SRTObjects.class));
+    }
+
+    @Test
     public void start_looksForSubTitleMatches() throws Exception {
         workflow.start();
         verify(workflowService, atLeastOnce()).findMatchingSubTitles(any(SRTObject.class), any(SRTObject.class));
+    }
+
+    @Test
+    public void start_persistsMatches() throws Exception {
+        workflow.start();
+        verify(subTitleMatchesService, atLeastOnce()).persist(any(SubTitleMatches.class));
     }
 }
