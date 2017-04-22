@@ -63,8 +63,12 @@ public class WorkflowService {
                                                 .stream()
                                                 .map(subTitleRef ->  {
                                                     SubTitle match = targetSRT.lookupForMatchingSubTitleFrame(subTitleRef);
+                                                    if(match == null){
+                                                        return null;
+                                                    }
                                                     return new SubTitleMatch(subTitleRef, match);
                                                 })
+                                                .filter(out -> out != null)
                                                 .collect(Collectors.toSet());
 
         logger.log(Level.INFO, matches);

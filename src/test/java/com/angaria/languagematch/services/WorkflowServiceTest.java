@@ -16,6 +16,8 @@ import java.io.File;
 import java.text.ParseException;
 import java.util.*;
 
+import static com.angaria.languagematch.entities.SubTitle.COMPLETE_DATE_FORMAT;
+import static com.angaria.languagematch.entities.SubTitle.REFERENCE_DAY;
 import static org.junit.Assert.*;
 import static org.mockito.Matchers.any;
 import static org.mockito.Mockito.*;
@@ -34,22 +36,24 @@ public class WorkflowServiceTest {
     private WorkflowService workflowService;
 
     @Before
-    public void setup(){
+    public void setup() throws ParseException {
         setupMocks();
         prepareExpectationObjects();
     }
 
-    private void prepareExpectationObjects() {
+    private void prepareExpectationObjects() throws ParseException {
         subTitle1 = SubTitleBuilder.getInstance()
                 .content("English blah blah")
-                .startDate(new Date())
+                .startDate(COMPLETE_DATE_FORMAT.parse(REFERENCE_DAY + " 01:40:32,384"))
+                .endDate(COMPLETE_DATE_FORMAT.parse(REFERENCE_DAY + " 01:40:35,971"))
                 .language("en")
                 .srtObject(srtRefObject)
                 .build();
 
         subTitle2 = SubTitleBuilder.getInstance()
                 .content("Vietnamese blah blah")
-                .startDate(new Date())
+                .startDate(COMPLETE_DATE_FORMAT.parse(REFERENCE_DAY + " 01:40:32,884"))
+                .endDate(COMPLETE_DATE_FORMAT.parse(REFERENCE_DAY + " 01:40:36,271"))
                 .language("vi")
                 .srtObject(srtTargetObject)
                 .build();
@@ -100,11 +104,135 @@ public class WorkflowServiceTest {
     }
 
     @Test
-    public void findMatchingSubTitles() throws Exception {
-        SubTitleMatches matches = workflowService.findMatchingSubTitles(srtRefObject, srtTargetObject);
+    public void findMatchingSubTitles_overlapOK_stRefStartsBeforeTargetAndEndsAfter() throws Exception {
 
+        //  SubTitleRef    :  ========================
+        //  SubTitleTarget :    =====================
+
+        subTitle1.setStartDate(COMPLETE_DATE_FORMAT.parse(REFERENCE_DAY + " 01:40:32,384"));
+        subTitle1.setEndDate(COMPLETE_DATE_FORMAT.parse(REFERENCE_DAY + " 01:40:36,371"));
+
+        subTitle2.setStartDate(COMPLETE_DATE_FORMAT.parse(REFERENCE_DAY + " 01:40:32,884"));
+        subTitle2.setEndDate(COMPLETE_DATE_FORMAT.parse(REFERENCE_DAY + " 01:40:36,271"));
+
+        SubTitleMatches matches = workflowService.findMatchingSubTitles(srtRefObject, srtTargetObject);
         assertEquals(1 , matches.size());
         assertEquals("Vietnamese blah blah", matches.next().getTargetContent());
+    }
+
+    @Test
+    public void findMatchingSubTitles_overlapOK_stRefStartsBeforeTargetAndEndsBefore() throws Exception {
+
+        //  SubTitleRef    :  ========================
+        //  SubTitleTarget :    ========================
+
+        subTitle1.setStartDate(COMPLETE_DATE_FORMAT.parse(REFERENCE_DAY + " 01:40:32,384"));
+        subTitle1.setEndDate(COMPLETE_DATE_FORMAT.parse(REFERENCE_DAY + " 01:40:35,971"));
+
+        subTitle2.setStartDate(COMPLETE_DATE_FORMAT.parse(REFERENCE_DAY + " 01:40:32,884"));
+        subTitle2.setEndDate(COMPLETE_DATE_FORMAT.parse(REFERENCE_DAY + " 01:40:36,271"));
+
+        SubTitleMatches matches = workflowService.findMatchingSubTitles(srtRefObject, srtTargetObject);
+        assertEquals(1 , matches.size());
+        assertEquals("Vietnamese blah blah", matches.next().getTargetContent());
+    }
+
+    @Test
+    public void findMatchingSubTitles_overlapOK_stRefStartsAfterTargetAndEndsBefore() throws Exception {
+
+        //  SubTitleRef    :   ====================
+        //  SubTitleTarget :  ========================
+
+        subTitle1.setStartDate(COMPLETE_DATE_FORMAT.parse(REFERENCE_DAY + " 01:40:33,084"));
+        subTitle1.setEndDate(COMPLETE_DATE_FORMAT.parse(REFERENCE_DAY + " 01:40:35,971"));
+
+        subTitle2.setStartDate(COMPLETE_DATE_FORMAT.parse(REFERENCE_DAY + " 01:40:32,884"));
+        subTitle2.setEndDate(COMPLETE_DATE_FORMAT.parse(REFERENCE_DAY + " 01:40:36,271"));
+
+        SubTitleMatches matches = workflowService.findMatchingSubTitles(srtRefObject, srtTargetObject);
+        assertEquals(1 , matches.size());
+        assertEquals("Vietnamese blah blah", matches.next().getTargetContent());
+    }
+
+    @Test
+    public void findMatchingSubTitles_overlapOK_stRefStartsAfterTargetAndEndsAfter() throws Exception {
+
+        //  SubTitleRef    :   ========================
+        //  SubTitleTarget :  ========================
+
+        subTitle1.setStartDate(COMPLETE_DATE_FORMAT.parse(REFERENCE_DAY + " 01:40:33,084"));
+        subTitle1.setEndDate(COMPLETE_DATE_FORMAT.parse(REFERENCE_DAY + " 01:40:36,971"));
+
+        subTitle2.setStartDate(COMPLETE_DATE_FORMAT.parse(REFERENCE_DAY + " 01:40:32,884"));
+        subTitle2.setEndDate(COMPLETE_DATE_FORMAT.parse(REFERENCE_DAY + " 01:40:36,671"));
+
+        SubTitleMatches matches = workflowService.findMatchingSubTitles(srtRefObject, srtTargetObject);
+        assertEquals(1 , matches.size());
+        assertEquals("Vietnamese blah blah", matches.next().getTargetContent());
+    }
+
+    @Test
+    public void findMatchingSubTitles_overlapKO_stRefStartsAfterTarget() throws Exception {
+
+        //  SubTitleRef    :                    ========================
+        //  SubTitleTarget :  ========================
+
+        subTitle1.setStartDate(COMPLETE_DATE_FORMAT.parse(REFERENCE_DAY + " 01:40:34,084"));
+        subTitle1.setEndDate(COMPLETE_DATE_FORMAT.parse(REFERENCE_DAY + " 01:40:36,971"));
+
+        subTitle2.setStartDate(COMPLETE_DATE_FORMAT.parse(REFERENCE_DAY + " 01:40:32,884"));
+        subTitle2.setEndDate(COMPLETE_DATE_FORMAT.parse(REFERENCE_DAY + " 01:40:36,671"));
+
+        SubTitleMatches matches = workflowService.findMatchingSubTitles(srtRefObject, srtTargetObject);
+        assertEquals(0 , matches.size());
+    }
+
+    @Test
+    public void findMatchingSubTitles_overlapKO_stRefStartsBeforeTarget() throws Exception {
+
+        //  SubTitleRef    :  ========================
+        //  SubTitleTarget :               ========================
+
+        subTitle1.setStartDate(COMPLETE_DATE_FORMAT.parse(REFERENCE_DAY + " 01:40:32,384"));
+        subTitle1.setEndDate(COMPLETE_DATE_FORMAT.parse(REFERENCE_DAY + " 01:40:33,971"));
+
+        subTitle2.setStartDate(COMPLETE_DATE_FORMAT.parse(REFERENCE_DAY + " 01:40:32,884"));
+        subTitle2.setEndDate(COMPLETE_DATE_FORMAT.parse(REFERENCE_DAY + " 01:40:36,271"));
+
+        SubTitleMatches matches = workflowService.findMatchingSubTitles(srtRefObject, srtTargetObject);
+        assertEquals(0 , matches.size());
+    }
+
+    @Test
+    public void findMatchingSubTitles_NoOverlap_stRefStartsBeforeTarget() throws Exception {
+
+        //  SubTitleRef    :  ===========
+        //  SubTitleTarget :                 ===============
+
+        subTitle1.setStartDate(COMPLETE_DATE_FORMAT.parse(REFERENCE_DAY + " 01:40:32,384"));
+        subTitle1.setEndDate(COMPLETE_DATE_FORMAT.parse(REFERENCE_DAY + " 01:40:32,771"));
+
+        subTitle2.setStartDate(COMPLETE_DATE_FORMAT.parse(REFERENCE_DAY + " 01:40:32,884"));
+        subTitle2.setEndDate(COMPLETE_DATE_FORMAT.parse(REFERENCE_DAY + " 01:40:36,271"));
+
+        SubTitleMatches matches = workflowService.findMatchingSubTitles(srtRefObject, srtTargetObject);
+        assertEquals(0 , matches.size());
+    }
+
+    @Test
+    public void findMatchingSubTitles_NoOverlap_stRefStartsAfterTarget() throws Exception {
+
+        //  SubTitleRef    :                    ========================
+        //  SubTitleTarget :  ==============
+
+        subTitle1.setStartDate(COMPLETE_DATE_FORMAT.parse(REFERENCE_DAY + " 01:40:34,084"));
+        subTitle1.setEndDate(COMPLETE_DATE_FORMAT.parse(REFERENCE_DAY + " 01:40:36,971"));
+
+        subTitle2.setStartDate(COMPLETE_DATE_FORMAT.parse(REFERENCE_DAY + " 01:40:32,884"));
+        subTitle2.setEndDate(COMPLETE_DATE_FORMAT.parse(REFERENCE_DAY + " 01:40:33,671"));
+
+        SubTitleMatches matches = workflowService.findMatchingSubTitles(srtRefObject, srtTargetObject);
+        assertEquals(0 , matches.size());
     }
 
     @Test

@@ -1,11 +1,15 @@
 package com.angaria.languagematch.entities;
 
+import com.angaria.languagematch.components.CharsetDetector;
+import org.apache.commons.lang3.StringEscapeUtils;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import javax.persistence.*;
 import java.io.*;
+import java.nio.charset.Charset;
 import java.text.ParseException;
+import java.time.Duration;
 import java.util.*;
 
 import static javax.persistence.GenerationType.AUTO;
@@ -60,8 +64,11 @@ public class SRTObject {
     }
 
     public void generateSubTitles() {
+        CharsetDetector cd = new CharsetDetector();
+        Charset charset = cd.detectCharset(file, new String[]{"UTF-8", "utf-16le"});
+
         try (BufferedReader br = new BufferedReader(
-                new InputStreamReader(new FileInputStream(file),"UTF-8"))) {
+                new InputStreamReader(new FileInputStream(file), charset))) {
             generateSubTitlesBody(br);
         }
         catch(Exception e){
@@ -109,6 +116,8 @@ public class SRTObject {
 
         line = line.replace("\u0000", ""); // removes NUL chars
         line = line.replace("\\u0000", ""); // removes backslash+u0000
+        line = StringEscapeUtils.unescapeHtml4(line);
+
         return line.trim();
     }
 
@@ -163,11 +172,13 @@ public class SRTObject {
 
     public SubTitle lookupForMatchingSubTitleFrame(SubTitle stReference) {
         return subTitles.stream()
-                    .filter(s -> s.getStartDate().after(stReference.getStartDate()))
+                    .filter(s -> s.isOverlappingEnoughWith(stReference))
                     .findFirst()
-                    .orElse(getLastSubTitle());
-
+                    .orElse(null);
     }
+
+
+
 
     public SubTitle getLastSubTitle(){
         return subTitles.stream()

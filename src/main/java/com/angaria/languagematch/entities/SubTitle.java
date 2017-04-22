@@ -1,9 +1,13 @@
 package com.angaria.languagematch.entities;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 import javax.persistence.*;
 import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
+import java.time.Duration;
 import java.util.Date;
 
 import static javax.persistence.GenerationType.AUTO;
@@ -15,6 +19,7 @@ public class SubTitle implements Comparable<SubTitle>{
     public static final String SRT_DATE_SEPARATOR = " --> ";
     public static final DateFormat COMPLETE_DATE_FORMAT = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss,SSS");
     public static final String REFERENCE_DAY = "2017-04-09";
+    private static final Logger logger = LogManager.getLogger(SubTitle.class.getName());
 
     @Id
     @GeneratedValue(strategy = AUTO)
@@ -77,6 +82,14 @@ public class SubTitle implements Comparable<SubTitle>{
         return srtObject != null ? srtObject.getFileName() : null;
     }
 
+    public void setStartDate(Date startDate) {
+        this.startDate = startDate;
+    }
+
+    public void setEndDate(Date endDate) {
+        this.endDate = endDate;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -121,13 +134,65 @@ public class SubTitle implements Comparable<SubTitle>{
         endDate = COMPLETE_DATE_FORMAT.parse(REFERENCE_DAY + " " + line.substring(line.indexOf(SRT_DATE_SEPARATOR) + SRT_DATE_SEPARATOR.length(), line.length()));
     }
 
+    public boolean isOverlappingEnoughWith(SubTitle subTitleRef){
+        Long commonBand = 0L;
+
+        Long subTitleReferenceLength = Duration.between(subTitleRef.getStartDate().toInstant(), subTitleRef.getEndDate().toInstant()).toMillis();
+        Long subTitleTargetLength = Duration.between(this.getStartDate().toInstant(), this.getEndDate().toInstant()).toMillis();
+        Double maxLength = Math.max(new Double(subTitleReferenceLength), new Double(subTitleTargetLength));
+
+        double minimumOverlap = 0.8;
+
+        if(subTitleRef.getStartDate().before(this.getStartDate())
+                || subTitleRef.getStartDate().equals(this.getStartDate())){
+
+            if(this.getStartDate().before(subTitleRef.getEndDate())){
+                // there is an overlap
+
+                if(subTitleRef.getEndDate().before(this.getEndDate())
+                        || subTitleRef.getEndDate().equals(this.getEndDate())){
+
+                    //  SubTitleRef    :  =================
+                    //  SubTitleTarget :    ========================
+                    commonBand = Duration.between(this.getStartDate().toInstant(), subTitleRef.getEndDate().toInstant()).toMillis();
+                }
+                else {
+
+                    //  SubTitleRef    :  ==========================
+                    //  SubTitleTarget :    ===============
+                    commonBand = Duration.between(this.getStartDate().toInstant(), this.getEndDate().toInstant()).toMillis();
+                }
+            }
+        }
+        else if(subTitleRef.getStartDate().before(this.getEndDate())){
+            // there is an overlap
+
+            if(subTitleRef.getEndDate().before(this.getEndDate())
+                    || subTitleRef.getEndDate().equals(this.getEndDate())){
+
+                //  SubTitleRef    :       ==============
+                //  SubTitleTarget :    ========================
+                commonBand = Duration.between(subTitleRef.getStartDate().toInstant(), subTitleRef.getEndDate().toInstant()).toMillis();
+            }
+            else {
+
+                //  SubTitleRef    :       =====================
+                //  SubTitleTarget :    ===============
+                commonBand = Duration.between(subTitleRef.getStartDate().toInstant(), this.getEndDate().toInstant()).toMillis();
+            }
+        }
+
+        logger.info("Overlap ratio: " + commonBand / maxLength);
+        return (commonBand / maxLength) >= minimumOverlap;
+    }
+
     @Override
     public String toString() {
         return "SubTitle{" +
                 "startDate=" + startDate +
                 ", endDate=" + endDate +
                 ", language='" + language + '\'' +
-                ", srtObjectName='" + srtObject.getFileName() + '\'' +
+                ", srtObjectName='" + (srtObject != null ? srtObject.getFileName() : null) + '\'' +
                 ", content='" + content + '\'' +
                 "}";
     }
