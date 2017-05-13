@@ -22,7 +22,7 @@ import java.util.stream.Collectors;
 public class WorkflowService {
 
     private static final Logger logger = LogManager.getLogger(WorkflowService.class.getName());
-    private static final String SRT_FILES_PATH = "src/main/resources/";
+    private static final String SRT_FILES_PATH = "src/main/resources/input";
 
     @Autowired
     private FileSystemService fileSystemService;

@@ -1,0 +1,6143 @@
+﻿1
+00:00:11,920 --> 00:00:15,527
+[car horns honking]
+
+2
+00:00:18,920 --> 00:00:21,127
+[classical music
+playing on radio]
+
+3
+00:00:25,240 --> 00:00:26,241
+[tuning radio]
+
+4
+00:00:26,320 --> 00:00:29,016
+[announcer] <i>It's another hot, sunny day
+today here in Southern California.</i>
+
+5
+00:00:29,040 --> 00:00:31,168
+<i>Temperature is 84
+for downtown Los Angeles,</i>
+
+6
+00:00:31,240 --> 00:00:32,765
+<i>overnight lows of 75.</i>
+
+7
+00:00:32,840 --> 00:00:34,490
+[car horns continue honking]
+
+8
+00:00:34,560 --> 00:00:38,326
+[rock music playing
+on car 1 radio]
+
+9
+00:00:38,400 --> 00:00:40,402
+[lively music playing
+on car 2 radio]
+
+10
+00:00:45,440 --> 00:00:49,126
+[hip-hop music playing
+on car 3 radio]
+
+11
+00:00:49,200 --> 00:00:51,362
+[commentator chattering
+on car 4 radio]
+
+12
+00:00:51,440 --> 00:00:54,649
+[smooth listening music playing
+on car 5 radio]
+
+13
+00:00:54,720 --> 00:01:00,841
+[electronic music playing
+on car 6 radio]
+
+14
+00:01:00,920 --> 00:01:06,086
+[upbeat music playing
+on car 7 radio]
+
+15
+00:01:06,160 --> 00:01:07,491
+[female driver vocalizing]
+
+16
+00:01:13,360 --> 00:01:15,010
+<i>♪ I think about that day ♪</i>
+
+17
+00:01:15,080 --> 00:01:18,721
+<i>♪ I left him at a Greyhound station
+west of Santa Fe ♪</i>
+
+18
+00:01:18,800 --> 00:01:22,441
+<i>♪ We were 17, but he was sweet
+and it was true ♪</i>
+
+19
+00:01:22,560 --> 00:01:26,121
+<i>♪ Still, I knew what I had to do ♪</i>
+
+20
+00:01:26,200 --> 00:01:28,407
+<i>♪ 'Cause I just knew ♪</i>
+
+21
+00:01:28,480 --> 00:01:30,164
+<i>♪ Summer Sunday nights ♪</i>
+
+22
+00:01:30,240 --> 00:01:34,040
+<i>♪ We'd sink into our seats
+right as they dimmed out all the lights ♪</i>
+
+23
+00:01:34,120 --> 00:01:37,602
+<i>♪ A technicolor world
+made out of music and machine ♪</i>
+
+24
+00:01:37,680 --> 00:01:41,480
+<i>♪ It called me to be on that screen ♪</i>
+
+25
+00:01:41,560 --> 00:01:43,688
+<i>♪ And live inside each scene ♪</i>
+
+26
+00:01:43,760 --> 00:01:47,446
+<i>♪ Without a nickel to my name,
+hopped a bus, here I came ♪</i>
+
+27
+00:01:47,520 --> 00:01:51,445
+<i>♪ Could be brave or just insane,
+we'll have to see ♪</i>
+
+28
+00:01:51,520 --> 00:01:53,170
+<i>♪ 'Cause maybe
+in that sleepy town ♪</i>
+
+29
+00:01:53,240 --> 00:01:55,004
+<i>♪ He'll sit one day,
+the lights are down ♪</i>
+
+30
+00:01:55,080 --> 00:01:59,051
+<i>♪ He'll see my face and think
+how he used to know me ♪</i>
+
+31
+00:01:59,120 --> 00:02:02,488
+<i>♪ Climb these hills,
+I'm reaching for the heights ♪</i>
+
+32
+00:02:02,600 --> 00:02:06,605
+<i>♪ And chasing
+all the lights that shine ♪</i>
+
+33
+00:02:06,680 --> 00:02:10,480
+<i>♪ And when they let you down ♪</i>
+
+34
+00:02:10,560 --> 00:02:14,007
+<i>♪ You get up off the ground ♪</i>
+
+35
+00:02:14,080 --> 00:02:16,651
+<i>♪ 'Cause morning rolls around ♪</i>
+
+36
+00:02:16,720 --> 00:02:19,963
+<i>♪ And it's another day of sun ♪</i>
+
+37
+00:02:21,720 --> 00:02:23,609
+<i>♪ I hear 'em every day ♪</i>
+
+38
+00:02:23,680 --> 00:02:27,446
+<i>♪ The rhythms in the canyons
+that'll never fade away ♪</i>
+
+39
+00:02:27,520 --> 00:02:31,241
+<i>♪ The ballads in the barrooms
+left by those who came before ♪</i>
+
+40
+00:02:31,320 --> 00:02:34,608
+<i>♪ They say
+"You gotta want it more" ♪</i>
+
+41
+00:02:34,680 --> 00:02:36,967
+<i>♪ So I bang on every door ♪</i>
+
+42
+00:02:37,040 --> 00:02:38,769
+<i>♪ And even when the answer's "no" ♪</i>
+
+43
+00:02:38,840 --> 00:02:40,763
+<i>♪ Or when my money's running low ♪</i>
+
+44
+00:02:40,840 --> 00:02:44,481
+<i>♪ The dusty mic and neon glow
+are all I need ♪</i>
+
+45
+00:02:44,600 --> 00:02:46,523
+<i>♪ And someday
+as I sing my song ♪</i>
+
+46
+00:02:46,600 --> 00:02:48,489
+<i>♪ A small-town kid'll come along ♪</i>
+
+47
+00:02:48,560 --> 00:02:51,006
+<i>♪ That'll be the thing to push him on ♪</i>
+
+48
+00:02:51,080 --> 00:02:52,525
+<i>♪ And go, go ♪</i>
+
+49
+00:02:52,600 --> 00:02:56,002
+<i>♪ Climb these hills,
+I'm reaching for the heights ♪</i>
+
+50
+00:02:56,080 --> 00:02:59,766
+<i>♪ And chasing
+all the lights that shine ♪</i>
+
+51
+00:02:59,840 --> 00:03:04,004
+<i>♪ And when they let you down ♪</i>
+
+52
+00:03:04,120 --> 00:03:07,806
+<i>♪ You get up off the ground ♪</i>
+
+53
+00:03:07,880 --> 00:03:10,087
+<i>♪ 'Cause morning rolls around ♪</i>
+
+54
+00:03:10,160 --> 00:03:13,243
+<i>♪ And it's another day of sun ♪</i>
+
+55
+00:03:15,360 --> 00:03:17,203
+[instrumental break]
+
+56
+00:03:17,280 --> 00:03:20,045
+[all cheering]
+
+57
+00:03:45,840 --> 00:03:49,606
+<i>♪ Once they've let you down ♪</i>
+
+58
+00:03:49,680 --> 00:03:52,445
+<i>♪ And morning rolls around ♪</i>
+
+59
+00:03:52,520 --> 00:03:54,363
+<i>♪ It's another day of sun ♪</i>
+
+60
+00:03:56,440 --> 00:03:58,522
+<i>♪ It's another day of sun ♪</i>
+
+61
+00:04:00,160 --> 00:04:03,687
+<i>♪ It's another day of sun,
+sun, sun, sun, sun, sun ♪</i>
+
+62
+00:04:03,760 --> 00:04:06,411
+<i>♪ It's another day of sun ♪</i>
+
+63
+00:04:07,400 --> 00:04:09,846
+<i>♪ Just another day of sun ♪</i>
+
+64
+00:04:11,400 --> 00:04:13,562
+<i>♪ It's another day of sun ♪</i>
+
+65
+00:04:14,960 --> 00:04:17,008
+<i>♪ Another day has just begun ♪</i>
+
+66
+00:04:20,640 --> 00:04:22,449
+<i>♪ It's another day of sun ♪</i>
+
+67
+00:04:22,520 --> 00:04:23,760
+[instrumental break]
+
+68
+00:04:36,880 --> 00:04:39,281
+[car horns honking melodically]
+
+69
+00:04:39,360 --> 00:04:41,601
+<i>♪ It's another day of sun. ♪</i>
+
+70
+00:04:46,520 --> 00:04:49,046
+[car horns honking]
+
+71
+00:04:53,840 --> 00:04:55,856
+[announcer on radio] <i>...already
+has won three Oscars,</i>
+
+72
+00:04:55,880 --> 00:05:00,204
+<i>including for the 1998 film</i>
+Shakespeare in Love.
+
+73
+00:05:00,320 --> 00:05:01,560
+[jazz music playing on tape]
+
+74
+00:05:01,640 --> 00:05:03,290
+[rewinds]
+
+75
+00:05:23,680 --> 00:05:25,808
+[jazz music playing]
+
+76
+00:05:25,880 --> 00:05:28,804
+[Mia] I mean, we could not
+believe what was happening.
+
+77
+00:05:28,880 --> 00:05:32,646
+I swear to God,
+she was wrecked.
+
+78
+00:05:32,720 --> 00:05:35,007
+[laughs]
+She was completely wrecked!
+
+79
+00:05:35,080 --> 00:05:40,689
+I know. I know,
+it was pure insanity.
+
+80
+00:05:40,760 --> 00:05:42,967
+It's insanity...
+
+81
+00:05:43,040 --> 00:05:44,405
+Ah!
+
+82
+00:05:44,480 --> 00:05:47,768
+- "Lunacy! It was pure lunacy."
+- [horn honking insistently]
+
+83
+00:05:57,760 --> 00:05:59,649
+What is his prob...
+I should go.
+
+84
+00:06:01,520 --> 00:06:03,522
+[jazzy Christmas music playing]
+
+85
+00:06:08,000 --> 00:06:09,411
+Cappuccino, please.
+
+86
+00:06:09,480 --> 00:06:11,482
+- Right. Of course.
+- On us.
+
+87
+00:06:11,600 --> 00:06:13,364
+Oh, no, thank you. I insist.
+
+88
+00:06:21,600 --> 00:06:22,965
+[door closing]
+
+89
+00:06:26,040 --> 00:06:27,520
+[whispering] Did you see
+who that was?
+
+90
+00:06:39,160 --> 00:06:40,685
+[cell phone chimes]
+
+91
+00:06:44,960 --> 00:06:46,200
+Shit!
+
+92
+00:06:47,640 --> 00:06:50,530
+- Mia, where do you think you're going?
+- Oh, it's five after.
+
+93
+00:06:50,600 --> 00:06:52,682
+- You better be here early tomorrow.
+- Okay.
+
+94
+00:06:54,120 --> 00:06:55,645
+Have a good night!
+
+95
+00:06:55,720 --> 00:06:56,767
+Uh!
+
+96
+00:07:03,880 --> 00:07:05,325
+[both exclaim]
+
+97
+00:07:07,000 --> 00:07:09,606
+[laughing]
+
+98
+00:07:09,680 --> 00:07:14,163
+She was wrecked!
+It was pure lunacy, it was...
+
+99
+00:07:14,240 --> 00:07:18,643
+It was so crazy, and I just...
+Oh, you would have died.
+
+100
+00:07:20,520 --> 00:07:25,242
+No, Turner's fine.
+Turner's fine. I just, um...
+
+101
+00:07:25,320 --> 00:07:28,449
+Are you gonna wait 'til Denver
+to tell her, or...?
+
+102
+00:07:32,040 --> 00:07:33,280
+What?
+
+103
+00:07:42,680 --> 00:07:43,920
+Okay.
+
+104
+00:07:48,840 --> 00:07:50,365
+[voice breaking]
+No, I'm happy for you.
+
+105
+00:07:53,200 --> 00:07:54,884
+I am. I'm happy for you, I just...
+
+106
+00:07:58,360 --> 00:08:00,044
+I just thought...
+
+107
+00:08:03,800 --> 00:08:06,520
+- I don't know, I guess I thought...
+- [casting director] One second.
+
+108
+00:08:08,240 --> 00:08:10,891
+- What, Ruby?
+- [Ruby] Jessica's on the phone.
+
+109
+00:08:10,960 --> 00:08:13,122
+[casting director] Um, tell her
+I'll call her back.
+
+110
+00:08:13,200 --> 00:08:14,565
+[Ruby] In two minutes?
+
+111
+00:08:14,680 --> 00:08:16,808
+- Less than two minutes.
+- I'll go get your lunch.
+
+112
+00:08:16,880 --> 00:08:18,564
+I'm almost done. Thank you.
+
+113
+00:08:27,720 --> 00:08:31,327
+Oh, you know what? I think we're good.
+Thanks for coming in.
+
+114
+00:08:40,600 --> 00:08:42,011
+[elevator bell dings]
+
+115
+00:08:47,440 --> 00:08:48,680
+♪♪
+
+116
+00:09:06,840 --> 00:09:08,080
+[shower running]
+
+117
+00:09:09,200 --> 00:09:10,201
+[turns off shower]
+
+118
+00:09:27,160 --> 00:09:29,367
+[humming]
+
+119
+00:09:34,320 --> 00:09:38,086
+Whoa! Holy shit!
+You wanna open a window?
+
+120
+00:09:38,160 --> 00:09:41,050
+- I was trying to give you an entrance.
+- Thank you.
+
+121
+00:09:41,120 --> 00:09:43,009
+[Alexis] Mia!
+How'd the audition go?
+
+122
+00:09:44,080 --> 00:09:45,127
+Eh.
+
+123
+00:09:45,200 --> 00:09:47,601
+Eh, same here.
+Was Jen there or Rachel?
+
+124
+00:09:47,680 --> 00:09:50,160
+- I don't know who Jen and Rachel are.
+- They're the worst.
+
+125
+00:09:50,240 --> 00:09:53,369
+- Well, I don't know if they were there.
+- I bet they were.
+
+126
+00:09:53,440 --> 00:09:56,410
+[Caitlin] Why is there a convention
+in the bathroom?
+
+127
+00:09:56,480 --> 00:09:59,290
+[Tracy] Two minutes, people.
+Mia, you're coming, right?
+
+128
+00:09:59,360 --> 00:10:01,601
+I can't! I'm working.
+
+129
+00:10:01,680 --> 00:10:02,841
+[Tracy] What?
+
+130
+00:10:03,840 --> 00:10:06,081
+Did she just say "working"?
+
+131
+00:10:06,160 --> 00:10:07,685
+- [knocking on door]
+- What?
+
+132
+00:10:07,760 --> 00:10:09,171
+I'm sorry it didn't go well today,
+
+133
+00:10:09,240 --> 00:10:11,456
+and there's like four things in my inbox
+that you're perfect for,
+
+134
+00:10:11,480 --> 00:10:14,404
+and I will submit you.
+But right now you're coming!
+
+135
+00:10:14,480 --> 00:10:15,766
+It'll be fun.
+
+136
+00:10:15,840 --> 00:10:17,604
+- It's not gonna be fun.
+- It could be.
+
+137
+00:10:17,720 --> 00:10:20,121
+It's not. It's gonna be
+a bunch of social climbers
+
+138
+00:10:20,200 --> 00:10:22,726
+all packed into one of those
+big glass houses.
+
+139
+00:10:22,800 --> 00:10:24,131
+This looks familiar.
+
+140
+00:10:24,200 --> 00:10:26,726
+- I was gonna give that back.
+- How long have you had this?
+
+141
+00:10:26,800 --> 00:10:28,768
+- A long time.
+- Come on, Mia.
+
+142
+00:10:28,840 --> 00:10:30,136
+When else are you gonna get to see
+
+143
+00:10:30,160 --> 00:10:32,162
+every Hollywood cliché crammed
+into the same room?
+
+144
+00:10:32,240 --> 00:10:33,765
+We'll make fun of it together!
+
+145
+00:10:33,840 --> 00:10:35,683
+[gasps]
+I'm disappointed in you, Lex.
+
+146
+00:10:35,760 --> 00:10:37,000
+There's nothing to make fun of.
+
+147
+00:10:37,080 --> 00:10:40,880
+This party's gonna be
+humanity at its finest.
+
+148
+00:10:40,960 --> 00:10:42,769
+<i>♪ You've got the invitation ♪</i>
+
+149
+00:10:42,840 --> 00:10:44,683
+<i>♪ You've got the right address ♪</i>
+
+150
+00:10:44,760 --> 00:10:46,285
+<i>♪ You need some medication? ♪</i>
+
+151
+00:10:46,360 --> 00:10:48,249
+<i>♪ The answer's always "yes" ♪</i>
+
+152
+00:10:48,320 --> 00:10:50,129
+<i>♪ A little chance encounter ♪</i>
+
+153
+00:10:50,200 --> 00:10:53,409
+<i>♪ Could be the one you've waited for ♪</i>
+
+154
+00:10:53,480 --> 00:10:56,086
+<i>♪ Just squeeze a bit more ♪</i>
+
+155
+00:10:56,160 --> 00:10:59,448
+<i>♪ Tonight we're on a mission,
+tonight's the casting call ♪</i>
+
+156
+00:10:59,520 --> 00:11:01,409
+<i>♪ If this is the real audition ♪</i>
+
+157
+00:11:01,480 --> 00:11:03,289
+Oh, God help us all!
+
+158
+00:11:03,360 --> 00:11:05,249
+<i>♪ You make the right impression ♪</i>
+
+159
+00:11:05,320 --> 00:11:08,688
+<i>♪ Then everybody knows your name ♪</i>
+
+160
+00:11:08,760 --> 00:11:10,967
+<i>♪ You're in the fast lane! ♪</i>
+
+161
+00:11:11,040 --> 00:11:14,249
+<i>♪ Someone in the crowd
+could be the one you need to know ♪</i>
+
+162
+00:11:14,360 --> 00:11:18,046
+<i>♪ The one to finally
+lift you off the ground ♪</i>
+
+163
+00:11:18,120 --> 00:11:21,841
+<i>♪ Someone in the crowd
+could take you where you wanna go ♪</i>
+
+164
+00:11:21,920 --> 00:11:24,969
+<i>♪ If you're the someone
+ready to be found ♪</i>
+
+165
+00:11:25,080 --> 00:11:27,208
+<i>♪ If you're the someone
+ready to be ♪</i>
+
+166
+00:11:27,280 --> 00:11:30,682
+<i>♪ Do what you need to do
+'til they discover you ♪</i>
+
+167
+00:11:30,760 --> 00:11:34,446
+<i>♪ And make you more than
+who you're seeing now ♪</i>
+
+168
+00:11:34,520 --> 00:11:36,284
+<i>♪ So with the stars aligned ♪</i>
+
+169
+00:11:36,360 --> 00:11:38,328
+<i>♪ I think I'll stay behind ♪</i>
+
+170
+00:11:38,400 --> 00:11:41,404
+<i>♪ You've got to go and find ♪</i>
+
+171
+00:11:43,240 --> 00:11:44,924
+<i>♪ That someone in the crowd ♪</i>
+
+172
+00:11:45,000 --> 00:11:47,002
+[instrumental break]
+
+173
+00:12:11,440 --> 00:12:13,044
+- [all exclaim]
+- [Tracy] Hey, girl!
+
+174
+00:12:15,880 --> 00:12:17,882
+<i>♪ That someone in the crowd ♪</i>
+
+175
+00:13:16,680 --> 00:13:18,682
+[indistinct cheering]
+
+176
+00:13:27,640 --> 00:13:31,247
+[in slower tempo]
+<i>♪ Is someone in the crowd ♪</i>
+
+177
+00:13:31,320 --> 00:13:34,563
+<i>♪ The only thing you really see? ♪</i>
+
+178
+00:13:36,440 --> 00:13:42,641
+<i>♪ Watching while the world
+keeps spinning 'round ♪</i>
+
+179
+00:13:44,960 --> 00:13:47,611
+<i>♪ Somewhere there's a place ♪</i>
+
+180
+00:13:47,720 --> 00:13:52,442
+<i>♪ Where I find who I'm gonna be ♪</i>
+
+181
+00:13:54,920 --> 00:14:01,610
+<i>♪ A somewhere that's just
+waiting to be found ♪</i>
+
+182
+00:14:07,480 --> 00:14:11,121
+[slow tempo music playing]
+
+183
+00:14:34,080 --> 00:14:36,082
+[tempo increasing]
+
+184
+00:14:49,360 --> 00:14:52,648
+<i>♪ Someone in the crowd
+could be the one you need to know ♪</i>
+
+185
+00:14:52,720 --> 00:14:56,520
+<i>♪ The someone who can lift you
+off the ground ♪</i>
+
+186
+00:14:56,600 --> 00:15:00,321
+<i>♪ Someone in the crowd could take you
+where you wanna go ♪</i>
+
+187
+00:15:00,400 --> 00:15:02,164
+<i>♪ Someone in the crowd
+could make you ♪</i>
+
+188
+00:15:02,240 --> 00:15:04,288
+<i>♪ Someone in the crowd will take you ♪</i>
+
+189
+00:15:04,360 --> 00:15:06,886
+<i>♪ Flying off the ground
+if you're the someone ♪</i>
+
+190
+00:15:06,960 --> 00:15:10,567
+<i>♪ Ready to be ♪</i>
+
+191
+00:15:10,680 --> 00:15:14,685
+<i>♪ Found. ♪</i>
+
+192
+00:15:19,560 --> 00:15:21,085
+[Mia] No, no.
+
+193
+00:15:22,080 --> 00:15:24,686
+Oh, come on!
+What?
+
+194
+00:15:27,120 --> 00:15:28,406
+[phone beeps]
+
+195
+00:15:28,480 --> 00:15:31,324
+Ahh!
+[growls]
+
+196
+00:15:31,400 --> 00:15:32,686
+[sighs]
+
+197
+00:16:03,640 --> 00:16:05,768
+[soft jazz music playing
+in the distance]
+
+198
+00:16:22,080 --> 00:16:24,401
+[soft jazz music playing inside]
+
+199
+00:16:53,400 --> 00:16:54,925
+[soft jazz music playing]
+
+200
+00:17:31,640 --> 00:17:32,640
+[honking loudly]
+
+201
+00:18:17,760 --> 00:18:19,569
+Please stop
+sneaking into my home.
+
+202
+00:18:19,640 --> 00:18:21,376
+[Laura] You think Mom or Dad
+would call this a home?
+
+203
+00:18:21,400 --> 00:18:22,686
+[Sebastian] What are you doing?
+
+204
+00:18:22,760 --> 00:18:24,496
+Please don't do that.
+Please don't sit on that.
+
+205
+00:18:24,520 --> 00:18:25,567
+Are you kidding?
+
+206
+00:18:25,640 --> 00:18:26,896
+Please don't sit on that.
+Don't sit on that.
+
+207
+00:18:26,920 --> 00:18:28,256
+Don't sit on that.
+Hoagy Carmichael sat on that!
+
+208
+00:18:28,280 --> 00:18:30,726
+- Oh, my God!
+- "The Baked Potato" just threw it away.
+
+209
+00:18:30,800 --> 00:18:33,406
+- I can't imagine why.
+- And now you're just sitting on it.
+
+210
+00:18:33,480 --> 00:18:35,608
+- I got you a throw rug.
+- I don't need that.
+
+211
+00:18:35,680 --> 00:18:38,490
+What if I said Miles Davis pissed on it?
+
+212
+00:18:38,560 --> 00:18:41,643
+It's almost insulting.
+Is it true?
+
+213
+00:18:41,720 --> 00:18:44,371
+When are you gonna
+unpack these boxes?
+
+214
+00:18:44,440 --> 00:18:46,124
+When I unpack them
+in my own club.
+
+215
+00:18:46,200 --> 00:18:49,727
+Oh, Sebastian! It's like a girl broke up
+with you and you're stalking her.
+
+216
+00:18:49,800 --> 00:18:51,404
+You're not still going
+by there, are you?
+
+217
+00:18:51,480 --> 00:18:54,245
+[scoffs]
+That's...
+
+218
+00:18:54,360 --> 00:18:56,576
+You won't believe it. They turned it
+into a samba-tapas place.
+
+219
+00:18:56,600 --> 00:19:00,241
+- Oh, my God, Sebastian!
+- Samba. Tapas.
+
+220
+00:19:00,320 --> 00:19:02,766
+Pick one, you know?
+Do one right.
+
+221
+00:19:02,840 --> 00:19:06,401
+- I have someone I want you to meet.
+- I don't wanna meet anyone.
+
+222
+00:19:06,480 --> 00:19:07,816
+No, no, I don't wanna meet anyone.
+
+223
+00:19:07,840 --> 00:19:10,286
+- Dad gave you this? You'll like her.
+- Yes.
+
+224
+00:19:10,360 --> 00:19:12,681
+I don't think I'm gonna like her.
+Does she like jazz?
+
+225
+00:19:12,760 --> 00:19:14,800
+- Probably not.
+- Then what are we gonna talk about?
+
+226
+00:19:14,840 --> 00:19:16,683
+I don't know!
+It doesn't matter, okay?
+
+227
+00:19:16,800 --> 00:19:19,849
+Because you're living like a hermit.
+You're driving without insurance!
+
+228
+00:19:19,920 --> 00:19:21,296
+- "It doesn't matter"?
+- Yeah, it doesn't matter.
+
+229
+00:19:21,320 --> 00:19:22,816
+- Okay. Well, I know a guy...
+- You need to get serious.
+
+230
+00:19:22,840 --> 00:19:24,016
+...with a face tattoo
+that you should see.
+
+231
+00:19:24,040 --> 00:19:25,616
+- Okay, low blow.
+- With a heart of gold.
+
+232
+00:19:25,640 --> 00:19:27,881
+- Get serious!
+- "Get serious"?
+
+233
+00:19:27,960 --> 00:19:32,170
+Laura... I had a very serious plan
+for my future.
+
+234
+00:19:32,240 --> 00:19:34,402
+- I know.
+- It's not my fault I got shanghaied.
+
+235
+00:19:34,480 --> 00:19:37,643
+You didn't get shanghaied.
+You got ripped off!
+
+236
+00:19:37,720 --> 00:19:38,936
+- What's the difference?
+- [groans]
+
+237
+00:19:38,960 --> 00:19:42,203
+I don't know.
+It's not as romantic as that.
+
+238
+00:19:42,280 --> 00:19:44,328
+Don't sit...
+
+239
+00:19:44,400 --> 00:19:47,847
+Everybody knew that guy
+was shady except for you.
+
+240
+00:19:47,920 --> 00:19:51,606
+Why do you say "romantic"
+like it's a dirty word?
+
+241
+00:19:51,680 --> 00:19:55,526
+Unpaid bills are not romantic.
+Call her.
+
+242
+00:19:55,600 --> 00:19:56,886
+I'm not gonna call her.
+
+243
+00:19:56,960 --> 00:19:58,291
+And the thing is...
+[stammers]
+
+244
+00:19:58,360 --> 00:20:00,567
+You're acting like life's got me
+on the ropes.
+
+245
+00:20:00,640 --> 00:20:03,291
+I want to be
+on the ropes. Okay?
+
+246
+00:20:03,360 --> 00:20:04,976
+I'm letting life hit me
+'til it gets tired.
+
+247
+00:20:05,000 --> 00:20:07,321
+- Oh?
+- Then I'm gonna hit back.
+
+248
+00:20:07,400 --> 00:20:10,210
+It's a classic rope-a-dope.
+
+249
+00:20:10,280 --> 00:20:13,489
+Okay, Ali. I love you.
+Unpack the boxes.
+
+250
+00:20:13,560 --> 00:20:16,131
+- I'm gonna change the locks.
+- You can't afford it.
+
+251
+00:20:17,440 --> 00:20:20,205
+I'm a phoenix
+rising from the ashes.
+
+252
+00:20:30,080 --> 00:20:32,208
+[jazz music playing]
+
+253
+00:20:37,640 --> 00:20:39,085
+[music stops]
+
+254
+00:20:41,440 --> 00:20:43,442
+[practicing song from record]
+
+255
+00:21:07,760 --> 00:21:08,761
+- Hey.
+- [clears throat]
+
+256
+00:21:08,840 --> 00:21:11,320
+- Bill. Thanks for having me back.
+- You're welcome.
+
+257
+00:21:11,400 --> 00:21:13,056
+I want you to know you're lookin'
+at a new man,
+
+258
+00:21:13,080 --> 00:21:15,208
+- a man that's happy to be here.
+- Good. Excellent.
+
+259
+00:21:15,280 --> 00:21:18,363
+- Very-easy-to-work-with man.
+- And you're going to play the set list?
+
+260
+00:21:18,440 --> 00:21:19,851
+Happy to.
+
+261
+00:21:19,920 --> 00:21:22,651
+Even though I don't think anyone cares
+what I play, but, yeah.
+
+262
+00:21:22,760 --> 00:21:26,287
+Well, if by "anyone" you mean anyone
+other than me, that would be correct.
+
+263
+00:21:26,360 --> 00:21:28,249
+I care, and I don't wanna hear
+the free jazz.
+
+264
+00:21:28,320 --> 00:21:30,448
+Right. Okay.
+
+265
+00:21:30,520 --> 00:21:32,124
+Although I thought in this town
+
+266
+00:21:32,200 --> 00:21:35,727
+it worked on a sort of
+"one for you, one for me" type system.
+
+267
+00:21:35,800 --> 00:21:38,849
+How 'bout two for you,
+one for me?
+
+268
+00:21:38,920 --> 00:21:40,649
+How 'bout all for you
+and none for me?
+
+269
+00:21:40,720 --> 00:21:42,131
+- That's perfect, yes.
+- Great.
+
+270
+00:21:42,200 --> 00:21:43,770
+- Okay.
+- Mutual decision, then.
+
+271
+00:21:43,840 --> 00:21:45,330
+Right. Made by me.
+
+272
+00:21:45,400 --> 00:21:47,607
+Right. And I sign off on it, so...
+
+273
+00:21:47,680 --> 00:21:50,445
+Whatever. Tell yourself
+what you wanna know.
+
+274
+00:21:50,520 --> 00:21:53,808
+Well. Welcome back.
+
+275
+00:21:53,880 --> 00:21:55,882
+There's a nice way
+to say that, Karen.
+
+276
+00:21:57,440 --> 00:21:58,487
+[sighs]
+
+277
+00:21:58,560 --> 00:22:00,562
+[playing Christmas carol]
+
+278
+00:22:02,960 --> 00:22:05,486
+- [different Christmas song playing]
+- [indistinct chattering]
+
+279
+00:22:17,920 --> 00:22:18,921
+[song ends]
+
+280
+00:22:34,720 --> 00:22:36,722
+[playing Christmas carol]
+
+281
+00:23:09,880 --> 00:23:11,882
+[playing jazz music]
+
+282
+00:24:59,000 --> 00:25:00,331
+[Bill] Seb.
+
+283
+00:25:12,840 --> 00:25:14,216
+[stammers]
+I hear what you're saying,
+
+284
+00:25:14,240 --> 00:25:15,936
+but I don't think you're saying
+what you mean.
+
+285
+00:25:15,960 --> 00:25:17,936
+Yeah, I don't think you hear
+what I'm saying. You're fired.
+
+286
+00:25:17,960 --> 00:25:20,216
+Well, that's what you're saying,
+but it's not what you mean.
+
+287
+00:25:20,240 --> 00:25:22,481
+- What you mean is...
+- You're fired.
+
+288
+00:25:22,560 --> 00:25:25,803
+- "Play the set list."
+- No, I'm saying it's too late.
+
+289
+00:25:25,880 --> 00:25:28,486
+- It's a warning.
+- What planet are you from?
+
+290
+00:25:28,560 --> 00:25:31,530
+- Don't fire me, Bill. Don't fire me.
+- You're done. I'm sorry, Seb.
+
+291
+00:25:31,600 --> 00:25:32,886
+It's Christmas.
+
+292
+00:25:32,960 --> 00:25:36,089
+Yeah, I see the decorations.
+Good luck in the new year.
+
+293
+00:25:50,120 --> 00:25:52,600
+I just heard you play,
+and I wanted to...
+
+294
+00:25:57,640 --> 00:25:58,687
+[scoffs]
+
+295
+00:26:03,120 --> 00:26:05,361
+[door closes]
+
+296
+00:26:06,720 --> 00:26:11,681
+I don't like the fissure on the GT scan.
+Did you test for achromatopsia?
+
+297
+00:26:11,760 --> 00:26:15,367
+DOA on 23rd. Perp laughin'
+his face off at the PD.
+
+298
+00:26:15,440 --> 00:26:16,851
+Damn Miranda rights.
+
+299
+00:26:16,920 --> 00:26:18,968
+This is my classroom.
+
+300
+00:26:19,040 --> 00:26:20,929
+You don't like it,
+the door's to my left.
+
+301
+00:26:21,000 --> 00:26:23,002
+Lady, why you be trippin' like that?
+
+302
+00:26:24,080 --> 00:26:28,483
+No, Jamal.
+You be trippin'.
+
+303
+00:26:28,560 --> 00:26:30,562
+['80s pop music playing]
+
+304
+00:26:35,640 --> 00:26:37,563
+[indistinct conversations]
+
+305
+00:26:37,640 --> 00:26:39,005
+[woman] Jump right here!
+
+306
+00:26:42,640 --> 00:26:45,450
+<i>♪ We're talking away ♪</i>
+
+307
+00:26:45,520 --> 00:26:48,842
+<i>♪ I don't know what I'm to say,
+I'll say it anyway... ♪</i>
+
+308
+00:26:48,960 --> 00:26:50,485
+[laughing]
+Oh, Mia!
+
+309
+00:26:50,560 --> 00:26:52,608
+- Hi.
+- Hi.
+
+310
+00:26:52,680 --> 00:26:54,409
+- I want you to meet my friend, Carlo.
+- Hi.
+
+311
+00:26:54,480 --> 00:26:55,656
+- Hi. Carlo.
+- Carlo, this is Mia.
+
+312
+00:26:55,680 --> 00:26:57,762
+- Mia? Hi. How are you?
+- Yes, Mia.
+
+313
+00:26:57,840 --> 00:26:59,410
+Carlo is a writer.
+
+314
+00:26:59,480 --> 00:27:01,400
+Yeah. They say I have a knack
+for world-building.
+
+315
+00:27:01,440 --> 00:27:02,726
+I got a lot of heat right now.
+
+316
+00:27:02,800 --> 00:27:05,216
+There's been a lot of buzz, people talkin'
+about me, which is exciting.
+
+317
+00:27:05,240 --> 00:27:07,136
+I mean, you work so hard,
+and then all that validation.
+
+318
+00:27:07,160 --> 00:27:08,844
+- I'm gonna grab a drink.
+- Okay.
+
+319
+00:27:08,920 --> 00:27:10,809
+Nice to meet you.
+
+320
+00:27:10,880 --> 00:27:15,249
+<i>♪ I'll be gone ♪</i>
+
+321
+00:27:15,360 --> 00:27:19,445
+<i>♪ In a day or two ♪</i>
+
+322
+00:27:21,840 --> 00:27:24,889
+<i>♪ So needless to say ♪</i>
+
+323
+00:27:24,960 --> 00:27:26,485
+<i>♪ I'm odds and ends ♪</i>
+
+324
+00:27:26,560 --> 00:27:29,404
+<i>♪ But I'll be stumbling away ♪</i>
+
+325
+00:27:29,480 --> 00:27:30,527
+[laughs]
+
+326
+00:27:30,600 --> 00:27:31,776
+<i>♪ Slowly learning that life is okay ♪</i>
+
+327
+00:27:31,800 --> 00:27:33,609
+Sorry.
+
+328
+00:27:33,680 --> 00:27:36,843
+<i>♪ Say after me ♪</i>
+
+329
+00:27:36,920 --> 00:27:39,082
+<i>♪ It's no better to be safe than sorry ♪</i>
+
+330
+00:27:39,160 --> 00:27:44,803
+<i>♪ Take on me ♪</i>
+
+331
+00:27:44,880 --> 00:27:48,930
+<i>♪ Take me on ♪</i>
+
+332
+00:27:49,000 --> 00:27:50,490
+<i>♪ Take on me ♪</i>
+
+333
+00:27:50,560 --> 00:27:54,804
+<i>♪ I'll be gone ♪</i>
+
+334
+00:27:54,880 --> 00:27:58,805
+<i>♪ In a day or two ♪</i>
+
+335
+00:28:00,160 --> 00:28:01,446
+[music stops]
+
+336
+00:28:01,520 --> 00:28:05,127
+Thank you.
+Any other requests?
+
+337
+00:28:07,200 --> 00:28:08,850
+Girl in the front!
+
+338
+00:28:08,920 --> 00:28:10,126
+"I Ran."
+
+339
+00:28:10,200 --> 00:28:13,522
+[singer] "I Ran."
+A fantastic suggestion.
+
+340
+00:28:13,600 --> 00:28:15,523
+All right, piano man,
+tickle those ivories.
+
+341
+00:28:15,600 --> 00:28:17,011
+Let's hit it.
+
+342
+00:28:17,080 --> 00:28:18,844
+One! Two! Three! Four!
+
+343
+00:28:26,080 --> 00:28:27,445
+[grunts]
+
+344
+00:28:30,240 --> 00:28:32,004
+That's right.
+
+345
+00:28:32,080 --> 00:28:34,924
+<i>♪ I walk along the avenue ♪</i>
+
+346
+00:28:35,000 --> 00:28:39,767
+<i>♪ I never thought
+I'd meet a girl like you ♪</i>
+
+347
+00:28:39,840 --> 00:28:42,002
+<i>♪ Meet a girl like you ♪</i>
+
+348
+00:28:42,080 --> 00:28:43,411
+[mouthing]
+Me?
+
+349
+00:28:44,760 --> 00:28:46,000
+Stop.
+
+350
+00:28:46,080 --> 00:28:48,003
+<i>♪ With auburn hair
+and tawny eyes ♪</i>
+
+351
+00:28:48,120 --> 00:28:52,489
+<i>♪ The kind of eyes
+that hypnotize me through ♪</i>
+
+352
+00:28:52,560 --> 00:28:56,690
+<i>♪ You hypnotize me through ♪</i>
+
+353
+00:28:56,760 --> 00:29:01,971
+<i>♪ And I ran, I ran so far away ♪</i>
+
+354
+00:29:02,960 --> 00:29:04,291
+<i>♪ I couldn't get away... ♪</i>
+
+355
+00:29:12,880 --> 00:29:14,120
+[different pop song playing]
+
+356
+00:29:15,600 --> 00:29:20,083
+<i>♪ Sometimes I feel I've got to ♪</i>
+
+357
+00:29:20,160 --> 00:29:21,366
+<i>♪ Run away ♪</i>
+
+358
+00:29:21,440 --> 00:29:23,408
+<i>♪ I've got to ♪</i>
+
+359
+00:29:23,480 --> 00:29:28,771
+<i>♪ Get away from the pain
+you drive into the heart of me... ♪</i>
+
+360
+00:29:29,920 --> 00:29:31,968
+All right, I remember you.
+
+361
+00:29:32,080 --> 00:29:34,447
+And I'll admit
+I was a little curt that night.
+
+362
+00:29:34,520 --> 00:29:35,681
+Curt?
+
+363
+00:29:35,760 --> 00:29:37,649
+Okay, I was an asshole.
+I can admit that.
+
+364
+00:29:37,720 --> 00:29:38,721
+Okay.
+
+365
+00:29:38,800 --> 00:29:42,043
+But requesting "I Ran" from a serious
+musician, it's just... It's too far.
+
+366
+00:29:42,120 --> 00:29:45,761
+My Lord! Did you just say
+"a serious musician"?
+
+367
+00:29:45,840 --> 00:29:48,002
+- I don't think so.
+- Can I borrow what you're wearing?
+
+368
+00:29:48,080 --> 00:29:49,844
+- Why?
+- 'Cause I have an audition next week.
+
+369
+00:29:49,920 --> 00:29:51,922
+I'm playing a "serious" firefighter.
+
+370
+00:29:52,000 --> 00:29:54,040
+So you're an actress.
+I thought you looked familiar.
+
+371
+00:29:54,080 --> 00:29:55,730
+Have I seen you in anything?
+
+372
+00:29:55,800 --> 00:29:59,850
+Uh... coffee shop on the Warner Bros. lot.
+That's a classic.
+
+373
+00:29:59,920 --> 00:30:01,888
+- Oh, I see. You're a barista.
+- Yeah.
+
+374
+00:30:01,960 --> 00:30:05,043
+And I can see how you could then
+look down on me from all the way up there.
+
+375
+00:30:05,120 --> 00:30:07,122
+Time to do the next set.
+
+376
+00:30:08,280 --> 00:30:11,887
+He doesn't... I don't...
+he doesn't tell me what to do.
+
+377
+00:30:11,960 --> 00:30:13,371
+He just told you what to do.
+
+378
+00:30:13,440 --> 00:30:16,330
+I know. I let him.
+What's your name?
+
+379
+00:30:16,400 --> 00:30:17,447
+- Mia.
+- Mia.
+
+380
+00:30:19,600 --> 00:30:21,489
+Guess I'll see you
+in the movies.
+
+381
+00:30:23,840 --> 00:30:25,976
+- [Carlo] You heard of Joseph Campbell?
+- [Mia] Uh, yeah.
+
+382
+00:30:26,000 --> 00:30:28,496
+I have this idea to do a re-imagining
+of <i>Goldilocks and The Three Bears,</i>
+
+383
+00:30:28,520 --> 00:30:30,090
+but from the perspective
+of the bears.
+
+384
+00:30:30,160 --> 00:30:32,096
+- The hero's journey.
+- It could be like a franchise.
+
+385
+00:30:32,120 --> 00:30:33,176
+- Right.
+- So we don't know.
+
+386
+00:30:33,200 --> 00:30:34,936
+There could have been a fourth bear,
+we don't know.
+
+387
+00:30:34,960 --> 00:30:36,803
+George Michael!
+
+388
+00:30:41,400 --> 00:30:42,640
+Hello.
+
+389
+00:30:42,720 --> 00:30:44,051
+- Sorry, it's...
+- Yeah, yeah.
+
+390
+00:30:44,120 --> 00:30:46,600
+I know that guy.
+Did you get your keys?
+
+391
+00:30:49,040 --> 00:30:50,690
+Mmm-hmm, yes.
+
+392
+00:30:50,760 --> 00:30:53,001
+- Can you grab mine?
+- Can I what?
+
+393
+00:30:53,120 --> 00:30:54,616
+Would you be able
+to grab mine? My keys?
+
+394
+00:30:54,640 --> 00:30:55,801
+- I can't hear.
+- Sorry.
+
+395
+00:30:55,880 --> 00:30:58,690
+- Can you grab my keys?
+- Oh.
+
+396
+00:30:58,760 --> 00:31:00,000
+- Please?
+- Oh, there we go.
+
+397
+00:31:00,080 --> 00:31:01,889
+- Thank you.
+- You're welcome.
+
+398
+00:31:04,160 --> 00:31:06,128
+- What kind?
+- It's a Prius.
+
+399
+00:31:08,640 --> 00:31:10,130
+That doesn't help me.
+
+400
+00:31:10,200 --> 00:31:12,885
+- With a green ribbon.
+- All right.
+
+401
+00:31:15,840 --> 00:31:20,004
+- Those look, uh, comfortable.
+- They are.
+
+402
+00:31:21,600 --> 00:31:23,762
+Thank you for saving the day
+back there.
+
+403
+00:31:25,920 --> 00:31:28,810
+Well, you didn't really
+give me much of a choice.
+
+404
+00:31:29,920 --> 00:31:32,810
+It's pretty strange that we keep running
+into each other.
+
+405
+00:31:32,880 --> 00:31:36,805
+It is strange.
+Maybe it means something.
+
+406
+00:31:36,880 --> 00:31:38,216
+- I doubt it.
+- Yeah, I don't think so.
+
+407
+00:31:38,240 --> 00:31:40,527
+Where's my car?
+
+408
+00:31:40,600 --> 00:31:42,602
+You gotta put that thing
+to your chin.
+
+409
+00:31:42,680 --> 00:31:44,091
+- This?
+- Yeah.
+
+410
+00:31:45,240 --> 00:31:46,896
+Yeah, it makes your head
+into an antenna, so...
+
+411
+00:31:46,920 --> 00:31:48,256
+- Ooh.
+- I think it gives you cancer,
+
+412
+00:31:48,280 --> 00:31:50,089
+- but you find your car faster.
+- What?
+
+413
+00:31:50,160 --> 00:31:52,976
+You don't live as long, but you get where
+you're going quicker, so it all evens out.
+
+414
+00:31:53,000 --> 00:31:54,525
+That sounds terrible.
+
+415
+00:31:54,640 --> 00:31:57,211
+- Just a suggestion.
+- You're a...
+
+416
+00:31:57,280 --> 00:32:00,045
+You're a real, um...
+what's the word I'm looking for?
+
+417
+00:32:00,120 --> 00:32:01,724
+"Knight in shining armor"?
+
+418
+00:32:01,800 --> 00:32:04,849
+- Weirdo. That was the word.
+- Okay.
+
+419
+00:32:11,640 --> 00:32:13,051
+Not much to look at, huh?
+
+420
+00:32:14,080 --> 00:32:15,684
+I've seen better.
+
+421
+00:32:23,800 --> 00:32:27,850
+<i>♪ The sun is nearly gone ♪</i>
+
+422
+00:32:27,920 --> 00:32:31,367
+<i>♪ The lights are turning on ♪</i>
+
+423
+00:32:32,840 --> 00:32:38,006
+<i>♪ A silver shine
+that stretches to the sea ♪</i>
+
+424
+00:32:40,640 --> 00:32:43,803
+<i>♪ We've stumbled on a view ♪</i>
+
+425
+00:32:43,880 --> 00:32:47,885
+<i>♪ That's tailor-made for two ♪</i>
+
+426
+00:32:49,120 --> 00:32:53,808
+<i>♪ What a shame
+those two are you and me ♪</i>
+
+427
+00:32:56,200 --> 00:33:00,762
+<i>♪ Some other girl and guy ♪</i>
+
+428
+00:33:00,840 --> 00:33:03,571
+<i>♪ Would love this swirling sky ♪</i>
+
+429
+00:33:03,640 --> 00:33:07,008
+<i>♪ But there's only you and I ♪</i>
+
+430
+00:33:08,000 --> 00:33:11,607
+<i>♪ And we've got no shot ♪</i>
+
+431
+00:33:11,680 --> 00:33:15,048
+<i>♪ This could never be ♪</i>
+
+432
+00:33:15,120 --> 00:33:16,804
+<i>♪ You're not the type for me ♪</i>
+
+433
+00:33:16,880 --> 00:33:18,120
+Really?
+
+434
+00:33:18,200 --> 00:33:22,250
+<i>♪ And there's not a spark in sight ♪</i>
+
+435
+00:33:22,320 --> 00:33:27,008
+<i>♪ What a a waste of a lovely night ♪</i>
+
+436
+00:33:27,080 --> 00:33:29,128
+[clears throat]
+
+437
+00:33:29,200 --> 00:33:30,804
+<i>♪ You say there's nothing here? ♪</i>
+
+438
+00:33:30,880 --> 00:33:32,564
+<i>♪ Well, let's make
+something clear ♪</i>
+
+439
+00:33:32,640 --> 00:33:34,961
+<i>♪ I think I'll be the one
+to make that call ♪</i>
+
+440
+00:33:35,040 --> 00:33:36,041
+But you'll call?
+
+441
+00:33:36,120 --> 00:33:38,771
+<i>♪ And though you look so cute
+in your polyester suit ♪</i>
+
+442
+00:33:38,840 --> 00:33:39,976
+- It's wool.
+<i>- ♪ You're right ♪</i>
+
+443
+00:33:40,000 --> 00:33:42,765
+<i>♪ I'd never fall for you at all ♪</i>
+
+444
+00:33:42,840 --> 00:33:46,083
+<i>- ♪ And maybe this appeals ♪</i>
+- [whistling]
+
+445
+00:33:46,160 --> 00:33:48,970
+<i>♪ To someone not in heels ♪</i>
+
+446
+00:33:49,040 --> 00:33:52,931
+<i>♪ Or to any girl who feels ♪</i>
+
+447
+00:33:53,000 --> 00:33:56,686
+<i>♪ There's some chance
+for romance ♪</i>
+
+448
+00:33:56,760 --> 00:33:59,001
+<i>♪ But I'm frankly feeling nothing ♪</i>
+
+449
+00:33:59,080 --> 00:34:00,366
+<i>♪ Is that so? ♪</i>
+
+450
+00:34:00,440 --> 00:34:02,442
+<i>♪ Or it could be less than nothing ♪</i>
+
+451
+00:34:02,560 --> 00:34:05,291
+<i>♪ Good to know, so you agree? ♪</i>
+
+452
+00:34:05,360 --> 00:34:06,361
+<i>♪ That's right ♪</i>
+
+453
+00:34:06,480 --> 00:34:10,644
+<i>♪ What a waste of a lovely night. ♪</i>
+
+454
+00:34:10,720 --> 00:34:11,960
+[instrumental break]
+
+455
+00:36:10,840 --> 00:36:12,444
+[cell phone ringing]
+
+456
+00:36:17,560 --> 00:36:19,289
+Ah!
+
+457
+00:36:19,360 --> 00:36:23,365
+Hi, Greg.
+Oh, sorry I'm late.
+
+458
+00:36:23,440 --> 00:36:25,841
+Yeah. Be there soon.
+Okay, bye.
+
+459
+00:36:32,040 --> 00:36:33,041
+[car lock beeps]
+
+460
+00:36:46,920 --> 00:36:48,922
+- It was just right there.
+- Just right here.
+
+461
+00:36:54,480 --> 00:36:57,165
+Do you want a ride
+to your car?
+
+462
+00:36:57,240 --> 00:36:59,527
+No, I'm just right up here.
+
+463
+00:37:02,080 --> 00:37:03,684
+Good night.
+
+464
+00:37:09,920 --> 00:37:11,445
+Good night.
+
+465
+00:37:11,520 --> 00:37:12,806
+[crickets chirping]
+
+466
+00:37:44,960 --> 00:37:46,246
+♪♪
+
+467
+00:37:57,480 --> 00:37:59,050
+[sighs]
+
+468
+00:38:01,240 --> 00:38:02,526
+[engine starting]
+
+469
+00:38:13,600 --> 00:38:15,011
+[bell ringing]
+
+470
+00:38:23,720 --> 00:38:26,087
+Excuse me.
+This is gluten-free, right?
+
+471
+00:38:27,120 --> 00:38:29,009
+- No.
+- What?
+
+472
+00:38:29,080 --> 00:38:30,570
+Mmm-mmm.
+
+473
+00:38:30,640 --> 00:38:32,404
+Ugh!
+I'd like a refund.
+
+474
+00:38:34,200 --> 00:38:37,010
+Okay. Let me check on that for you.
+
+475
+00:38:38,240 --> 00:38:39,287
+Mia...
+
+476
+00:38:39,360 --> 00:38:41,886
+- Hi.
+- You're closing Friday.
+
+477
+00:38:41,960 --> 00:38:44,611
+I can't close on Friday.
+I have an audition, remember?
+
+478
+00:38:44,680 --> 00:38:47,001
+Do I look like I care?
+Reschedule it.
+
+479
+00:38:47,080 --> 00:38:50,163
+Oh, and we need to have a little talk
+tomorrow, okay?
+
+480
+00:38:50,240 --> 00:38:51,969
+Fix your apron, please.
+
+481
+00:38:52,040 --> 00:38:53,280
+Okay.
+
+482
+00:38:58,040 --> 00:38:59,485
+You again!
+
+483
+00:39:01,240 --> 00:39:02,526
+What are you doing here?
+
+484
+00:39:02,600 --> 00:39:05,843
+Oh, you know, just meetings
+and... studio heads and...
+
+485
+00:39:05,920 --> 00:39:07,285
+How'd you get on the lot?
+
+486
+00:39:07,360 --> 00:39:10,921
+[clears throat] I basically
+just hauled ass past the guard gates.
+
+487
+00:39:11,000 --> 00:39:12,656
+I think I have 20 minutes
+until they find me.
+
+488
+00:39:12,680 --> 00:39:13,727
+[clears throat]
+
+489
+00:39:13,800 --> 00:39:15,529
+You don't have a break
+coming up, do you?
+
+490
+00:39:15,600 --> 00:39:17,409
+I'm off in 10 minutes, so...
+
+491
+00:39:18,840 --> 00:39:20,205
+Can I hide
+in the bathroom?
+
+492
+00:39:20,280 --> 00:39:22,442
+- Yes.
+- Okay.
+
+493
+00:39:23,640 --> 00:39:24,926
+Sorry.
+
+494
+00:39:25,000 --> 00:39:27,970
+Um... I actually do have to check.
+I'm sorry.
+
+495
+00:39:32,160 --> 00:39:34,686
+That's the window that Humphrey Bogart
+and Ingrid Bergman
+
+496
+00:39:34,760 --> 00:39:35,886
+looked out of in <i>Casablanca.</i>
+
+497
+00:39:35,960 --> 00:39:37,200
+- [Sebastian] Wow!
+- [Mia] Yeah.
+
+498
+00:39:37,240 --> 00:39:39,216
+I can't believe you work
+right across the street from that.
+
+499
+00:39:39,240 --> 00:39:41,004
+- Yeah.
+- That's amazing.
+
+500
+00:39:41,080 --> 00:39:44,880
+What was your Bogart's name?
+
+501
+00:39:44,960 --> 00:39:47,167
+What's his name?
+Is it Greg?
+
+502
+00:39:47,280 --> 00:39:49,282
+Yeah. Greg.
+
+503
+00:39:49,360 --> 00:39:52,170
+Right. How long have you been...
+
+504
+00:39:52,240 --> 00:39:54,080
+We've been seeing each other
+for about a month.
+
+505
+00:39:54,120 --> 00:39:55,690
+Oh, that's great.
+
+506
+00:39:55,760 --> 00:39:57,091
+He's, um... He's sweet.
+
+507
+00:39:57,160 --> 00:39:59,242
+Anyway, I love
+being around this stuff, you know?
+
+508
+00:39:59,320 --> 00:40:00,321
+I know what you mean.
+
+509
+00:40:00,400 --> 00:40:03,643
+I get coffee five miles out of the way
+just so I can be near a jazz club.
+
+510
+00:40:03,720 --> 00:40:05,210
+- Really?
+- Yeah, the Van Beek.
+
+511
+00:40:05,280 --> 00:40:06,361
+- Do you know it?
+- Mmm-mmm.
+
+512
+00:40:06,440 --> 00:40:10,889
+All the big swing bands used to play
+there. Count Basie, Chick Webb.
+
+513
+00:40:10,960 --> 00:40:13,361
+Anyway, it's a samba-tapas
+place now, so...
+
+514
+00:40:14,880 --> 00:40:16,211
+What's a samba-tapas place?
+
+515
+00:40:16,280 --> 00:40:18,760
+It's just a samba place
+where they serve tapas.
+
+516
+00:40:18,840 --> 00:40:20,808
+- Oh.
+- Yeah, so the joke's on...
+
+517
+00:40:20,880 --> 00:40:22,120
+- history?
+- [laughs]
+
+518
+00:40:22,200 --> 00:40:23,486
+I don't know. That's L.A.
+
+519
+00:40:23,560 --> 00:40:27,246
+They just worship everything
+and they value nothing.
+
+520
+00:40:27,360 --> 00:40:29,727
+[man] We're about to roll.
+Stop, please, guys.
+
+521
+00:40:29,800 --> 00:40:30,926
+[whispering] Okay.
+
+522
+00:40:31,000 --> 00:40:32,570
+- You're rolling?
+- Yeah.
+
+523
+00:40:32,640 --> 00:40:35,056
+I know. They shoot movies on my street
+all the time, so I know about movies.
+
+524
+00:40:35,080 --> 00:40:36,286
+- Come this way.
+- [man] Great.
+
+525
+00:40:36,360 --> 00:40:38,681
+- [Sebastian] It's a lock-down.
+- [Mia gasps]
+
+526
+00:40:38,760 --> 00:40:40,728
+- I love her!
+- [man] And here we go.
+
+527
+00:40:40,800 --> 00:40:42,723
+[whispering] Hey! How'd you get
+into all this?
+
+528
+00:40:42,800 --> 00:40:44,245
+[man] And roll!
+
+529
+00:40:44,320 --> 00:40:45,760
+- Get into what?
+- [man] Sound speed!
+
+530
+00:40:45,800 --> 00:40:47,325
+You know, movies, acting...
+
+531
+00:40:47,400 --> 00:40:49,402
+- [man] Action!
+- Oh, um...
+
+532
+00:40:49,480 --> 00:40:52,324
+- My aunt was an actress.
+- Oh, okay.
+
+533
+00:40:52,400 --> 00:40:54,767
+She was in a traveling
+theater company.
+
+534
+00:40:54,840 --> 00:40:57,047
+I grew up in Boulder City, Nevada.
+
+535
+00:40:57,120 --> 00:40:59,726
+So across the street from my house
+there was this little library
+
+536
+00:40:59,800 --> 00:41:01,404
+that had an old movie section.
+
+537
+00:41:01,520 --> 00:41:05,923
+So she took me and we spent an entire day
+watching all these old movies
+
+538
+00:41:06,000 --> 00:41:10,050
+like <i>Notorious</i> and <i>Bringing Up Baby</i>
+and <i>Casablanca.</i>
+
+539
+00:41:10,120 --> 00:41:11,565
+- And...
+- [man] Cut it there! Cut!
+
+540
+00:41:11,640 --> 00:41:13,720
+- [crew member] Check the gate.
+- So we can talk now.
+
+541
+00:41:13,760 --> 00:41:15,603
+- She sounds incredible.
+- She was incredible.
+
+542
+00:41:15,680 --> 00:41:18,286
+And I would put on all these plays
+in my bedroom,
+
+543
+00:41:18,360 --> 00:41:23,605
+and it would basically just be she and I
+re-enacting those scenes from the movies.
+
+544
+00:41:23,680 --> 00:41:25,091
+And then I would
+write my own plays.
+
+545
+00:41:25,160 --> 00:41:26,730
+- Wow.
+- Um... Yeah.
+
+546
+00:41:42,000 --> 00:41:43,240
+[indistinct chatter]
+
+547
+00:41:47,880 --> 00:41:49,484
+I love it.
+
+548
+00:41:53,640 --> 00:41:56,689
+So anyway, I left college
+after two years to come here
+
+549
+00:41:56,760 --> 00:41:59,604
+and my last audition was
+for a teen show
+
+550
+00:41:59,680 --> 00:42:01,842
+pitched as <i>"Dangerous Minds</i>
+meets <i>The O.C."</i>
+
+551
+00:42:01,920 --> 00:42:06,005
+So, yeah, should've
+been a lawyer.
+
+552
+00:42:06,080 --> 00:42:08,003
+[Sebastian] 'Cause the world
+needs more lawyers.
+
+553
+00:42:08,080 --> 00:42:10,208
+[Mia, laughing] It doesn't
+need more actresses.
+
+554
+00:42:10,280 --> 00:42:11,691
+You're not
+just an actress.
+
+555
+00:42:11,760 --> 00:42:14,366
+- What do you mean, "just an actress"?
+- You said it yourself.
+
+556
+00:42:14,440 --> 00:42:16,886
+[stammers] You're a child prodigy
+playwright.
+
+557
+00:42:16,960 --> 00:42:18,405
+That is not what I said.
+
+558
+00:42:18,480 --> 00:42:22,007
+Well, you're too modest
+to say it, but it's true.
+
+559
+00:42:22,080 --> 00:42:23,880
+You could just write
+your own roles, you know?
+
+560
+00:42:23,920 --> 00:42:25,840
+Write something that's
+as interesting as you are,
+
+561
+00:42:25,880 --> 00:42:27,416
+and you don't have to audition
+for this...
+
+562
+00:42:27,440 --> 00:42:28,771
+- uh, piece of caca.
+- Yeah.
+
+563
+00:42:28,840 --> 00:42:30,251
+Look at Louis Armstrong.
+
+564
+00:42:30,360 --> 00:42:33,011
+He could've just played the marching band
+charts that he was given.
+
+565
+00:42:33,080 --> 00:42:34,809
+But he didn't do that.
+What did he do?
+
+566
+00:42:34,880 --> 00:42:38,248
+- What did he do?
+- He made history, didn't he?
+
+567
+00:42:38,320 --> 00:42:41,290
+Well, I'm gonna stop auditioning
+and I'm gonna make history instead.
+
+568
+00:42:42,280 --> 00:42:46,046
+Well, my work is done here.
+
+569
+00:42:46,120 --> 00:42:49,283
+I should probably tell you something now,
+just to get it out of the way.
+
+570
+00:42:49,360 --> 00:42:50,600
+- Mmm-hmm?
+- I hate jazz.
+
+571
+00:42:53,400 --> 00:42:54,561
+Are you okay?
+
+572
+00:42:54,640 --> 00:42:56,927
+What do you mean,
+you hate jazz?
+
+573
+00:42:57,000 --> 00:42:58,816
+It just means that when I listen to it,
+I don't like it.
+
+574
+00:42:58,840 --> 00:43:01,764
+Yeah, but it's such a blanket statement
+you don't like jazz.
+
+575
+00:43:01,840 --> 00:43:03,080
+What are you doing right now?
+
+576
+00:43:04,440 --> 00:43:05,851
+Nothing.
+
+577
+00:43:08,600 --> 00:43:10,523
+[jazz music playing]
+
+578
+00:43:22,720 --> 00:43:25,485
+I just think that people,
+when they say that they...
+
+579
+00:43:26,520 --> 00:43:30,047
+you know, hate jazz, they just...
+
+580
+00:43:30,120 --> 00:43:33,966
+They don't have context, they don't know
+where it comes from.
+
+581
+00:43:34,040 --> 00:43:37,681
+Jazz was born in a little
+flophouse in New Orleans,
+
+582
+00:43:37,800 --> 00:43:39,776
+and it's just because people
+were crammed in there,
+
+583
+00:43:39,800 --> 00:43:42,416
+they spoke five different languages,
+they couldn't talk to each other.
+
+584
+00:43:42,440 --> 00:43:46,240
+The only way they could communicate
+was with jazz.
+
+585
+00:43:46,320 --> 00:43:47,731
+Yeah, but what about Kenny G?
+
+586
+00:43:49,200 --> 00:43:51,043
+- What?
+- What about Kenny G?
+
+587
+00:43:51,120 --> 00:43:52,963
+I mean, what about elevator music?
+
+588
+00:43:53,040 --> 00:43:55,520
+You know,
+jazz music that I know?
+
+589
+00:43:55,600 --> 00:43:57,364
+- What about it?
+- From my life?
+
+590
+00:43:57,440 --> 00:43:59,761
+- Mmm-hmm?
+- I just find it relaxing.
+
+591
+00:43:59,840 --> 00:44:02,241
+It's not relaxing.
+It's not, it's not.
+
+592
+00:44:02,320 --> 00:44:05,449
+Sidney Bechet shot somebody because
+they told him he played a wrong note.
+
+593
+00:44:05,520 --> 00:44:06,760
+That's hardly relaxing.
+
+594
+00:44:06,840 --> 00:44:11,050
+Yeah, but where I grew up there was
+this station called K-jazz 103.
+
+595
+00:44:11,120 --> 00:44:14,016
+And people would just put on that station
+when they had a cocktail party...
+
+596
+00:44:14,040 --> 00:44:15,280
+Right.
+
+597
+00:44:15,360 --> 00:44:17,522
+And everyone would
+kinda just talk over it.
+
+598
+00:44:17,600 --> 00:44:18,601
+I know.
+
+599
+00:44:18,680 --> 00:44:20,176
+- 'Cause it was...
+- That's the prob...
+
+600
+00:44:20,200 --> 00:44:22,567
+Okay, okay. So I think
+that's part of the problem,
+
+601
+00:44:22,680 --> 00:44:24,496
+is that you can't hear it, you know?
+You have to see it.
+
+602
+00:44:24,520 --> 00:44:26,856
+You have to see what's at stake.
+I mean, look at these fellas.
+
+603
+00:44:26,880 --> 00:44:29,167
+Look at the sax player
+right now.
+
+604
+00:44:29,240 --> 00:44:31,481
+He just hijacked the song.
+He's on his own trip.
+
+605
+00:44:31,560 --> 00:44:33,164
+Every one of these guys
+is composing,
+
+606
+00:44:33,240 --> 00:44:34,969
+they're rearranging,
+they're writing.
+
+607
+00:44:35,040 --> 00:44:36,616
+Then they're playing the melody.
+They're just...
+
+608
+00:44:36,640 --> 00:44:38,005
+And now look,
+the trumpet player.
+
+609
+00:44:38,080 --> 00:44:39,570
+He's got his own idea.
+
+610
+00:44:39,640 --> 00:44:44,168
+And so, it's conflict,
+and it's compromise, and it's just...
+
+611
+00:44:44,240 --> 00:44:45,605
+It's new every time.
+
+612
+00:44:45,680 --> 00:44:49,162
+It's brand-new every night.
+It's very, very exciting.
+
+613
+00:44:49,240 --> 00:44:50,685
+[music stops]
+
+614
+00:44:56,480 --> 00:44:59,723
+And it's dying.
+It's dying, Mia.
+
+615
+00:44:59,840 --> 00:45:01,285
+It's dying on the vine.
+
+616
+00:45:01,360 --> 00:45:04,682
+And the world says, "Let it die.
+It had its time."
+
+617
+00:45:04,760 --> 00:45:06,569
+Well, not on my watch.
+
+618
+00:45:07,920 --> 00:45:11,447
+- What are you gonna do?
+- I'm gonna have my own club.
+
+619
+00:45:11,560 --> 00:45:13,130
+- Really?
+- Yes.
+
+620
+00:45:13,200 --> 00:45:16,010
+We're gonna play whatever we want,
+whenever we want,
+
+621
+00:45:16,080 --> 00:45:20,324
+however we want,
+as long as it's pure jazz.
+
+622
+00:45:21,440 --> 00:45:22,680
+<i>Hi, this is Mia Dolan.</i>
+
+623
+00:45:23,680 --> 00:45:25,205
+Yeah, I just missed a call.
+
+624
+00:45:25,280 --> 00:45:27,851
+♪♪
+
+625
+00:45:32,320 --> 00:45:35,085
+- I got a callback!
+- What? Come on!
+
+626
+00:45:35,160 --> 00:45:36,525
+- [laughs]
+- For what?
+
+627
+00:45:36,600 --> 00:45:39,649
+For a TV show. The one I was
+telling you about earlier.
+
+628
+00:45:39,720 --> 00:45:41,927
+- The <i>"Dangerous Minds</i> meets <i>The O.C."?</i>
+- Yeah.
+
+629
+00:45:42,000 --> 00:45:44,296
+- Congratulations! That's incredible!
+- It's really exciting.
+
+630
+00:45:44,320 --> 00:45:46,322
+I feel like I said negative
+stuff about it before.
+
+631
+00:45:46,400 --> 00:45:48,448
+- What?
+- It's like <i>Rebel Without a Cause.</i>
+
+632
+00:45:49,600 --> 00:45:51,648
+"I got the bullets!"
+
+633
+00:45:51,720 --> 00:45:54,200
+Yes.
+
+634
+00:45:54,280 --> 00:45:56,123
+- You've never seen it!
+- I've never seen it.
+
+635
+00:45:56,200 --> 00:45:58,885
+Oh, my! You know,
+it's playing at the Rialto.
+
+636
+00:45:58,960 --> 00:46:00,086
+- Really?
+- Yes.
+
+637
+00:46:00,160 --> 00:46:03,642
+You should go... I mean,
+[stammering] I can take you.
+
+638
+00:46:03,720 --> 00:46:04,721
+Okay.
+
+639
+00:46:04,800 --> 00:46:06,296
+- You know, for research.
+- For research.
+
+640
+00:46:06,320 --> 00:46:08,163
+- Yeah. Okay.
+- Yeah.
+
+641
+00:46:08,240 --> 00:46:10,402
+Um, Monday night, 10:00.
+
+642
+00:46:10,480 --> 00:46:12,289
+- Yeah. Great.
+- Okay.
+
+643
+00:46:12,360 --> 00:46:13,725
+For research.
+
+644
+00:46:15,240 --> 00:46:17,481
+♪♪
+
+645
+00:46:42,120 --> 00:46:44,122
+[whistling]
+
+646
+00:46:56,520 --> 00:46:59,410
+<i>♪ City of stars ♪</i>
+
+647
+00:46:59,480 --> 00:47:06,170
+<i>♪ Are you shining just for me? ♪</i>
+
+648
+00:47:06,240 --> 00:47:09,323
+<i>♪ City of stars ♪</i>
+
+649
+00:47:09,400 --> 00:47:13,166
+<i>♪ There's so much that I can't see ♪</i>
+
+650
+00:47:15,680 --> 00:47:18,763
+<i>♪ Who knows? ♪</i>
+
+651
+00:47:18,840 --> 00:47:25,610
+<i>♪ Is this the start
+of something wonderful and new?♪</i>
+
+652
+00:47:25,680 --> 00:47:30,766
+<i>♪ Or one more dream ♪</i>
+
+653
+00:47:30,840 --> 00:47:34,242
+<i>♪ That I cannot make true. ♪</i>
+
+654
+00:47:37,760 --> 00:47:39,762
+[whistling]
+
+655
+00:47:58,760 --> 00:47:59,761
+[car lock beeps]
+
+656
+00:48:01,520 --> 00:48:03,640
+- Stand right there, please.
+- Okay. Nice to meet you.
+
+657
+00:48:05,520 --> 00:48:08,763
+- Hi.
+- [male director] Hi.
+
+658
+00:48:08,840 --> 00:48:10,080
+[video camera beeps]
+
+659
+00:48:15,880 --> 00:48:17,405
+[keypad beeping]
+
+660
+00:48:31,560 --> 00:48:32,846
+In your own time.
+
+661
+00:48:32,920 --> 00:48:34,206
+Okay.
+
+662
+00:48:38,120 --> 00:48:39,610
+Two options.
+
+663
+00:48:39,680 --> 00:48:42,001
+You either follow my rules
+or follow my rules.
+
+664
+00:48:42,080 --> 00:48:43,320
+- <i>Capisce?</i>
+- Thank you.
+
+665
+00:48:44,440 --> 00:48:45,885
+- Oh...
+- Thanks.
+
+666
+00:48:45,960 --> 00:48:47,200
+I can do it a different way.
+
+667
+00:48:47,280 --> 00:48:49,681
+No, that's fine.
+Thank you very much. Thank you.
+
+668
+00:48:58,160 --> 00:48:59,241
+That was fun. Thanks.
+
+669
+00:48:59,320 --> 00:49:00,560
+- Bye.
+- [door opens]
+
+670
+00:49:11,600 --> 00:49:12,886
+♪♪
+
+671
+00:49:29,640 --> 00:49:31,529
+[Alexis] Oh, hey, Mia?
+
+672
+00:49:31,600 --> 00:49:33,602
+- Hey.
+- Greg's here.
+
+673
+00:49:33,680 --> 00:49:37,685
+- What do you mean...
+- Hey, babe. Got a space out front.
+
+674
+00:49:37,760 --> 00:49:39,489
+- [chuckles] Great.
+- We should get going.
+
+675
+00:49:39,560 --> 00:49:41,160
+- Okay.
+- My brother landed really early.
+
+676
+00:49:44,120 --> 00:49:46,771
+- Did you forget? You forgot.
+- Shit.
+
+677
+00:49:46,840 --> 00:49:48,569
+That's tonight.
+
+678
+00:49:48,640 --> 00:49:50,961
+- That's okay. You forgot.
+- Yeah. Okay.
+
+679
+00:49:51,040 --> 00:49:52,496
+All right, so then
+I'll just get changed.
+
+680
+00:49:52,520 --> 00:49:55,000
+- Okay. Great.
+- Okay. Great.
+
+681
+00:49:55,080 --> 00:49:57,447
+- [cell phone ringing]
+- [Greg chuckles]
+
+682
+00:49:57,520 --> 00:49:58,806
+- Yeah, that's him.
+- Um...
+
+683
+00:49:58,880 --> 00:50:00,644
+Hey, Josh, yeah. Uh...
+
+684
+00:50:00,720 --> 00:50:03,724
+Just pickin' up Mia.
+We'll be there in, like...
+
+685
+00:50:04,760 --> 00:50:07,216
+[Josh] <i>But now we've got this
+surround-sound set-up, so it's like...</i>
+
+686
+00:50:07,240 --> 00:50:09,607
+- It's like being in a movie theater.
+- Wow.
+
+687
+00:50:09,680 --> 00:50:11,136
+But better than being
+in a theater, really.
+
+688
+00:50:11,160 --> 00:50:13,096
+- [Greg] I can't wait.
+- You know theaters these days.
+
+689
+00:50:13,120 --> 00:50:14,963
+- Yeah.
+- They're so dirty.
+
+690
+00:50:15,040 --> 00:50:16,451
+Yeah, I know.
+And so smelly.
+
+691
+00:50:16,520 --> 00:50:18,176
+[Josh] And they're either
+too hot or too cold.
+
+692
+00:50:18,200 --> 00:50:19,896
+[Greg] I know. The quality's
+really fallen off.
+
+693
+00:50:19,920 --> 00:50:22,416
+[Josh] The quality's terrible.
+And there's always people talking.
+
+694
+00:50:22,440 --> 00:50:24,056
+- [Greg] Because...
+- Which is just... Oh, it's the worst!
+
+695
+00:50:24,080 --> 00:50:25,496
+- [cell phone buzzes]
+- Oh, I'm sorry.
+
+696
+00:50:25,520 --> 00:50:27,249
+- Hold on one second.
+- [Greg] The texting.
+
+697
+00:50:28,240 --> 00:50:29,241
+Hello?
+
+698
+00:50:29,320 --> 00:50:30,890
+- Probably work.
+- Mmm.
+
+699
+00:50:30,960 --> 00:50:32,200
+[speaking Mandarin]
+
+700
+00:50:36,760 --> 00:50:39,764
+- Sorry. So, yeah, we love it.
+- Oh, it's so nice.
+
+701
+00:50:39,840 --> 00:50:43,890
+- [Greg] Well, we have to come. Maybe.
+- [Josh] You should. Come by.
+
+702
+00:50:49,320 --> 00:50:50,765
+[sighs]
+
+703
+00:51:00,840 --> 00:51:02,576
+- [Josh] I got one word for you, man.
+- [Greg] Mmm-hmm?
+
+704
+00:51:02,600 --> 00:51:05,843
+- Indonesia.
+- Never heard anyone say that.
+
+705
+00:51:05,920 --> 00:51:09,080
+I don't even know. I can't keep track
+of it, but honestly, it was life-changing.
+
+706
+00:51:09,120 --> 00:51:11,361
+- Really?
+- Yeah. It affected me.
+
+707
+00:51:11,440 --> 00:51:13,966
+- It was incredible.
+- Is it amazing?
+
+708
+00:51:14,040 --> 00:51:16,247
+- Yes.
+- A 5-star jungle eco-resort
+
+709
+00:51:16,320 --> 00:51:18,129
+- you would not believe.
+- Amazing.
+
+710
+00:51:18,200 --> 00:51:19,531
+We were thinking about Nicaragua.
+
+711
+00:51:19,600 --> 00:51:22,416
+The thing about Nicaragua is it's less
+developed, it's a little under-developed.
+
+712
+00:51:22,440 --> 00:51:23,441
+Right.
+
+713
+00:51:23,520 --> 00:51:27,206
+I think there's a little more... Yeah,
+then, I just don't know if it's safe.
+
+714
+00:51:27,280 --> 00:51:28,964
+- Yeah, yeah. It's...
+- You know?
+
+715
+00:51:29,040 --> 00:51:30,216
+fiancée Yeah, you don't want
+to explore too far.
+
+716
+00:51:30,240 --> 00:51:31,816
+[Josh] Kind of a "natives are
+restless" sort of thing.
+
+717
+00:51:31,840 --> 00:51:33,046
+[slow jazz music playing]
+
+718
+00:51:33,120 --> 00:51:35,930
+[Josh] Actually, China's going
+to build a canal.
+
+719
+00:52:00,640 --> 00:52:02,130
+I'm sorry.
+
+720
+00:53:36,600 --> 00:53:38,967
+[film narrator] <i>...the
+immensity of our universe.</i>
+
+721
+00:53:39,040 --> 00:53:41,850
+<i>For many days
+before the end of our earth,</i>
+
+722
+00:53:41,920 --> 00:53:43,649
+<i>people will look into the night sky</i>
+
+723
+00:53:43,720 --> 00:53:48,248
+<i>and notice a star increasingly bright
+and increasingly near.</i>
+
+724
+00:53:48,320 --> 00:53:50,721
+<i>As this star approaches us...</i>
+
+725
+00:53:52,120 --> 00:53:54,521
+[Jim] <i>Jim Stark.</i>
+
+726
+00:53:54,600 --> 00:53:56,409
+<i>I'll go find a place.
+I'm sorry.</i>
+
+727
+00:53:56,480 --> 00:53:58,016
+[film narrator]
+<i>As this star approaches us,</i>
+
+728
+00:53:58,040 --> 00:53:59,963
+<i>the weather will change.</i>
+
+729
+00:54:00,040 --> 00:54:04,204
+<i>The great polar fields of the north
+and south will rot and divide,</i>
+
+730
+00:54:04,280 --> 00:54:07,329
+<i>and the seas will turn warm.</i>
+
+731
+00:54:07,400 --> 00:54:10,643
+<i>The last of us search the heavens
+and stand amazed,</i>
+
+732
+00:54:10,720 --> 00:54:13,564
+<i>for the stars will still be there
+and will be...</i>
+
+733
+00:54:13,640 --> 00:54:15,290
+[voice distorts]
+
+734
+00:54:17,320 --> 00:54:18,606
+[crowd murmuring]
+
+735
+00:54:21,360 --> 00:54:23,886
+- [chuckles]
+- [blows raspberry]
+
+736
+00:54:26,360 --> 00:54:27,600
+Mmm...
+
+737
+00:54:31,040 --> 00:54:33,088
+I have an idea.
+
+738
+00:54:33,160 --> 00:54:34,400
+♪♪
+
+739
+00:59:07,640 --> 00:59:09,449
+What is that?
+Is it a script?
+
+740
+00:59:09,520 --> 00:59:10,931
+It's a play.
+
+741
+00:59:11,000 --> 00:59:13,844
+[Alexis] A play?
+You better give us all roles!
+
+742
+00:59:13,920 --> 00:59:17,766
+Actually, it's a one-woman show!
+So I can't.
+
+743
+00:59:17,840 --> 00:59:19,410
+[car horn honks loudly]
+
+744
+00:59:22,680 --> 00:59:25,570
+Wow. Is that gonna
+happen every time?
+
+745
+00:59:25,640 --> 00:59:27,290
+I think so.
+
+746
+00:59:29,720 --> 00:59:31,722
+♪♪
+
+747
+00:59:42,440 --> 00:59:44,488
+- [Mia] Ahh! It's one-way!
+- [tires screech]
+
+748
+00:59:49,360 --> 00:59:51,727
+[jazz music playing]
+
+749
+01:00:19,120 --> 01:00:22,329
+[inaudible]
+
+750
+01:01:50,840 --> 01:01:51,887
+[cheering]
+
+751
+01:02:05,760 --> 01:02:07,489
+I love you.
+
+752
+01:02:17,600 --> 01:02:19,329
+[laughing]
+Oh!
+
+753
+01:02:21,560 --> 01:02:23,050
+[man] Sebastian?
+
+754
+01:02:26,560 --> 01:02:27,846
+Keith.
+
+755
+01:02:27,920 --> 01:02:29,331
+Come here, man.
+
+756
+01:02:31,160 --> 01:02:32,924
+- How are you?
+- I've been good, man.
+
+757
+01:02:33,000 --> 01:02:34,764
+This is Mia. Mia, Keith.
+
+758
+01:02:34,840 --> 01:02:36,080
+Hi, Mia. Nice to meet you.
+
+759
+01:02:36,160 --> 01:02:38,731
+- Nice to meet you.
+- I used to play with this guy.
+
+760
+01:02:38,800 --> 01:02:40,404
+Went to school together.
+
+761
+01:02:40,480 --> 01:02:42,130
+- So how you been, brother?
+- Great.
+
+762
+01:02:42,200 --> 01:02:43,645
+Never been better.
+How 'bout you?
+
+763
+01:02:43,720 --> 01:02:45,484
+I been really good.
+Been very busy.
+
+764
+01:02:45,560 --> 01:02:48,040
+- I got a new combo.
+- Okay. Cool.
+
+765
+01:02:48,120 --> 01:02:49,565
+We're lookin' for keys.
+
+766
+01:02:50,960 --> 01:02:53,486
+- Are you kidding me?
+- No, I'm not kidding you.
+
+767
+01:02:53,560 --> 01:02:55,449
+- No, I'm good.
+- Are you sure? It pays.
+
+768
+01:02:56,640 --> 01:02:58,290
+I'm good.
+
+769
+01:02:58,360 --> 01:03:00,647
+Let's just grab a drink then.
+It's been too long.
+
+770
+01:03:00,720 --> 01:03:02,006
+- Okay.
+- Nice to meet you, Mia.
+
+771
+01:03:02,080 --> 01:03:03,491
+[Mia] Nice to meet you.
+
+772
+01:03:13,160 --> 01:03:14,685
+"The end."
+
+773
+01:03:19,640 --> 01:03:21,642
+- Genius.
+- [chuckles] Really?
+
+774
+01:03:21,720 --> 01:03:23,370
+- Yes. Yes.
+- Really?
+
+775
+01:03:23,440 --> 01:03:24,720
+It feels really nostalgic to me.
+
+776
+01:03:24,760 --> 01:03:26,296
+- Is it too nostalgic?
+- That's the point.
+
+777
+01:03:26,320 --> 01:03:28,721
+Are people gonna like it?
+
+778
+01:03:28,800 --> 01:03:31,371
+- Fuck 'em.
+- [laughs] You always say that.
+
+779
+01:03:31,440 --> 01:03:35,126
+- Well, I truly believe it.
+- I made you something.
+
+780
+01:03:35,200 --> 01:03:37,851
+- For what?
+- For your club.
+
+781
+01:03:39,720 --> 01:03:41,006
+Why does it say "Seb's"?
+
+782
+01:03:41,080 --> 01:03:42,696
+'Cause I think you should call it "Seb's."
+
+783
+01:03:42,720 --> 01:03:43,816
+- What?
+- 'Cause no one will come
+
+784
+01:03:43,840 --> 01:03:45,410
+to "Chicken on a Stick."
+
+785
+01:03:45,480 --> 01:03:47,403
+Is that a music note
+as an apostrophe?
+
+786
+01:03:47,480 --> 01:03:48,800
+- Yes! Yeah.
+- That's pretty cool.
+
+787
+01:03:48,840 --> 01:03:50,968
+It's gotta be "Chicken on a Stick,"
+
+788
+01:03:51,040 --> 01:03:52,883
+because Charlie Parker
+got his nickname...
+
+789
+01:03:52,960 --> 01:03:55,281
+I know, because he loved chicken.
+
+790
+01:03:55,360 --> 01:03:58,603
+- [both laugh]
+- That's why they called him "Bird."
+
+791
+01:03:58,680 --> 01:04:01,445
+So I'm gonna have chicken, beer, jazz.
+"Chicken on a Stick."
+
+792
+01:04:01,520 --> 01:04:04,808
+I know. You should drop the chicken
+and just have drinks and jazz, and also...
+
+793
+01:04:04,880 --> 01:04:07,963
+- I'm not droppin' the chicken.
+- You could maybe do it somewhere else.
+
+794
+01:04:08,040 --> 01:04:09,376
+- What are you talk...
+- Find a new spot.
+
+795
+01:04:09,400 --> 01:04:10,845
+It's gotta be the Van Beek.
+
+796
+01:04:10,920 --> 01:04:12,296
+Well, it doesn't have to be the Van Beek.
+
+797
+01:04:12,320 --> 01:04:14,766
+I can't let them samba
+all over its history.
+
+798
+01:04:14,840 --> 01:04:16,763
+- [groans]
+- I can't do it.
+
+799
+01:04:16,840 --> 01:04:19,161
+You can let them,
+but you refuse to.
+
+800
+01:04:19,240 --> 01:04:21,686
+Your play's incredible.
+
+801
+01:04:21,760 --> 01:04:25,970
+You know, the whole world
+from your bedroom.
+
+802
+01:04:26,040 --> 01:04:29,044
+What else do they want?
+Who's doing that?
+
+803
+01:04:30,080 --> 01:04:32,321
+- I'm doing that.
+- You're doing that.
+
+804
+01:04:33,320 --> 01:04:37,644
+Who was that guy at The Lighthouse?
+The guy that offered you the gig?
+
+805
+01:04:37,720 --> 01:04:38,846
+- Keith.
+- Yeah.
+
+806
+01:04:38,920 --> 01:04:43,005
+- Why was it so weird between you two?
+- It's always weird with him.
+
+807
+01:04:43,080 --> 01:04:44,320
+- Really?
+- Yeah.
+
+808
+01:04:44,440 --> 01:04:47,683
+But he seemed kinda nice
+'cause he did offer you a job.
+
+809
+01:04:48,760 --> 01:04:52,890
+- Are you gonna call him?
+- No. No.
+
+810
+01:04:52,960 --> 01:04:54,883
+All right.
+
+811
+01:04:54,960 --> 01:04:58,248
+So... Here's what we know.
+
+812
+01:04:58,320 --> 01:05:00,129
+Yeah?
+
+813
+01:05:00,200 --> 01:05:03,602
+It's definitely
+"Chicken on a Stick,"
+
+814
+01:05:03,680 --> 01:05:05,728
+and your play
+is gonna be a triumph.
+
+815
+01:05:08,720 --> 01:05:10,961
+[Mia] It's a one-woman show,
+so it's just me...
+
+816
+01:05:11,040 --> 01:05:13,520
+No, I mean, I'm acting in it, too.
+
+817
+01:05:15,160 --> 01:05:18,846
+No, Mom, I'm not getting paid.
+I'm paying to do it.
+
+818
+01:05:21,120 --> 01:05:23,805
+He's great. He's gonna
+open his own jazz club.
+
+819
+01:05:23,880 --> 01:05:25,530
+Yeah, it's gonna be incredible.
+
+820
+01:05:27,960 --> 01:05:29,724
+No, he hasn't.
+He hasn't opened it yet.
+
+821
+01:05:29,800 --> 01:05:31,040
+He needs some...
+
+822
+01:05:35,200 --> 01:05:36,929
+He's saving up, I think.
+
+823
+01:05:43,080 --> 01:05:45,082
+No, he doesn't have a steady gig.
+
+824
+01:05:45,160 --> 01:05:47,970
+But he's figuring it out,
+it's just been a little tricky lately.
+
+825
+01:05:52,080 --> 01:05:55,243
+Morn, he's gonna find a way to open it
+and you're gonna love it, okay?
+
+826
+01:05:55,320 --> 01:05:56,560
+How's Dad?
+
+827
+01:05:58,840 --> 01:06:01,969
+[band playing jazz music]
+
+828
+01:06:04,520 --> 01:06:07,729
+Sebastian.
+Come on in, man.
+
+829
+01:06:09,280 --> 01:06:11,123
+- Thanks for comin'.
+- Thanks for having me.
+
+830
+01:06:11,200 --> 01:06:13,567
+Wasn't sure I'd see you today.
+
+831
+01:06:13,640 --> 01:06:15,529
+- So... Here's the deal.
+- Okay.
+
+832
+01:06:15,600 --> 01:06:18,524
+We got distribution with Universal.
+We've got our own imprint.
+
+833
+01:06:18,600 --> 01:06:20,011
+About to go on the road.
+
+834
+01:06:20,120 --> 01:06:22,168
+Uh, we can pay you 1,000 bucks a week,
+
+835
+01:06:22,240 --> 01:06:25,369
+plus a cut of the ticket revenue
+and merchandising.
+
+836
+01:06:25,440 --> 01:06:27,090
+Sound good?
+
+837
+01:06:27,160 --> 01:06:29,447
+[clears throat]
+
+838
+01:06:29,520 --> 01:06:31,602
+- Sebastian? All right.
+- Yeah.
+
+839
+01:06:31,680 --> 01:06:32,966
+- Let's play-
+- Okay.
+
+840
+01:06:33,040 --> 01:06:34,280
+[playing jazz music]
+
+841
+01:06:54,800 --> 01:06:56,564
+[scatting]
+
+842
+01:07:05,280 --> 01:07:07,044
+[electronic beat playing]
+
+843
+01:07:13,800 --> 01:07:15,529
+[continues scatting]
+
+844
+01:07:27,280 --> 01:07:28,930
+<i>♪ Tonight. ♪</i>
+
+845
+01:07:32,000 --> 01:07:33,081
+I know. It's different.
+
+846
+01:07:35,200 --> 01:07:37,567
+But you say
+you wanna save jazz.
+
+847
+01:07:37,640 --> 01:07:40,086
+How you gonna save jazz
+if no one's listening?
+
+848
+01:07:40,200 --> 01:07:42,646
+Jazz is dying
+because of people like you.
+
+849
+01:07:42,720 --> 01:07:46,930
+You're playin' to 90-year-olds
+at The Lighthouse.
+
+850
+01:07:47,040 --> 01:07:49,486
+Where are the kids?
+Where are the young people?
+
+851
+01:07:49,560 --> 01:07:53,963
+You're so obsessed with Kenny Clarke
+and Thelonious Monk.
+
+852
+01:07:54,040 --> 01:07:55,690
+These guys were revolutionaries.
+
+853
+01:07:55,800 --> 01:07:59,885
+How are you gonna be a revolutionary
+if you're such a traditionalist?
+
+854
+01:07:59,960 --> 01:08:03,760
+You're holdin' onto the past,
+but jazz is about the future.
+
+855
+01:08:08,720 --> 01:08:10,563
+I know.
+
+856
+01:08:10,640 --> 01:08:13,564
+The other guy,
+he wasn't as good as you.
+
+857
+01:08:14,960 --> 01:08:17,725
+But you're a pain in the ass, man.
+
+858
+01:08:21,400 --> 01:08:24,404
+[Sebastian playing
+slow jazz music]
+
+859
+01:08:57,720 --> 01:09:00,610
+<i>♪ City of stars ♪</i>
+
+860
+01:09:00,680 --> 01:09:07,006
+<i>♪ Are you shining just for me? ♪</i>
+
+861
+01:09:07,120 --> 01:09:10,124
+<i>♪ City of stars ♪</i>
+
+862
+01:09:10,200 --> 01:09:14,125
+<i>♪ There's so much that I can't see ♪</i>
+
+863
+01:09:16,360 --> 01:09:19,569
+<i>♪ Who knows? ♪</i>
+
+864
+01:09:19,640 --> 01:09:24,806
+<i>♪ I felt it from the first embrace
+I shared with you ♪</i>
+
+865
+01:09:26,160 --> 01:09:30,085
+<i>♪ That now our dreams ♪</i>
+
+866
+01:09:30,160 --> 01:09:33,004
+<i>♪ May finally come true ♪</i>
+
+867
+01:09:36,200 --> 01:09:38,851
+<i>♪ City of stars ♪</i>
+
+868
+01:09:38,920 --> 01:09:42,447
+<i>♪ Just one thing everybody wants ♪</i>
+
+869
+01:09:45,240 --> 01:09:47,891
+<i>♪ There in the bars ♪</i>
+
+870
+01:09:47,960 --> 01:09:53,842
+<i>♪ Or through the smokescreen
+of the crowded restaurants ♪</i>
+
+871
+01:09:53,960 --> 01:09:57,009
+<i>♪ It's love ♪</i>
+
+872
+01:09:57,080 --> 01:09:59,765
+<i>♪ Yes, all we're lookin' for is love ♪</i>
+
+873
+01:09:59,880 --> 01:10:03,248
+<i>♪ From someone else ♪</i>
+
+874
+01:10:03,320 --> 01:10:05,527
+<i>- ♪ A rush ♪
+- ♪ A glance ♪</i>
+
+875
+01:10:05,600 --> 01:10:07,967
+<i>- ♪ A touch ♪
+- ♪ A dance ♪</i>
+
+876
+01:10:08,040 --> 01:10:11,010
+<i>♪ A look in somebody's eyes ♪</i>
+
+877
+01:10:11,080 --> 01:10:13,162
+<i>♪ To light up the skies ♪</i>
+
+878
+01:10:13,240 --> 01:10:16,528
+<i>♪ To open the world
+and send it reeling ♪</i>
+
+879
+01:10:16,600 --> 01:10:19,729
+<i>♪ A voice that says "I'll be here" ♪</i>
+
+880
+01:10:19,800 --> 01:10:22,201
+<i>♪ And you'll be all right ♪</i>
+
+881
+01:10:25,280 --> 01:10:28,090
+<i>♪ I don't care if I know ♪</i>
+
+882
+01:10:28,200 --> 01:10:30,248
+<i>♪ Just where I will go ♪</i>
+
+883
+01:10:30,320 --> 01:10:33,688
+<i>♪ 'Cause all that I need's
+this crazy feeling ♪</i>
+
+884
+01:10:33,760 --> 01:10:37,845
+<i>♪ The rat-tat-tat of my heart ♪</i>
+
+885
+01:10:37,960 --> 01:10:41,203
+<i>♪ Think I want it to stay ♪</i>
+
+886
+01:10:41,280 --> 01:10:43,282
+♪♪
+
+887
+01:11:32,760 --> 01:11:34,762
+[inaudible]
+
+888
+01:12:31,520 --> 01:12:34,410
+[Sebastian]
+♪ <i>City of stars ♪</i>
+
+889
+01:12:34,480 --> 01:12:38,201
+<i>♪ Are you shinin' just for me? ♪</i>
+
+890
+01:12:41,360 --> 01:12:46,127
+<i>♪ City of stars ♪</i>
+
+891
+01:12:46,200 --> 01:12:48,168
+<i>♪ You never shined ♪</i>
+
+892
+01:12:48,240 --> 01:12:51,562
+<i>♪ So brightly. ♪</i>
+
+893
+01:12:54,520 --> 01:12:55,806
+[music stops]
+
+894
+01:12:58,160 --> 01:13:00,049
+[applause and cheers]
+
+895
+01:13:03,360 --> 01:13:05,840
+[playing jazz music]
+
+896
+01:13:20,920 --> 01:13:25,528
+[Keith] <i>♪ I don't know
+why I keep movin' my body ♪</i>
+
+897
+01:13:25,600 --> 01:13:30,447
+<i>♪ I don't know
+if this is wrong or if it's right ♪</i>
+
+898
+01:13:30,520 --> 01:13:32,761
+<i>♪ I don't know if it's the beat ♪</i>
+
+899
+01:13:32,840 --> 01:13:35,525
+<i>♪ But somethings taken over me ♪</i>
+
+900
+01:13:35,640 --> 01:13:40,202
+<i>♪ And I just know I feel so good tonight ♪</i>
+
+901
+01:13:47,600 --> 01:13:52,049
+<i>♪ I don't know what your name is,
+but I like it ♪</i>
+
+902
+01:13:52,120 --> 01:13:56,569
+<i>♪ I've been thinkin' 'bout
+some things I wanna try ♪</i>
+
+903
+01:13:56,640 --> 01:13:59,120
+<i>♪ I don't know
+what you came to do ♪</i>
+
+904
+01:13:59,200 --> 01:14:01,885
+<i>♪ But I wanna do it with you ♪</i>
+
+905
+01:14:01,960 --> 01:14:04,964
+<i>♪ And I just know I feel so good tonight ♪</i>
+
+906
+01:14:06,800 --> 01:14:10,202
+<i>♪ Oh, if we keep on dancin' ♪</i>
+
+907
+01:14:10,280 --> 01:14:15,207
+<i>♪ Take our rhythm to new heights ♪</i>
+
+908
+01:14:16,200 --> 01:14:20,888
+<i>♪ Feel the heat of passion, baby ♪</i>
+
+909
+01:14:20,960 --> 01:14:24,407
+<i>♪ Light up the night! ♪</i>
+
+910
+01:14:24,520 --> 01:14:26,602
+<i>♪ We can start a fire! ♪</i>
+
+911
+01:14:26,680 --> 01:14:29,160
+<i>♪ Come on, let it burn, baby ♪</i>
+
+912
+01:14:29,240 --> 01:14:31,242
+<i>♪ We can start a fire! ♪</i>
+
+913
+01:14:31,360 --> 01:14:33,647
+<i>♪ Let the tables turn, baby ♪</i>
+
+914
+01:14:33,720 --> 01:14:39,045
+<i>♪ We can start a fire! ♪</i>
+
+915
+01:14:40,040 --> 01:14:42,122
+<i>♪ I just know I feel so good ♪</i>
+
+916
+01:14:42,200 --> 01:14:44,282
+<i>♪ Don't you know I feel so good ♪</i>
+
+917
+01:14:44,360 --> 01:14:48,604
+<i>♪ I just know I feel so good ♪</i>
+
+918
+01:14:48,680 --> 01:14:50,489
+<i>♪ Tonight ♪</i>
+
+919
+01:14:50,560 --> 01:14:53,211
+[audience cheering]
+
+920
+01:14:53,280 --> 01:14:58,002
+<i>♪ I don't care
+if this turns into a riot ♪</i>
+
+921
+01:14:58,080 --> 01:15:02,449
+<i>♪ Let's get reckless, tear this place
+down to the floor ♪</i>
+
+922
+01:15:02,560 --> 01:15:04,881
+<i>♪ Turn the music way up loud ♪</i>
+
+923
+01:15:04,960 --> 01:15:07,930
+<i>♪ Can't nobody stop us now ♪</i>
+
+924
+01:15:08,000 --> 01:15:11,083
+<i>♪ I just know I feel so good tonight ♪</i>
+
+925
+01:15:12,600 --> 01:15:15,763
+<i>♪ I just know I feel so good tonight ♪</i>
+
+926
+01:15:35,200 --> 01:15:37,407
+<i>♪ We can start a fire! ♪</i>
+
+927
+01:15:37,480 --> 01:15:40,211
+<i>♪ Come on, let it burn, baby! ♪</i>
+
+928
+01:15:40,280 --> 01:15:42,328
+<i>♪ We can start a fire! ♪</i>
+
+929
+01:15:42,400 --> 01:15:44,607
+<i>♪ Let the tables turn, baby! ♪</i>
+
+930
+01:15:44,680 --> 01:15:49,481
+<i>♪ We can start a fire!♪</i>
+
+931
+01:15:49,560 --> 01:15:52,564
+<i>♪ Oh, I just know I feel so good ♪</i>
+
+932
+01:15:52,640 --> 01:15:55,120
+<i>♪ Don't you know I feel so good ♪</i>
+
+933
+01:15:55,200 --> 01:15:59,603
+<i>♪ Don't you know, don't you know ♪</i>
+
+934
+01:15:59,680 --> 01:16:01,205
+<i>♪ Tonight! ♪</i>
+
+935
+01:16:01,280 --> 01:16:02,805
+[audience cheering]
+
+936
+01:16:23,640 --> 01:16:25,642
+♪♪
+
+937
+01:16:38,120 --> 01:16:39,804
+Hey, it's me.
+
+938
+01:16:39,880 --> 01:16:41,256
+Uh, I'm not sure where you are right now.
+
+939
+01:16:41,280 --> 01:16:45,524
+I think Boston?
+Maybe Dallas, I don't know.
+
+940
+01:16:45,600 --> 01:16:47,489
+Uh...
+
+941
+01:16:47,560 --> 01:16:52,771
+I haven't heard from you in a little while
+and I miss you.
+
+942
+01:16:55,240 --> 01:16:56,844
+All right, bye.
+
+943
+01:17:10,360 --> 01:17:12,124
+[jazz music playing]
+
+944
+01:17:30,720 --> 01:17:32,290
+- [laughs]
+- [Sebastian clears throat]
+
+945
+01:17:33,280 --> 01:17:36,489
+I thought...
+Surprise.
+
+946
+01:17:39,520 --> 01:17:42,444
+Gotta leave first thing in the morning,
+but I just had to see you...
+
+947
+01:17:47,880 --> 01:17:49,689
+It's so nice to be home.
+
+948
+01:17:52,520 --> 01:17:54,170
+I'm so glad you're home.
+
+949
+01:17:56,560 --> 01:17:58,801
+How's the play goin'?
+
+950
+01:17:58,880 --> 01:18:00,530
+Um... I'm nervous.
+
+951
+01:18:00,600 --> 01:18:02,329
+- You are? Why?
+- Mmm-hmm.
+
+952
+01:18:02,400 --> 01:18:04,402
+Because what if people show up'?
+
+953
+01:18:04,480 --> 01:18:05,766
+Piece of caca.
+
+954
+01:18:05,840 --> 01:18:10,323
+- You nervous about what they think?
+- I'm nervous to do it.
+
+955
+01:18:10,400 --> 01:18:13,370
+I'm nervous to get up on a stage
+and perform for people...
+
+956
+01:18:13,440 --> 01:18:14,856
+I mean, I don't need
+to say that to you.
+
+957
+01:18:14,880 --> 01:18:18,487
+- It's gonna be incredible.
+- You don't get it, but I'm terrified.
+
+958
+01:18:18,560 --> 01:18:22,485
+They should be so lucky to see it.
+I can't wait.
+
+959
+01:18:22,560 --> 01:18:24,050
+I can.
+
+960
+01:18:26,240 --> 01:18:27,480
+When do you leave,
+the morning?
+
+961
+01:18:27,560 --> 01:18:30,723
+[clears throat]
+Yeah. 6:45.
+
+962
+01:18:30,800 --> 01:18:31,847
+- Ooh.
+- Boise.
+
+963
+01:18:32,840 --> 01:18:34,922
+- Boy-he?
+- Boyden.
+
+964
+01:18:35,000 --> 01:18:36,650
+To Boise!
+
+965
+01:18:39,520 --> 01:18:40,885
+You should come.
+
+966
+01:18:42,320 --> 01:18:43,560
+To Boise?
+
+967
+01:18:43,640 --> 01:18:45,376
+Yeah, you can knock that
+off your bucket list.
+
+968
+01:18:45,400 --> 01:18:49,405
+Oh, that would be... really exciting.
+I wish I could.
+
+969
+01:18:49,480 --> 01:18:50,840
+What are you doing after the tour?
+
+970
+01:18:52,240 --> 01:18:53,571
+Why can't you?
+
+971
+01:18:53,640 --> 01:18:54,801
+- Come to Boise?
+- Yeah.
+
+972
+01:18:54,880 --> 01:18:56,325
+'Cause I have to rehearse.
+
+973
+01:18:56,400 --> 01:18:58,402
+But can't you rehearse anywhere?
+
+974
+01:19:02,200 --> 01:19:04,487
+Anywhere you are?
+
+975
+01:19:04,560 --> 01:19:06,403
+I mean, I guess.
+
+976
+01:19:07,400 --> 01:19:10,882
+Um... all my stuff is here,
+and it's in two weeks,
+
+977
+01:19:10,960 --> 01:19:13,725
+So I don't really think
+that would be...
+
+978
+01:19:13,800 --> 01:19:18,169
+- Okay. Well.
+- ...the best idea right now, but...
+
+979
+01:19:18,240 --> 01:19:20,447
+- I wish I could.
+- [grunts]
+
+980
+01:19:20,520 --> 01:19:23,683
+We're just gonna have to try and see
+each other. We never see each other.
+
+981
+01:19:23,760 --> 01:19:26,286
+I know, but when are you done?
+
+982
+01:19:26,360 --> 01:19:29,204
+What do you mean? I mean...
+
+983
+01:19:29,280 --> 01:19:31,362
+When are you finished
+with the whole tour?
+
+984
+01:19:31,440 --> 01:19:35,331
+After we finish, we're gonna go
+and record, and then we go back on tour.
+
+985
+01:19:35,400 --> 01:19:36,896
+You know, we tour so we can
+make the record,
+
+986
+01:19:36,920 --> 01:19:39,207
+so we can go back
+and tour the record.
+
+987
+01:19:42,960 --> 01:19:45,930
+So it's like the long haul?
+
+988
+01:19:48,400 --> 01:19:50,289
+What do you mean,
+"the long haul"?
+
+989
+01:19:50,360 --> 01:19:54,649
+I mean the long haul, like you're gonna
+stay in this band for a long time.
+
+990
+01:19:56,000 --> 01:19:57,411
+On tour.
+
+991
+01:19:59,320 --> 01:20:00,924
+What did you think I was gonna do?
+
+992
+01:20:01,000 --> 01:20:05,210
+I don't... I hadn't really thought it
+through. I didn't know that the band...
+
+993
+01:20:07,040 --> 01:20:09,600
+- ...was so important.
+- You didn't think it would be successful?
+
+994
+01:20:10,000 --> 01:20:12,765
+Um...
+
+995
+01:20:12,840 --> 01:20:15,525
+No, that's not really what I mean.
+I just mean that you...
+
+996
+01:20:15,600 --> 01:20:19,321
+You're gonna be on tour for,
+what, months now? Years?
+
+997
+01:20:19,400 --> 01:20:20,970
+Yeah. I don't believe...
+This is it.
+
+998
+01:20:21,040 --> 01:20:23,441
+I mean, it could easily be...
+
+999
+01:20:23,520 --> 01:20:26,251
+I could be on tour with this
+for a couple of years, at least.
+
+1000
+01:20:26,320 --> 01:20:28,527
+Just this record.
+
+1001
+01:20:28,600 --> 01:20:31,365
+Do you like the music you're playing?
+
+1002
+01:20:33,040 --> 01:20:35,008
+I don't...
+[sighs]
+
+1003
+01:20:35,080 --> 01:20:38,687
+I don't know what it matters.
+
+1004
+01:20:38,760 --> 01:20:41,843
+Well, it matters, because if you're gonna
+give up your dream,
+
+1005
+01:20:41,920 --> 01:20:46,847
+I think it matters that you like
+what you're playing on the road for years.
+
+1006
+01:20:49,440 --> 01:20:50,851
+Do you like the music
+I'm playing?
+
+1007
+01:20:50,920 --> 01:20:54,891
+Yeah. I do.
+
+1008
+01:20:54,960 --> 01:20:57,327
+I just didn't think that you did.
+
+1009
+01:20:57,400 --> 01:20:59,801
+- Yeah, well...
+- You always said Keith is the worst,
+
+1010
+01:20:59,880 --> 01:21:03,009
+and now you're gonna be on tour with him
+for years, so I just didn't...
+
+1011
+01:21:03,080 --> 01:21:04,616
+- What are you doing right now?
+- ...know if you were happy.
+
+1012
+01:21:04,640 --> 01:21:05,736
+- Why are you doing this?
+- I don't...
+
+1013
+01:21:05,760 --> 01:21:07,976
+- What do you mean, why am I doing this?
+- I thought you wanted me to do this.
+
+1014
+01:21:08,000 --> 01:21:09,816
+It just sounds like now
+you don't want me to do it.
+
+1015
+01:21:09,840 --> 01:21:12,320
+What do you mean,
+I wanted you to do this?
+
+1016
+01:21:12,400 --> 01:21:14,528
+This is what you wanted for me.
+
+1017
+01:21:14,640 --> 01:21:15,687
+To be in this band?
+
+1018
+01:21:15,760 --> 01:21:18,491
+To be in a band.
+To have a steady job, you know?
+
+1019
+01:21:18,600 --> 01:21:21,922
+To be... You know.
+
+1020
+01:21:22,000 --> 01:21:23,968
+Of course I wanted you
+to have a steady job,
+
+1021
+01:21:24,040 --> 01:21:26,056
+so that you could take care of yourself
+and your life
+
+1022
+01:21:26,080 --> 01:21:27,366
+and you could start your club.
+
+1023
+01:21:27,440 --> 01:21:29,856
+So I'm doing that, so I don't understand.
+Why aren't we celebrating?
+
+1024
+01:21:29,880 --> 01:21:31,803
+Why aren't you starting your club?
+
+1025
+01:21:31,880 --> 01:21:34,406
+You said yourself no one
+wants to go to that club.
+
+1026
+01:21:34,480 --> 01:21:36,576
+No one wants to go to a club
+called "Chicken on a Stick."
+
+1027
+01:21:36,600 --> 01:21:37,681
+So change the name!
+
+1028
+01:21:37,760 --> 01:21:39,922
+Well, no one likes jazz!
+Not even you!
+
+1029
+01:21:40,040 --> 01:21:41,849
+I do like jazz now because of you!
+
+1030
+01:21:41,920 --> 01:21:44,366
+And this is what I thought
+you wanted me to do!
+
+1031
+01:21:44,440 --> 01:21:47,649
+What am I supposed to do?
+Go back to playing "Jingle Bells"?
+
+1032
+01:21:47,720 --> 01:21:48,721
+I'm not saying that.
+
+1033
+01:21:48,840 --> 01:21:50,016
+I'm saying why don't you take
+what you've made and start the club?
+
+1034
+01:21:50,040 --> 01:21:52,691
+Scraping pennies so I can start a club
+no one wants to go to?
+
+1035
+01:21:52,800 --> 01:21:55,610
+People will want to go to it
+because you're passionate about it,
+
+1036
+01:21:55,720 --> 01:21:58,007
+and people love what other people
+are passionate about.
+
+1037
+01:21:58,080 --> 01:22:00,600
+- You remind people of what they forgot.
+- Not in my experience.
+
+1038
+01:22:04,120 --> 01:22:07,806
+Well, whatever, all right?
+It's just time to grow up, you know?
+
+1039
+01:22:07,880 --> 01:22:09,962
+I have a steady job,
+this is what I'm doing.
+
+1040
+01:22:10,040 --> 01:22:11,776
+And now all of a sudden
+if you had these problems,
+
+1041
+01:22:11,800 --> 01:22:13,529
+I wish you would have said them earlier,
+
+1042
+01:22:13,600 --> 01:22:15,096
+before I signed
+on the goddamn dotted line!
+
+1043
+01:22:15,120 --> 01:22:16,849
+I'm pointing out that you had a dream
+
+1044
+01:22:16,920 --> 01:22:18,736
+that you followed,
+that you were sticking to...
+
+1045
+01:22:18,760 --> 01:22:20,888
+This is the dream!
+This is the dream.
+
+1046
+01:22:20,960 --> 01:22:22,246
+This is not your dream!
+
+1047
+01:22:22,320 --> 01:22:24,561
+Guys like me work their whole lives
+to be in something
+
+1048
+01:22:24,640 --> 01:22:27,723
+that's successful, that people like.
+You know?
+
+1049
+01:22:27,800 --> 01:22:31,646
+I mean, I'm finally in something
+that-that-that people enjoy.
+
+1050
+01:22:31,720 --> 01:22:33,136
+Since when do you care
+about being liked?
+
+1051
+01:22:33,160 --> 01:22:34,736
+Just 'cause I don't enjoy it,
+it doesn't matter.
+
+1052
+01:22:34,760 --> 01:22:36,683
+Why do you care so much
+about being liked?
+
+1053
+01:22:36,760 --> 01:22:38,762
+You're an actress!
+What are you talking about?
+
+1054
+01:22:38,840 --> 01:22:40,683
+- [scoffs]
+- [music stops]
+
+1055
+01:22:56,880 --> 01:22:58,609
+Maybe you just liked me
+when I was on my ass
+
+1056
+01:22:58,680 --> 01:23:00,762
+'cause it made you
+feel better about yourself.
+
+1057
+01:23:05,560 --> 01:23:07,801
+- Are you kidding?
+- No.
+
+1058
+01:23:28,880 --> 01:23:30,120
+I don't know.
+
+1059
+01:23:35,560 --> 01:23:36,846
+[smoke alarm beeping]
+
+1060
+01:24:12,560 --> 01:24:13,891
+[sighs]
+
+1061
+01:24:40,560 --> 01:24:41,971
+[grunts]
+
+1062
+01:24:50,480 --> 01:24:52,847
+Okay, fellas.
+I'll see ya tomorrow.
+
+1063
+01:24:52,920 --> 01:24:54,160
+- Sebastian?
+- Yeah?
+
+1064
+01:24:54,240 --> 01:24:56,925
+You're good for tonight, right?
+
+1065
+01:24:57,000 --> 01:24:58,525
+[sighs]
+What are you talking about?
+
+1066
+01:24:58,600 --> 01:25:01,171
+7:00, the photo shoot.
+
+1067
+01:25:01,280 --> 01:25:03,521
+<i>Mojo.</i> Are you good?
+
+1068
+01:25:06,200 --> 01:25:09,602
+- I thought that was next Thursday.
+- No, it's tonight.
+
+1069
+01:25:12,200 --> 01:25:13,645
+Is that okay?
+
+1070
+01:26:06,240 --> 01:26:07,651
+[camera clicking]
+
+1071
+01:26:07,720 --> 01:26:09,961
+- [music playing]
+- [lip-synching]
+
+1072
+01:26:10,040 --> 01:26:12,016
+- Give me the other camera!
+- What's wrong with that one?
+
+1073
+01:26:12,040 --> 01:26:15,487
+"What's wrong with that one?" It doesn't
+bloody work, that's what's wrong with it!
+
+1074
+01:26:15,560 --> 01:26:17,244
+All right, trumpet,
+that's lovely.
+
+1075
+01:26:18,680 --> 01:26:21,923
+Lovely! Beautiful, beautiful!
+
+1076
+01:26:22,000 --> 01:26:24,287
+Okay, keyboard.
+Okay, look up.
+
+1077
+01:26:24,360 --> 01:26:27,364
+That's good. That's good,
+that's lovely. Lovely.
+
+1078
+01:26:27,440 --> 01:26:31,286
+Okay, cut the music!
+That is lovely. That's lovely.
+
+1079
+01:26:31,360 --> 01:26:35,160
+Okay, now bite your lip
+like this, sort of like...
+
+1080
+01:26:35,240 --> 01:26:38,881
+like you're concentrating on something,
+I don't know, like a piece of your music.
+
+1081
+01:26:38,960 --> 01:26:40,200
+Bite my what?
+
+1082
+01:26:40,280 --> 01:26:42,169
+Your lip. You know,
+bite your lip...
+
+1083
+01:26:43,280 --> 01:26:46,045
+Yeah, that's good.
+That's great.
+
+1084
+01:26:46,120 --> 01:26:47,360
+Beautiful! Beautiful.
+
+1085
+01:26:47,440 --> 01:26:50,728
+Okay, now just move your glasses
+down on... onto the nose...
+
+1086
+01:26:50,800 --> 01:26:53,406
+A little bit further, just a little bit,
+a touch further.
+
+1087
+01:26:53,520 --> 01:26:55,727
+Keep your head down,
+but look up at me.
+
+1088
+01:26:55,800 --> 01:26:57,484
+Look sort of moody.
+
+1089
+01:26:57,560 --> 01:27:00,166
+Yeah! That's beautiful!
+That is great!
+
+1090
+01:27:00,240 --> 01:27:03,289
+Okay, turn the keyboard on live!
+
+1091
+01:27:03,360 --> 01:27:04,736
+[muffled] Do you wanna hear
+the keyboard then?
+
+1092
+01:27:04,760 --> 01:27:07,411
+You don't have to bite your lip now.
+
+1093
+01:27:07,480 --> 01:27:09,926
+Well, actually play something.
+
+1094
+01:27:10,000 --> 01:27:12,128
+Play something.
+You know? Anything.
+
+1095
+01:27:12,200 --> 01:27:14,931
+You're a pianist, aren't you?
+Play something.
+
+1096
+01:27:18,280 --> 01:27:21,124
+[playing soft jazz music]
+
+1097
+01:27:26,280 --> 01:27:29,170
+- [camera clicking]
+- That's great, that's beautiful.
+
+1098
+01:27:29,240 --> 01:27:31,083
+That's lovely.
+Oh, that's good.
+
+1099
+01:27:31,160 --> 01:27:33,208
+No, don't stop.
+Keep playing.
+
+1100
+01:27:33,280 --> 01:27:35,931
+Go on, just keep playing.
+That was great!
+
+1101
+01:27:56,320 --> 01:27:57,924
+[cheers]
+
+1102
+01:28:15,640 --> 01:28:19,087
+[man 1] ...shoot myself in the head.
+[chuckling]
+
+1103
+01:28:19,160 --> 01:28:20,730
+She's not even good.
+
+1104
+01:28:20,800 --> 01:28:22,450
+[man 2] That whole window thing...
+
+1105
+01:28:22,520 --> 01:28:24,921
+[man 1] Yeah, what was
+that shit with the window?
+
+1106
+01:28:25,000 --> 01:28:27,651
+Oh, my God!
+Don't quit your day job.
+
+1107
+01:28:27,720 --> 01:28:29,563
+Oh, well...
+
+1108
+01:28:29,640 --> 01:28:32,530
+Not good. One-woman shows
+are always terrible.
+
+1109
+01:28:32,600 --> 01:28:34,602
+♪♪
+
+1110
+01:28:39,680 --> 01:28:41,364
+[brakes screeching]
+
+1111
+01:28:45,960 --> 01:28:47,200
+[knob rattles]
+
+1112
+01:28:55,800 --> 01:28:57,040
+Mia!
+
+1113
+01:28:59,040 --> 01:29:01,725
+Mia. I'm so sorry.
+
+1114
+01:29:04,040 --> 01:29:06,611
+Just tell me how it went.
+How was it?
+
+1115
+01:29:06,680 --> 01:29:09,126
+- Don't help me.
+- I'm sorry.
+
+1116
+01:29:09,200 --> 01:29:11,616
+- I'm sorry I've been such a prick.
+- You're sorry, you're sorry...
+
+1117
+01:29:11,640 --> 01:29:14,405
+[crying]
+You're sorry. You're sorry...
+
+1118
+01:29:14,480 --> 01:29:18,326
+I'm gonna make it up to you.
+Let me make it up to you, okay?
+
+1119
+01:29:24,440 --> 01:29:27,922
+- I don't blame you for not wanting...
+- It's over.
+
+1120
+01:29:28,000 --> 01:29:30,002
+- What is?
+- It's over. [sighs]
+
+1121
+01:29:30,080 --> 01:29:31,411
+What?
+
+1122
+01:29:33,240 --> 01:29:34,765
+All of this.
+
+1123
+01:29:34,840 --> 01:29:38,401
+I'm done embarrassing myself.
+I'm done, I'm done.
+
+1124
+01:29:39,440 --> 01:29:41,169
+- Nobody showed up.
+- So what? So what?
+
+1125
+01:29:41,240 --> 01:29:43,686
+I can't pay back the theater.
+This is so...
+
+1126
+01:29:45,040 --> 01:29:46,849
+I'm gonna go home for a while.
+
+1127
+01:29:46,920 --> 01:29:50,686
+- I'll come see you tomorrow.
+- No, I'm going "home" home.
+
+1128
+01:29:50,760 --> 01:29:53,366
+- This is home.
+- No, it's not anymore.
+
+1129
+01:30:00,040 --> 01:30:01,280
+[knocks on window]
+
+1130
+01:30:14,600 --> 01:30:16,648
+♪♪
+
+1131
+01:31:02,480 --> 01:31:04,528
+[Sebastian playing
+slow jazz music]
+
+1132
+01:31:43,760 --> 01:31:45,762
+[guests applauding]
+
+1133
+01:31:51,240 --> 01:31:52,969
+[cell phone ringing]
+
+1134
+01:32:08,760 --> 01:32:10,046
+Yep?
+
+1135
+01:32:10,120 --> 01:32:11,760
+[Jane] <i>Hi, I'm trying to reach Mia Dolan.</i>
+
+1136
+01:32:13,000 --> 01:32:14,240
+Wrong number.
+
+1137
+01:32:14,320 --> 01:32:16,891
+<i>She's not answering her cell.
+I was told I might find her here.</i>
+
+1138
+01:32:16,960 --> 01:32:18,200
+Not anymore.
+
+1139
+01:32:18,280 --> 01:32:20,442
+<i>- Okay, well, if you do talk to her...</i>
+- I won't.
+
+1140
+01:32:20,520 --> 01:32:24,047
+<i>...could you tell her Jane at Amy Brandt
+Casting is trying to reach her?</i>
+
+1141
+01:32:29,720 --> 01:32:30,960
+Casting?
+
+1142
+01:32:35,840 --> 01:32:37,649
+[car horn honking loudly]
+
+1143
+01:32:39,520 --> 01:32:40,851
+Who the hell is that?
+
+1144
+01:32:46,480 --> 01:32:47,720
+[man] Shut that thing off!
+
+1145
+01:32:47,800 --> 01:32:50,167
+[honking continues]
+
+1146
+01:32:53,200 --> 01:32:54,486
+[honking stops]
+
+1147
+01:32:58,440 --> 01:32:59,680
+[Mia] <i>Why did you come here?</i>
+
+1148
+01:32:59,800 --> 01:33:02,041
+- Because I have good news.
+- What?
+
+1149
+01:33:02,120 --> 01:33:05,761
+Amy Brandt,
+the casting director?
+
+1150
+01:33:05,840 --> 01:33:09,208
+- Yeah.
+- She was at your play, and she loved it.
+
+1151
+01:33:09,280 --> 01:33:13,205
+And she loved it so much that she wants
+you to come in tomorrow
+
+1152
+01:33:13,280 --> 01:33:15,965
+and audition for this huge movie
+that she's got.
+
+1153
+01:33:18,120 --> 01:33:19,610
+I'm not going to that.
+
+1154
+01:33:21,840 --> 01:33:23,016
+- I'm not going to that.
+- What?
+
+1155
+01:33:23,040 --> 01:33:25,771
+That one's gonna be...
+No. That one's gonna be...
+
+1156
+01:33:25,840 --> 01:33:27,126
+I'm sorry?
+
+1157
+01:33:27,200 --> 01:33:29,043
+That will kill me.
+
+1158
+01:33:30,520 --> 01:33:31,965
+- What?!
+- What?
+
+1159
+01:33:32,040 --> 01:33:33,849
+What? Shh! Stop!
+
+1160
+01:33:33,960 --> 01:33:35,405
+- No!
+- [shushing]
+
+1161
+01:33:35,480 --> 01:33:37,608
+You have to be quiet.
+We're in a neighborhood.
+
+1162
+01:33:37,680 --> 01:33:39,856
+If you want me to be quiet,
+you have to make some goddamn sense!
+
+1163
+01:33:39,880 --> 01:33:41,176
+- Tell me why you're not going.
+- They'll call the police.
+
+1164
+01:33:41,200 --> 01:33:42,280
+- Because. Because...
+- Why?
+
+1165
+01:33:42,320 --> 01:33:45,056
+I've been to a million auditions,
+and the same thing happens every time
+
+1166
+01:33:45,080 --> 01:33:47,924
+where I get interrupted because someone
+wants to get a sandwich!
+
+1167
+01:33:48,000 --> 01:33:50,651
+Or I'm crying,
+and they start laughing!
+
+1168
+01:33:50,720 --> 01:33:52,768
+Or there's people
+sitting in the waiting room,
+
+1169
+01:33:52,840 --> 01:33:57,050
+and they're like me, but prettier
+and better at the...
+
+1170
+01:33:57,120 --> 01:33:58,770
+Because maybe
+I'm not good enough!
+
+1171
+01:33:58,840 --> 01:34:01,127
+- Yes, you are.
+- No...
+
+1172
+01:34:01,200 --> 01:34:02,770
+- No, maybe I'm not.
+- Yes, you are.
+
+1173
+01:34:02,840 --> 01:34:05,650
+- Maybe I'm not.
+- You are.
+
+1174
+01:34:08,040 --> 01:34:11,806
+Maybe I'm one of those people
+that has always wanted to do it,
+
+1175
+01:34:11,880 --> 01:34:15,123
+but it's like a pipe dream for me,
+you know?
+
+1176
+01:34:15,200 --> 01:34:16,645
+And then, you said it,
+
+1177
+01:34:16,720 --> 01:34:19,564
+you change your dreams,
+and then you grow up.
+
+1178
+01:34:19,640 --> 01:34:21,847
+Maybe I'm one of those people,
+and I'm not supposed to.
+
+1179
+01:34:21,920 --> 01:34:23,968
+And I can go back to school,
+
+1180
+01:34:24,040 --> 01:34:26,168
+and I can find something else
+I'm supposed to do.
+
+1181
+01:34:26,240 --> 01:34:30,245
+'Cause I left to do that,
+and it's been six years,
+
+1182
+01:34:30,320 --> 01:34:31,924
+and I don't want to do it anymore.
+
+1183
+01:34:35,640 --> 01:34:36,880
+Why?
+
+1184
+01:34:39,160 --> 01:34:42,084
+- Why what?
+- Why don't you want to do it anymore?
+
+1185
+01:34:44,160 --> 01:34:47,050
+'Cause I think it hurts
+a little bit too much.
+
+1186
+01:34:48,880 --> 01:34:50,166
+You're a baby.
+
+1187
+01:34:50,240 --> 01:34:51,526
+[laughs]
+
+1188
+01:34:51,600 --> 01:34:53,176
+- I'm not a baby. I'm trying to grow up.
+- You are.
+
+1189
+01:34:53,200 --> 01:34:54,816
+- You're crying like a baby.
+- [sniffles] Oh, my God.
+
+1190
+01:34:54,840 --> 01:34:57,969
+You have an audition tomorrow at 5:30.
+
+1191
+01:34:58,040 --> 01:35:00,725
+I'll be out front at 8:00 A.M.
+
+1192
+01:35:00,840 --> 01:35:03,207
+You'll be out front or not,
+I don't know.
+
+1193
+01:35:03,280 --> 01:35:04,770
+[engine starts]
+
+1194
+01:35:04,840 --> 01:35:06,365
+How'd you find me here?
+
+1195
+01:35:06,440 --> 01:35:09,444
+The house
+in front of the library.
+
+1196
+01:35:30,200 --> 01:35:32,202
+♪♪
+
+1197
+01:35:45,360 --> 01:35:46,850
+[engine starting]
+
+1198
+01:35:52,720 --> 01:35:54,722
+- I got coffee.
+- Okay, great.
+
+1199
+01:36:12,800 --> 01:36:14,086
+Mia?
+
+1200
+01:36:20,160 --> 01:36:22,367
+Hi, Mia. I'm Amy
+and this is Frank.
+
+1201
+01:36:22,440 --> 01:36:23,726
+Hi. How are ya?
+
+1202
+01:36:23,840 --> 01:36:26,081
+- Nice to meet you.
+- Glad we found you.
+
+1203
+01:36:26,160 --> 01:36:27,605
+Me, too.
+
+1204
+01:36:28,600 --> 01:36:33,891
+The film shoots in Paris,
+and we don't have a script.
+
+1205
+01:36:33,960 --> 01:36:35,450
+[Frank]
+It's gonna be a process.
+
+1206
+01:36:35,560 --> 01:36:37,608
+We're gonna build the character
+around the actress.
+
+1207
+01:36:37,680 --> 01:36:40,331
+It's a 3-month rehearsal
+and a 4-month shoot.
+
+1208
+01:36:42,320 --> 01:36:44,084
+Okay.
+
+1209
+01:36:44,160 --> 01:36:47,721
+[Amy] And we thought that you
+could just tell us a story.
+
+1210
+01:36:47,800 --> 01:36:49,040
+About?
+
+1211
+01:36:49,120 --> 01:36:52,806
+- You can just tell us anything.
+- Anything?
+
+1212
+01:36:52,880 --> 01:36:55,690
+Yeah, just tell us a story.
+You're a storyteller.
+
+1213
+01:36:55,760 --> 01:36:57,888
+[chuckles] um...
+
+1214
+01:37:01,040 --> 01:37:03,042
+Whenever you're ready.
+
+1215
+01:37:12,880 --> 01:37:15,087
+My aunt used to live in Paris.
+
+1216
+01:37:19,840 --> 01:37:21,120
+I remember she used to come home
+
+1217
+01:37:21,160 --> 01:37:26,451
+and she would tell us these stories
+about being abroad, and...
+
+1218
+01:37:28,840 --> 01:37:30,080
+I remember...
+
+1219
+01:37:31,400 --> 01:37:34,609
+She told us that she jumped
+into the river once.
+
+1220
+01:37:36,800 --> 01:37:39,883
+<i>♪ Barefoot ♪</i>
+
+1221
+01:37:39,960 --> 01:37:42,804
+<i>♪ She smiled ♪</i>
+
+1222
+01:37:42,880 --> 01:37:47,124
+<i>♪ Leapt without looking ♪</i>
+
+1223
+01:37:50,200 --> 01:37:54,410
+<i>♪ And tumbled into ♪</i>
+
+1224
+01:37:55,760 --> 01:37:57,000
+<i>♪ The Seine ♪</i>
+
+1225
+01:38:00,160 --> 01:38:04,165
+<i>♪ The water was freezing ♪</i>
+
+1226
+01:38:04,240 --> 01:38:08,768
+<i>♪ She spent a month sneezing ♪</i>
+
+1227
+01:38:08,840 --> 01:38:13,482
+<i>♪ But said
+she would do it again ♪</i>
+
+1228
+01:38:16,440 --> 01:38:21,571
+<i>♪ Here's to the ones who dream ♪</i>
+
+1229
+01:38:24,200 --> 01:38:29,570
+<i>♪ Foolish as they may seem ♪</i>
+
+1230
+01:38:31,680 --> 01:38:37,403
+<i>♪ Here's to the hearts that ache ♪</i>
+
+1231
+01:38:39,240 --> 01:38:44,644
+<i>♪ Here's to the mess we make ♪</i>
+
+1232
+01:38:47,120 --> 01:38:49,771
+<i>♪ She captured a feeling ♪</i>
+
+1233
+01:38:49,840 --> 01:38:53,003
+<i>♪ Sky with no ceiling ♪</i>
+
+1234
+01:38:53,080 --> 01:38:57,210
+<i>♪ The sunset inside a frame ♪</i>
+
+1235
+01:38:59,200 --> 01:39:02,727
+<i>♪ She lived in her liquor ♪</i>
+
+1236
+01:39:02,800 --> 01:39:05,849
+<i>♪ And died with a flicker ♪</i>
+
+1237
+01:39:05,960 --> 01:39:10,090
+<i>♪ I'll always remember the flame ♪</i>
+
+1238
+01:39:12,360 --> 01:39:17,526
+<i>♪ Here's to the ones who dream ♪</i>
+
+1239
+01:39:18,560 --> 01:39:24,408
+<i>♪ Foolish as they may seem ♪</i>
+
+1240
+01:39:24,520 --> 01:39:30,482
+<i>♪ Here's to the hearts that ache ♪</i>
+
+1241
+01:39:30,560 --> 01:39:34,929
+<i>♪ Here's to the mess we make ♪</i>
+
+1242
+01:39:35,000 --> 01:39:38,482
+<i>♪ She told me ♪</i>
+
+1243
+01:39:38,560 --> 01:39:41,404
+<i>♪ A bit of madness is key ♪</i>
+
+1244
+01:39:42,520 --> 01:39:45,763
+<i>♪ To give us new colors to see ♪</i>
+
+1245
+01:39:47,400 --> 01:39:52,042
+<i>♪ Who knows where it will lead us? ♪</i>
+
+1246
+01:39:52,120 --> 01:39:56,523
+<i>♪ And that's why they need us ♪</i>
+
+1247
+01:39:56,600 --> 01:39:59,809
+<i>♪ So bring on the rebels ♪</i>
+
+1248
+01:39:59,880 --> 01:40:02,406
+<i>♪ The ripples from pebbles ♪</i>
+
+1249
+01:40:02,480 --> 01:40:06,804
+<i>♪ The painters and poets and plays ♪</i>
+
+1250
+01:40:06,880 --> 01:40:10,601
+<i>♪ And here's to the fools ♪</i>
+
+1251
+01:40:10,680 --> 01:40:13,490
+<i>♪ Who dream ♪</i>
+
+1252
+01:40:13,560 --> 01:40:18,805
+<i>♪ Crazy as they may seem ♪</i>
+
+1253
+01:40:18,880 --> 01:40:24,011
+<i>♪ Here's to the hearts that break ♪</i>
+
+1254
+01:40:24,120 --> 01:40:27,090
+<i>♪ Here's to the mess ♪</i>
+
+1255
+01:40:27,160 --> 01:40:29,731
+<i>♪ We make ♪</i>
+
+1256
+01:40:33,520 --> 01:40:35,045
+<i>♪ I ♪</i>
+
+1257
+01:40:35,120 --> 01:40:38,602
+<i>♪ Trace it all back to then ♪</i>
+
+1258
+01:40:41,400 --> 01:40:47,043
+<i>♪ Her and the snow
+and the Seine ♪</i>
+
+1259
+01:40:50,160 --> 01:40:53,607
+<i>♪ Smiling through it ♪</i>
+
+1260
+01:40:55,160 --> 01:40:59,370
+<i>♪ She said she'd do it ♪</i>
+
+1261
+01:41:02,280 --> 01:41:03,725
+<i>♪ Again. ♪</i>
+
+1262
+01:41:09,120 --> 01:41:10,884
+[birds chirping]
+
+1263
+01:41:18,040 --> 01:41:20,407
+When do you find out'?
+
+1264
+01:41:20,480 --> 01:41:23,051
+Oh, they said the next couple days.
+
+1265
+01:41:23,120 --> 01:41:25,521
+But I'm not expecting
+to find anything out.
+
+1266
+01:41:25,640 --> 01:41:26,880
+You're gonna get it.
+
+1267
+01:41:26,960 --> 01:41:28,336
+- I really might not.
+- Yes, you are.
+
+1268
+01:41:28,360 --> 01:41:31,045
+- I hope you're not disappointed.
+- I know.
+
+1269
+01:41:31,120 --> 01:41:33,771
+I know.
+I know these things.
+
+1270
+01:41:35,840 --> 01:41:37,080
+Where are we?
+
+1271
+01:41:40,720 --> 01:41:43,610
+- Griffith Park.
+<i>- Where... are we?</i>
+
+1272
+01:41:43,680 --> 01:41:46,809
+I know.
+[inhales deeply]
+
+1273
+01:41:46,880 --> 01:41:48,564
+I don't know.
+
+1274
+01:41:51,280 --> 01:41:53,169
+What do we do?
+
+1275
+01:41:53,240 --> 01:41:56,210
+I don't think
+we can do anything,
+
+1276
+01:41:56,280 --> 01:41:59,204
+- 'cause when you get this...
+- If I get this.
+
+1277
+01:41:59,280 --> 01:42:04,081
+When you get this, you gotta give it
+everything you got.
+
+1278
+01:42:05,960 --> 01:42:07,200
+Everything.
+
+1279
+01:42:08,200 --> 01:42:09,929
+It's your dream.
+
+1280
+01:42:10,000 --> 01:42:11,968
+What are you gonna do?
+
+1281
+01:42:12,040 --> 01:42:13,929
+I gotta follow
+my own plan, you know?
+
+1282
+01:42:14,000 --> 01:42:16,082
+Stay here
+and get my own thing goin'.
+
+1283
+01:42:22,160 --> 01:42:26,449
+You're gonna be in Paris.
+Good jazz there.
+
+1284
+01:42:26,520 --> 01:42:31,367
+And you love jazz now.
+Right?
+
+1285
+01:42:33,080 --> 01:42:34,320
+Yes.
+
+1286
+01:42:39,160 --> 01:42:40,571
+[sighs]
+
+1287
+01:42:43,680 --> 01:42:46,001
+And I guess we're just gonna
+have to wait and see.
+
+1288
+01:42:48,800 --> 01:42:50,802
+♪♪
+
+1289
+01:42:55,040 --> 01:42:56,883
+I'm always gonna love you.
+
+1290
+01:42:58,560 --> 01:43:00,164
+I'm always gonna love you, too.
+
+1291
+01:43:08,280 --> 01:43:10,282
+- Look at this view!
+- [chuckles]
+
+1292
+01:43:11,640 --> 01:43:14,211
+- I've seen better. Yeah.
+- It's the worst.
+
+1293
+01:43:18,560 --> 01:43:20,562
+I've never been here
+during the day.
+
+1294
+01:44:05,600 --> 01:44:07,329
+[jazzy Christmas music playing]
+
+1295
+01:44:13,160 --> 01:44:14,776
+Hi. Could I have
+two iced coffees, please?
+
+1296
+01:44:14,800 --> 01:44:17,280
+- Right. Of course.
+- On us.
+
+1297
+01:44:17,360 --> 01:44:19,283
+Oh, no, thank you, I insist.
+
+1298
+01:44:35,960 --> 01:44:37,564
+[piano playing]
+
+1299
+01:44:49,400 --> 01:44:53,246
+[man] Sounds good.
+Harris did a good job.
+
+1300
+01:44:53,320 --> 01:44:55,891
+- Took him long enough.
+- It always does.
+
+1301
+01:44:55,960 --> 01:44:57,405
+Signature time.
+
+1302
+01:44:59,680 --> 01:45:01,648
+Not doin' too bad, Seb.
+
+1303
+01:45:01,720 --> 01:45:04,610
+- "Not too bad" is great.
+- See ya tonight.
+
+1304
+01:45:04,680 --> 01:45:06,011
+See ya tonight.
+
+1305
+01:45:26,560 --> 01:45:28,130
+Hi.
+
+1306
+01:45:28,200 --> 01:45:30,282
+- How was your day?
+- Good.
+
+1307
+01:45:34,160 --> 01:45:35,810
+- Hmm. How is she?
+- She's great.
+
+1308
+01:45:35,880 --> 01:45:37,120
+- Yeah?
+- Yeah, come on.
+
+1309
+01:45:37,200 --> 01:45:39,328
+[gasps]
+Hi, buddy!
+
+1310
+01:45:40,680 --> 01:45:44,401
+I didn't think you were gonna
+be home yet.
+
+1311
+01:45:44,480 --> 01:45:46,642
+- Are you drawing?
+- Yeah.
+
+1312
+01:45:46,720 --> 01:45:49,803
+Can I help?
+You know I love to draw.
+
+1313
+01:45:57,360 --> 01:45:58,964
+[jazz music playing]
+
+1314
+01:46:29,400 --> 01:46:31,971
+[Mia] <i>Okay, Chelsea, we're gonna go.
+Are you good?</i>
+
+1315
+01:46:32,040 --> 01:46:34,646
+- We're good.
+- You need anything?
+
+1316
+01:46:34,720 --> 01:46:36,722
+Bye, baby.
+
+1317
+01:46:36,800 --> 01:46:38,131
+- Say "bye, Mommy."
+- Sleep well.
+
+1318
+01:46:38,200 --> 01:46:40,362
+- Bye, Mommy.
+- [laughing] Have fun with Chelsea.
+
+1319
+01:46:40,440 --> 01:46:41,805
+Have fun. Bye, Mia.
+
+1320
+01:46:41,880 --> 01:46:43,616
+- Bye. Thank you so much.
+- Good night, guys.
+
+1321
+01:46:43,640 --> 01:46:45,847
+- Night, sweetie. Bye.
+- Good night.
+
+1322
+01:46:54,960 --> 01:46:56,769
+- Oh, boy.
+- [yawns]
+
+1323
+01:46:57,800 --> 01:47:00,041
+What if we miss this?
+What do you wanna tell Natalie?
+
+1324
+01:47:00,120 --> 01:47:03,044
+Oh... [sighs]
+We'll just see it back in New York.
+
+1325
+01:47:03,120 --> 01:47:04,690
+Okay.
+
+1326
+01:47:06,480 --> 01:47:09,802
+- [Mia] I do not miss this.
+- [David] This is bad.
+
+1327
+01:47:15,880 --> 01:47:18,645
+Do you want to just
+pull off here and get dinner?
+
+1328
+01:47:20,800 --> 01:47:22,848
+- Sure, yeah. Yeah.
+- Yeah?
+
+1329
+01:47:22,920 --> 01:47:24,206
+Okay.
+
+1330
+01:47:33,120 --> 01:47:35,122
+[jazz music playing]
+
+1331
+01:47:52,200 --> 01:47:54,362
+Do you want to check it out?
+
+1332
+01:48:16,400 --> 01:48:17,845
+This place is pretty cool.
+
+1333
+01:48:28,200 --> 01:48:29,964
+[woman] I love them.
+
+1334
+01:49:10,520 --> 01:49:11,806
+[crowd cheering]
+
+1335
+01:49:18,880 --> 01:49:20,882
+Cal Bennett on sax!
+
+1336
+01:49:20,960 --> 01:49:22,689
+Javier Gonzalez on trumpet.
+
+1337
+01:49:22,760 --> 01:49:25,411
+The lovely Nedra Wheeler on bass.
+
+1338
+01:49:25,480 --> 01:49:30,361
+The one and only Clifton
+"Fou-fou" Eddie on drums!
+
+1339
+01:49:30,440 --> 01:49:31,805
+And a little too good on piano,
+
+1340
+01:49:31,880 --> 01:49:34,486
+so good he's gonna own
+this place if I'm not careful,
+
+1341
+01:49:34,560 --> 01:49:36,130
+Khirye Tyler, everybody.
+
+1342
+01:49:36,200 --> 01:49:38,202
+[cheering continues]
+
+1343
+01:49:46,760 --> 01:49:49,525
+[clicks tongue] Uh...
+
+1344
+01:49:49,600 --> 01:49:51,523
+Welcome to Seb's.
+
+1345
+01:50:19,080 --> 01:50:20,605
+[playing slow jazz music]
+
+1346
+01:51:41,720 --> 01:51:43,848
+I just heard you play
+and I want to...
+
+1347
+01:51:43,920 --> 01:51:45,922
+♪♪
+
+1348
+01:51:54,600 --> 01:51:56,602
+[upbeat jazz music playing]
+
+1349
+01:52:19,600 --> 01:52:21,250
+[inaudible]
+
+1350
+01:53:38,640 --> 01:53:40,608
+[soft music playing]
+
+1351
+01:54:12,720 --> 01:54:14,563
+[jazz music playing]
+
+1352
+01:56:22,640 --> 01:56:24,642
+[slow jazz music playing]
+
+1353
+01:58:30,960 --> 01:58:32,450
+Do you want to stay for another?
+
+1354
+01:58:38,520 --> 01:58:41,649
+- No, we should go.
+- All right.
+
+1355
+01:59:19,240 --> 01:59:21,641
+♪♪
+
+1356
+01:59:43,080 --> 01:59:45,481
+One, two.
+One, two, three, four.
+
+1357
+02:00:01,480 --> 02:00:03,528
+♪♪
+
