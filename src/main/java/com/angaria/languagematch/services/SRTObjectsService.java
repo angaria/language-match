@@ -4,6 +4,6 @@ import com.angaria.languagematch.wrappers.SRTObjects;
 
 public interface SRTObjectsService {
 
-    void persist(SRTObjects srtObjects);
+    SRTObjects persist(SRTObjects srtObjects);
 
 }

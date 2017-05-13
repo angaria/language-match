@@ -1,6 +1,7 @@
 package com.angaria.languagematch.entities;
 
 import com.angaria.languagematch.components.CharsetDetector;
+import com.angaria.languagematch.wrappers.SRTObjects;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.jsoup.Jsoup;
@@ -15,8 +16,8 @@ import java.util.*;
 @Table(name="srt_files")
 public class SRTObject {
 
-    private static final String LINE_SEPARATOR = "\r\n";
     private static final Logger logger = LogManager.getLogger(SRTObject.class.getName());
+    private static final String LINE_SEPARATOR = "\r\n";
 
     @Id
     @Column(name="file_name")
@@ -79,7 +80,7 @@ public class SRTObject {
 
     private void generateSubTitles(BufferedReader br) throws IOException {
 
-        while ((line = cleanupLine(br.readLine())) != null) {
+        while ((line = cleanup(br.readLine())) != null) {
 
             if(isTimingRelated(line)){
                 storeLastSubTitle(tempSubTitle);
@@ -92,7 +93,7 @@ public class SRTObject {
                     previousLineWasAboutTiming = false;
                 }
                 else if(!isNumeric(line) && !line.isEmpty() && tempSubTitle != null) {
-                    tempSubTitle.setContent(tempSubTitle.getContent() + LINE_SEPARATOR + line);
+                    tempSubTitle.setContent(cleanup(tempSubTitle.getContent() + " " + line));
                 }
             }
         }
@@ -110,13 +111,21 @@ public class SRTObject {
         logger.error(e.getMessage());
     }
 
-    private static String cleanupLine(String line){
+    private static String cleanup(String line){
         if(line == null) {
             return null;
         }
 
         line = line.replace("\u0000", ""); // removes NUL chars
         line = line.replace("\\u0000", ""); // removes backslash+u0000
+
+        line = line.replace(LINE_SEPARATOR, ""); // removes carriage returns
+        line = line.replace("\r", ""); // removes carriage returns
+        line = line.replace("\n", ""); // removes carriage returns
+
+        line = line.replace("  ", " "); // removes double spaces
+        line = line.replace("  ", " "); // removes double spaces
+
         line = Jsoup.parse(line).text();
 
         return line.trim();
@@ -156,25 +165,30 @@ public class SRTObject {
         }
     }
 
-    public boolean hasErrors(){
-        return !errors.isEmpty();
-    }
-
     private String extractLanguage(String fileName) {
-        String fileNameWithNoExt = fileName.substring(0, fileName.lastIndexOf("."));
+        String fileNameWithNoExt = fileName.substring(0, fileName.lastIndexOf('.'));
+        String code = getPotentialLanguage(fileNameWithNoExt);
 
-        if(!fileNameWithNoExt.contains(".")
-                || !Arrays.asList(Locale.getISOLanguages()).contains(fileNameWithNoExt.substring(fileNameWithNoExt.lastIndexOf(".")+1).toLowerCase())){
+        if(!fileNameWithNoExt.contains(".") || !isSecondaryLanguageCode(code)){
             return Locale.ENGLISH.getLanguage();
         }
 
-        return fileNameWithNoExt.substring(fileNameWithNoExt.lastIndexOf(".")+1).toLowerCase();
+        return fileNameWithNoExt.substring(fileNameWithNoExt.lastIndexOf('.') + 1).toLowerCase();
+    }
+
+    private boolean isSecondaryLanguageCode(String code){
+        return Arrays.asList(SRTObjects.SECONDARY_LANGUAGES).contains(code);
+    }
+
+    private String getPotentialLanguage(String fileNameWithNoExt){
+        return fileNameWithNoExt.substring(fileNameWithNoExt.lastIndexOf('.')+1).toLowerCase();
     }
 
     public SubTitle lookupForMatchingSubTitleFrame(SubTitle stReference) {
         return subTitles.stream()
                     .filter(s -> s.isOverlappingEnoughWith(stReference))
                     .filter(s -> s.hasOnlyOnePersonTalking())
+                    .filter(s -> s.hasNotForbiddenCharacters())
                     .findFirst()
                     .orElse(null);
     }
@@ -194,10 +208,6 @@ public class SRTObject {
 
     public void addSubTitle(SubTitle subTitle) {
         this.subTitles.add(subTitle);
-    }
-
-    public Set<Exception> getErrors() {
-        return errors;
     }
 
     public File getFile() {

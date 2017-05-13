@@ -8,8 +8,6 @@ import java.util.Set;
 
 public class SubTitleMatches {
 
-    private static final Logger logger = LogManager.getLogger(SubTitleMatches.class.getName());
-
     private Set<SubTitleMatch> subTitleMatches = new LinkedHashSet<>();
 
     public SubTitleMatches(Set<SubTitleMatch> subTitleMatches) {
@@ -18,10 +16,6 @@ public class SubTitleMatches {
 
     public Set<SubTitleMatch> getSubTitleMatches() {
         return subTitleMatches;
-    }
-
-    public void setSubTitleMatches(Set<SubTitleMatch> subTitleMatches) {
-        this.subTitleMatches = subTitleMatches;
     }
 
     public int size(){

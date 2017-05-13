@@ -22,7 +22,8 @@ import java.util.stream.Collectors;
 public class WorkflowService {
 
     private static final Logger logger = LogManager.getLogger(WorkflowService.class.getName());
-    private static final String SRT_FILES_PATH = "src/main/resources/input";
+    public static final String SRT_FILES_PATH = "src/main/resources/input";
+    public static final String SRT_FILES_PATH_DEST = "src/main/resources/previous";
 
     @Autowired
     private FileSystemService fileSystemService;
@@ -54,10 +55,10 @@ public class WorkflowService {
     public SubTitleMatches findMatchingSubTitles(SRTObject refSRT, SRTObject targetSRT) {
         Preconditions.checkArgument(refSRT != null, "Reference SRT file missing!");
         Preconditions.checkArgument(targetSRT != null, "Second SRT file missing!");
-
         Set<SubTitleMatch> matches = refSRT.getSubTitles()
                                             .stream()
                                             .filter(s -> s.hasOnlyOnePersonTalking())
+                                            .filter(s -> s.hasNotForbiddenCharacters())
                                             .map(subTitleRef ->  {
                                                 SubTitle match = targetSRT.lookupForMatchingSubTitleFrame(subTitleRef);
                                                 return match != null ?
@@ -66,7 +67,6 @@ public class WorkflowService {
                                             .filter(out -> out != null)
                                             .collect(Collectors.toSet());
 
-        logger.log(Level.INFO, matches);
         return new SubTitleMatches(matches);
     }
 

@@ -8,7 +8,9 @@ import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.time.Duration;
+import java.util.Arrays;
 import java.util.Date;
+import java.util.Optional;
 
 import static javax.persistence.GenerationType.AUTO;
 
@@ -20,6 +22,7 @@ public class SubTitle implements Comparable<SubTitle>{
     public static final DateFormat COMPLETE_DATE_FORMAT = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss,SSS");
     public static final String REFERENCE_DAY = "2017-04-09";
     private static final Logger logger = LogManager.getLogger(SubTitle.class.getName());
+    private static final char[] FORBIDDEN_CHARS = {'[', ']', '(', ')', '♪', '"'};
 
     @Id
     @GeneratedValue(strategy = AUTO)
@@ -182,7 +185,10 @@ public class SubTitle implements Comparable<SubTitle>{
             }
         }
 
-        logger.info("Overlap ratio: " + commonBand / maxLength);
+        if(commonBand > 0.0){
+            logger.debug("Overlap ratio: " + commonBand / maxLength);
+        }
+
         return (commonBand / maxLength) >= minimumOverlap;
     }
 
@@ -199,5 +205,14 @@ public class SubTitle implements Comparable<SubTitle>{
 
     public boolean hasOnlyOnePersonTalking() {
         return !content.startsWith("-");
+    }
+
+    public boolean hasNotForbiddenCharacters() {
+        for(char ch : FORBIDDEN_CHARS){
+            if(content.indexOf(ch)!=-1){
+                return false;
+            }
+        }
+        return true;
     }
 }
