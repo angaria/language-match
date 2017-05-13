@@ -45,14 +45,12 @@ public class SRTObjectTest extends EntityTest {
     @Test
     public void generateSubTitles_generationSize() throws ParseException {
         srtObject = new SRTObject(FILE_SRT_1);
-        srtObject.generateSubTitles();
         assertEquals(334 , srtObject.getSubTitles().size());
     }
 
     @Test
     public void generateSubTitles_inDetailGenerationCheck() throws ParseException {
         srtObject = new SRTObject(FILE_SRT_1);
-        srtObject.generateSubTitles();
         assertCollectionContains(srtObject.getSubTitles(), new SubTitle[]{subTitleEN1, subTitleEN2});
     }
 
@@ -61,22 +59,6 @@ public class SRTObjectTest extends EntityTest {
             logger.debug(e);
             assertTrue(subTitles.stream().filter(s -> s.equals(e)).findAny().isPresent());
         });
-    }
-
-    @Test
-    public void generateSubTitles_requiredFileAttachment_raisesErrorFlag() throws ParseException {
-        srtTargetObject = new SRTObject(FILE_SRT_2.getName(), "vi", Sets.newHashSet(subTitleVI1), null);
-        srtTargetObject.generateSubTitles();
-        assertTrue(srtTargetObject.hasErrors());
-    }
-
-    @Test
-    public void generateSubTitles_requiredFileAttachment_errorMessage() throws ParseException {
-        srtTargetObject = new SRTObject(FILE_SRT_2.getName(), "vi", Sets.newHashSet(subTitleVI1), null);
-        srtTargetObject.generateSubTitles();
-
-        String errorMessage = srtTargetObject.getErrors().iterator().next().getMessage();
-        assertEquals("File must be set before in order to generate the SubTitles!" , errorMessage);
     }
 
     @Test

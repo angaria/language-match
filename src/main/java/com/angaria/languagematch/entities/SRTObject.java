@@ -48,9 +48,10 @@ public class SRTObject {
         this.language = extractLanguage(fileName);
         this.subTitles = new TreeSet<>();
         this.file = file;
+        tryGenerateSubTitles();
     }
 
-    public SRTObject(){}
+    protected SRTObject(){}
 
     public SRTObject(String fileName, String language, Set<SubTitle> subTitles, File file){
         this();
@@ -58,32 +59,25 @@ public class SRTObject {
         this.language = language;
         this.subTitles = subTitles;
         this.file = file;
+        tryGenerateSubTitles();
     }
 
-    public void generateSubTitles() {
-        CharsetDetector cd = new CharsetDetector();
-        Charset charset = cd.detectCharset(file, new String[]{"UTF-8", "utf-16le"});
+    private void tryGenerateSubTitles() {
+        if(file != null){
+            CharsetDetector cd = new CharsetDetector();
+            Charset charset = cd.detectCharset(file, new String[]{"UTF-8", "utf-16le"});
 
-        try (BufferedReader br = new BufferedReader(
-                new InputStreamReader(new FileInputStream(file), charset))) {
-            generateSubTitlesBody(br);
-        }
-        catch(Exception e){
-            handleException(e);
+            try (BufferedReader br = new BufferedReader(
+                    new InputStreamReader(new FileInputStream(file), charset))) {
+                generateSubTitles(br);
+            }
+            catch(Exception e){
+                handleException(e);
+            }
         }
     }
 
-    private void handleException(Exception e) {
-        if(file == null){
-            e = new NullPointerException("File must be set before in order to generate the SubTitles!");
-        }
-
-        errors.add(e);
-        logger.info("An error happened during SubTitles generation of:" + this);
-        logger.error(e.getMessage());
-    }
-
-    private void generateSubTitlesBody(BufferedReader br) throws IOException {
+    private void generateSubTitles(BufferedReader br) throws IOException {
 
         while ((line = cleanupLine(br.readLine())) != null) {
 
@@ -104,6 +98,16 @@ public class SRTObject {
         }
 
         storeLastSubTitle(tempSubTitle);
+    }
+
+    private void handleException(Exception e) {
+        if(file == null){
+            e = new NullPointerException("File must be set before in order to generate the SubTitles!");
+        }
+
+        errors.add(e);
+        logger.info("An error happened during SubTitles generation of:" + this);
+        logger.error(e.getMessage());
     }
 
     private static String cleanupLine(String line){

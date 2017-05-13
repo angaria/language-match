@@ -1,6 +1,5 @@
 package com.angaria.languagematch.components;
 
-import com.angaria.languagematch.entities.SubTitleMatch;
 import com.angaria.languagematch.services.SRTObjectsService;
 import com.angaria.languagematch.services.SubTitleMatchesService;
 import com.angaria.languagematch.services.WorkflowService;

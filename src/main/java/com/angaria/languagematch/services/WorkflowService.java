@@ -45,11 +45,7 @@ public class WorkflowService {
         logger.log(Level.INFO, "Creating subtitle Objects...");
 
         Set<SRTObject> srtObjects = srtFiles.stream()
-                                            .map(f -> {
-                                                SRTObject srtObject = new SRTObject(f);
-                                                srtObject.generateSubTitles();
-                                                return srtObject;
-                                            })
+                                            .map(SRTObject::new)
                                             .collect(Collectors.toSet());
 
         return new SRTObjects(srtObjects);
@@ -60,17 +56,15 @@ public class WorkflowService {
         Preconditions.checkArgument(targetSRT != null, "Second SRT file missing!");
 
         Set<SubTitleMatch> matches = refSRT.getSubTitles()
-                                                .stream()
-                                                .filter(s -> s.hasOnlyOnePersonTalking())
-                                                .map(subTitleRef ->  {
-                                                    SubTitle match = targetSRT.lookupForMatchingSubTitleFrame(subTitleRef);
-                                                    if(match == null){
-                                                        return null;
-                                                    }
-                                                    return new SubTitleMatch(subTitleRef, match);
-                                                })
-                                                .filter(out -> out != null)
-                                                .collect(Collectors.toSet());
+                                            .stream()
+                                            .filter(s -> s.hasOnlyOnePersonTalking())
+                                            .map(subTitleRef ->  {
+                                                SubTitle match = targetSRT.lookupForMatchingSubTitleFrame(subTitleRef);
+                                                return match != null ?
+                                                        new SubTitleMatch(subTitleRef, match) : null;
+                                            })
+                                            .filter(out -> out != null)
+                                            .collect(Collectors.toSet());
 
         logger.log(Level.INFO, matches);
         return new SubTitleMatches(matches);
