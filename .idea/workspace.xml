@@ -1,15 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7341ea8a-f4b6-4e61-bef6-fb82947b47bc" name="Default" comment="Added Unit Tests">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/angaria/languagematch/ikm/MyClass.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/input/La.La.Land.2016.720p.BluRay.x264-SPARKS.HI.srt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/input/La.La.Land.2016.720p.BluRay.x264-SPARKS.HI.vi.srt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/resources/The.Scent.Of.Green.Papaya.1993.1080p.bluray.x264-hd4u.vi.srt" afterPath="$PROJECT_DIR$/src/main/resources/previous/The.Scent.Of.Green.Papaya.1993.1080p.bluray.x264-hd4u.vi.srt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/resources/The.Scent.of.Green.Papaya.1993.1080p.BluRay.x264-HD4U.srt" afterPath="$PROJECT_DIR$/src/main/resources/previous/The.Scent.of.Green.Papaya.1993.1080p.BluRay.x264-HD4U.srt" />
+    <list default="true" id="7341ea8a-f4b6-4e61-bef6-fb82947b47bc" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_io_commons_io_1_3_2.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LanguageMatch.iml" afterPath="$PROJECT_DIR$/LanguageMatch.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/angaria/languagematch/services/WorkflowService.java" afterPath="$PROJECT_DIR$/src/main/java/com/angaria/languagematch/services/WorkflowService.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -83,16 +82,6 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="30" selection-end-column="17" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="SRTObjectTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/angaria/languagematch/entities/SRTObjectTest.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -113,11 +102,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SubTitleTest.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="SubTitleTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/angaria/languagematch/entities/SubTitleTest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="405">
               <caret line="32" column="38" lean-forward="false" selection-start-line="32" selection-start-column="38" selection-end-line="32" selection-end-column="38" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="582">
+              <caret line="119" column="22" lean-forward="false" selection-start-line="119" selection-start-column="22" selection-end-line="119" selection-end-column="22" />
               <folding />
             </state>
           </provider>
@@ -264,7 +263,6 @@
         <option value="$PROJECT_DIR$/src/main/resources/context.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/angaria/languagematch/Launcher.java" />
         <option value="$PROJECT_DIR$/src/main/resources/META-INF/context.xml" />
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/src/main/java/com/angaria/languagematch/entities/SubTitleMatch.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/angaria/languagematch/services/SRTObjectsService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/angaria/languagematch/services/SubTitleMatchesServices.java" />
@@ -293,6 +291,7 @@
         <option value="$PROJECT_DIR$/src/main/java/com/angaria/languagematch/entities/SubTitle.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/angaria/languagematch/services/WorkflowService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/angaria/languagematch/ikm/MyClass.java" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -1145,7 +1144,14 @@
       <option name="project" value="LOCAL" />
       <updated>1492893445354</updated>
     </task>
-    <option name="localTasksCounter" value="45" />
+    <task id="LOCAL-00045" summary="Cleanup">
+      <created>1494669088172</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1494669088172</updated>
+    </task>
+    <option name="localTasksCounter" value="46" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1253,7 +1259,6 @@
     <MESSAGE value="Added Unit Tests" />
     <MESSAGE value="Fixed Unit Tests" />
     <MESSAGE value="Fixed Unit Test" />
-    <MESSAGE value="Cleanup" />
     <MESSAGE value="Cleanup &amp; added Unit Tests" />
     <MESSAGE value="Added Unit Tests for coverage" />
     <MESSAGE value="Clean" />
@@ -1262,7 +1267,8 @@
     <MESSAGE value="Added Persistence &amp; Services layers" />
     <MESSAGE value="Improved matches" />
     <MESSAGE value="Improved matching algo" />
-    <option name="LAST_COMMIT_MESSAGE" value="Improved matching algo" />
+    <MESSAGE value="Cleanup" />
+    <option name="LAST_COMMIT_MESSAGE" value="Cleanup" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1292,13 +1298,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/spring/csmcore-config.xml" />
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1785">
-          <caret line="119" column="22" lean-forward="true" selection-start-line="119" selection-start-column="22" selection-end-line="119" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-jpa/1.8.0.RELEASE/spring-data-jpa-1.8.0.RELEASE-sources.jar!/org/springframework/data/jpa/repository/JpaRepository.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-135">
@@ -1637,6 +1636,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="405">
           <caret line="32" column="38" lean-forward="false" selection-start-line="32" selection-start-column="38" selection-end-line="32" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="582">
+          <caret line="119" column="22" lean-forward="false" selection-start-line="119" selection-start-column="22" selection-end-line="119" selection-end-column="22" />
           <folding />
         </state>
       </provider>
