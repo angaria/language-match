@@ -124,4 +124,7 @@ out/
 .clover/
 report/
 report/html/
-/.idea/
+/language-match.script
+/language-match.log
+/language-match.properties
+/language-match.tmp/
