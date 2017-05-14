@@ -8,10 +8,12 @@ import java.util.Set;
 
 public class SubTitleMatches {
 
+    private String title;
     private Set<SubTitleMatch> subTitleMatches = new LinkedHashSet<>();
 
-    public SubTitleMatches(Set<SubTitleMatch> subTitleMatches) {
+    public SubTitleMatches(Set<SubTitleMatch> subTitleMatches, String title) {
         this.subTitleMatches = subTitleMatches;
+        this.title = title;
     }
 
     public Set<SubTitleMatch> getSubTitleMatches() {
@@ -24,5 +26,9 @@ public class SubTitleMatches {
 
     public SubTitleMatch next(){
         return subTitleMatches.iterator().next();
+    }
+
+    public String getTitle(){
+        return title;
     }
 }

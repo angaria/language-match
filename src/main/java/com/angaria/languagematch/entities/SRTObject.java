@@ -218,6 +218,15 @@ public class SRTObject {
         return fileName;
     }
 
+    public String getFileNameShort() {
+        if(fileName.length() > 10){
+            return fileName.substring(0,10) + "...";
+        }
+        else{
+            return fileName.substring(0,5) + "...";
+        }
+    }
+
     @Override
     public String toString() {
         return "SRTObject{" +

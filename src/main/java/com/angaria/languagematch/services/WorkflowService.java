@@ -6,6 +6,7 @@ import com.angaria.languagematch.entities.SubTitle;
 import com.angaria.languagematch.entities.SubTitleMatch;
 import com.angaria.languagematch.wrappers.SubTitleMatches;
 import com.google.common.base.Preconditions;
+import org.apache.commons.io.FileUtils;
 import org.apache.logging.log4j.Level;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -23,7 +24,7 @@ public class WorkflowService {
 
     private static final Logger logger = LogManager.getLogger(WorkflowService.class.getName());
     public static final String SRT_FILES_PATH = "src/main/resources/input";
-    public static final String SRT_FILES_PATH_DEST = "src/main/resources/previous";
+    public static final String SRT_FILES_PATH_DEST = "src/main/resources/processed";
 
     @Autowired
     private FileSystemService fileSystemService;
@@ -43,7 +44,7 @@ public class WorkflowService {
     }
 
     public SRTObjects buildSRTObjects(Collection<File> srtFiles){
-        logger.log(Level.INFO, "Creating subtitle Objects...");
+        logger.log(Level.INFO, "Creating subtitle objects");
 
         Set<SRTObject> srtObjects = srtFiles.stream()
                                             .map(SRTObject::new)
@@ -67,10 +68,48 @@ public class WorkflowService {
                                             .filter(out -> out != null)
                                             .collect(Collectors.toSet());
 
-        return new SubTitleMatches(matches);
+        return new SubTitleMatches(matches, refSRT.getFileNameShort());
     }
 
     public void setFileSystemService(FileSystemService fileSystemService) {
         this.fileSystemService = fileSystemService;
+    }
+
+    public Set<SubTitleMatches> findMatchingSubTitlesWithinGroups(Map<String, SRTObjects> groupsByTitle) {
+
+        Set<SubTitleMatches> result = new LinkedHashSet<>();
+        groupsByTitle.values()
+                .stream()
+                .forEach( g -> {
+                    logger.log(Level.INFO, "Look for matching subtitles in "+g.getReferenceSRTObject().getFileNameShort());
+                    SubTitleMatches m = findMatchingSubTitles(g.getReferenceSRTObject(),
+                            g.getSecondarySRTObject());
+                    result.add(m);
+                });
+
+        return result;
+    }
+
+    public void tryMoveProcessedFiles(SRTObjects srtObjects) {
+        try {
+            logger.log(Level.INFO, "Try moving processed files");
+
+            moveProcessedFiles(srtObjects);
+        } catch (IOException e1) {
+            logger.log(Level.WARN, "Moving processed files has failed!");
+            logger.log(Level.WARN, e1.getMessage());
+        }
+    }
+
+    private void moveProcessedFiles(SRTObjects srtObjects) throws IOException {
+        for(SRTObject srtObject : srtObjects.getSrtObjects()){
+            logger.log(Level.INFO, "Moving " + srtObject.getFileName());
+
+            FileUtils.copyFile(
+                    new File(WorkflowService.SRT_FILES_PATH + "/" + srtObject.getFileName()),
+                    new File(WorkflowService.SRT_FILES_PATH_DEST + "/" + srtObject.getFileName()));
+
+            FileUtils.forceDelete(new File(WorkflowService.SRT_FILES_PATH + "/" + srtObject.getFileName()));
+        }
     }
 }

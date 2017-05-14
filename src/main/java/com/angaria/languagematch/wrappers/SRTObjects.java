@@ -53,7 +53,6 @@ public class SRTObjects {
                 .findFirst();
 
         if(srtObject.isPresent()){
-            logger.info("Secondary object: "+srtObject.get());
             return srtObject.get();
         }
 
@@ -67,14 +66,13 @@ public class SRTObjects {
                 .findFirst();
 
         if(srtObject.isPresent()){
-            logger.info("Reference object: "+srtObject.get());
             return srtObject.get();
         }
 
         throw new RuntimeException("No file with Reference language has been found!");
     }
 
-    public Map<String, SRTObjects> groupByTitle(){
+    public Map<String, SRTObjects> getGroupsByTitle(){
 
         Map<String, Set<String>> textFileListBydate =
                 srtObjects.stream()

@@ -5,16 +5,12 @@ import com.angaria.languagematch.services.SubTitleMatchesService;
 import com.angaria.languagematch.services.WorkflowService;
 import com.angaria.languagematch.wrappers.SRTObjects;
 import com.angaria.languagematch.wrappers.SubTitleMatches;
-import org.apache.commons.io.FileUtils;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
-import javax.transaction.Transactional;
 import java.io.File;
-import java.io.IOException;
-import java.nio.file.Files;
 import java.util.Collection;
 import java.util.Map;
 import java.util.Set;
@@ -34,33 +30,34 @@ public class Workflow {
     private SubTitleMatchesService subTitleMatchesService;
 
     public void start() throws Exception {
-        Collection<File> srtFiles = workflowService.getSRTFilesFromFileSystem();
-        SRTObjects srtObjects = workflowService.buildSRTObjects(srtFiles);
-        srtObjects = srtObjectsService.persist(srtObjects);
+        SRTObjects srtObjects = persist(buildSRTObjects(getSRTFiles()));
 
-        srtObjects.groupByTitle().entrySet()
-                .stream()
-                .forEach( e -> {
-                        SubTitleMatches m = workflowService.findMatchingSubTitles(e.getValue().getReferenceSRTObject(),
-                                                                    e.getValue().getSecondarySRTObject());
-                        subTitleMatchesService.persist(m);
+        persist(findMatchesAmongRelatedFiles(srtObjects.getGroupsByTitle()));
 
-                        try {
-                            FileUtils.copyFile(
-                                        new File(WorkflowService.SRT_FILES_PATH + "/" + e.getValue().getReferenceSRTObject().getFileName()),
-                                        new File(WorkflowService.SRT_FILES_PATH_DEST + "/" + e.getValue().getReferenceSRTObject().getFileName()));
+        moveProcessedFiles(srtObjects);
+    }
 
-                            FileUtils.copyFile(
-                                    new File(WorkflowService.SRT_FILES_PATH + "/" + e.getValue().getSecondarySRTObject().getFileName()),
-                                    new File(WorkflowService.SRT_FILES_PATH_DEST + "/" + e.getValue().getSecondarySRTObject().getFileName()));
+    private SRTObjects buildSRTObjects(Collection<File> files) {
+        return workflowService.buildSRTObjects(files);
+    }
 
-                            FileUtils.forceDelete(new File(WorkflowService.SRT_FILES_PATH + "/" + e.getValue().getReferenceSRTObject().getFileName()));
-                            FileUtils.forceDelete(new File(WorkflowService.SRT_FILES_PATH + "/" + e.getValue().getSecondarySRTObject().getFileName()));
+    private Collection<File> getSRTFiles() throws Exception {
+        return workflowService.getSRTFilesFromFileSystem();
+    }
 
-                        } catch (IOException e1) {
-                            e1.printStackTrace();
-                        }
+    private SRTObjects persist(SRTObjects srtObjects){
+        return srtObjectsService.persist(srtObjects);
+    }
 
-                });
+    private Set<SubTitleMatches> findMatchesAmongRelatedFiles(Map<String, SRTObjects> groupsByTitle){
+        return workflowService.findMatchingSubTitlesWithinGroups(groupsByTitle);
+    }
+
+    private void persist(Set<SubTitleMatches> matchesByGroups){
+        subTitleMatchesService.persist(matchesByGroups);
+    }
+
+    private void moveProcessedFiles(SRTObjects srtObjects){
+        workflowService.tryMoveProcessedFiles(srtObjects);
     }
 }
