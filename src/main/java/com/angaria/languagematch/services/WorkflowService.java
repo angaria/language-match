@@ -82,9 +82,14 @@ public class WorkflowService {
                 .stream()
                 .forEach( g -> {
                     logger.log(Level.INFO, "Look for matching subtitles in "+g.getReferenceSRTObject().getFileNameShort());
-                    SubTitleMatches m = findMatchingSubTitles(g.getReferenceSRTObject(),
-                            g.getSecondarySRTObject());
-                    result.add(m);
+
+                    try{
+                        SubTitleMatches m = findMatchingSubTitles(g.getReferenceSRTObject(),
+                                g.getSecondarySRTObject());
+                        result.add(m);
+                    }
+                    catch (RuntimeException e){}
+
                 });
 
         return result;

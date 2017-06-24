@@ -13,8 +13,8 @@ public class SRTObjects {
 
     private static final Logger logger = LogManager.getLogger(SRTObjects.class.getName());
 
-    private static final String REF_LANGUAGE = "en";
-    public static final String[] SECONDARY_LANGUAGES = {"vi"};
+    public static final String REF_LANGUAGE = "en";
+    public static final String[] SECONDARY_LANGUAGES = {"vi", "ger"};
 
     private Set<SRTObject> srtObjects = new LinkedHashSet<>();
 

@@ -9,6 +9,7 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.time.Duration;
 import java.util.Arrays;
+import java.util.Calendar;
 import java.util.Date;
 import java.util.Optional;
 
@@ -22,7 +23,7 @@ public class SubTitle implements Comparable<SubTitle>{
     public static final DateFormat COMPLETE_DATE_FORMAT = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss,SSS");
     public static final String REFERENCE_DAY = "2017-04-09";
     private static final Logger logger = LogManager.getLogger(SubTitle.class.getName());
-    private static final char[] FORBIDDEN_CHARS = {'[', ']', '(', ')', '♪', '"'};
+    private static final char[] FORBIDDEN_CHARS = {'[', ']', '(', ')', '♪', '"', ':', '<', '>'};
 
     @Id
     @GeneratedValue(strategy = AUTO)
@@ -42,6 +43,9 @@ public class SubTitle implements Comparable<SubTitle>{
 
     protected String content;
     protected String language;
+
+    @Transient
+    protected Integer decayInMilliSeconds = 0;
 
     public SubTitle(){}
 
@@ -93,6 +97,14 @@ public class SubTitle implements Comparable<SubTitle>{
         this.endDate = endDate;
     }
 
+    public Integer getDecayInMilliSeconds() {
+        return decayInMilliSeconds;
+    }
+
+    public void setDecayInMilliSeconds(Integer decayInMilliSeconds) {
+        this.decayInMilliSeconds = decayInMilliSeconds;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -127,6 +139,11 @@ public class SubTitle implements Comparable<SubTitle>{
         }
 
         startDate = COMPLETE_DATE_FORMAT.parse(REFERENCE_DAY + " " + line.substring(0, line.indexOf(SRT_DATE_SEPARATOR)));
+
+        Calendar calendar = Calendar.getInstance(); // gets a calendar using the default time zone and locale.
+        calendar.setTime(startDate);
+        calendar.add(Calendar.MILLISECOND, decayInMilliSeconds);
+        startDate = new Date(calendar.getTimeInMillis());
     }
 
     public void setEndDateFromLine(String line) throws ParseException {
@@ -135,6 +152,11 @@ public class SubTitle implements Comparable<SubTitle>{
         }
 
         endDate = COMPLETE_DATE_FORMAT.parse(REFERENCE_DAY + " " + line.substring(line.indexOf(SRT_DATE_SEPARATOR) + SRT_DATE_SEPARATOR.length(), line.length()));
+
+        Calendar calendar = Calendar.getInstance(); // gets a calendar using the default time zone and locale.
+        calendar.setTime(endDate);
+        calendar.add(Calendar.MILLISECOND, decayInMilliSeconds);
+        endDate = new Date(calendar.getTimeInMillis());
     }
 
     public boolean isOverlappingEnoughWith(SubTitle subTitleRef){

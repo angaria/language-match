@@ -43,6 +43,9 @@ public class SRTObject {
     @Transient
     protected File file;
 
+    @Transient
+    protected Integer decayInMilliSeconds = 0;
+
     public SRTObject(File file){
         this();
         this.fileName = file.getName();
@@ -80,9 +83,15 @@ public class SRTObject {
 
     private void generateSubTitles(BufferedReader br) throws IOException {
 
+        boolean firstLine = true;
+
         while ((line = cleanup(br.readLine())) != null) {
 
-            if(isTimingRelated(line)){
+            if(firstLine && line.contains(">>")){
+                this.decayInMilliSeconds = new Integer(line.substring(line.indexOf(">>") + 2));
+                firstLine = false;
+            }
+            else if(isTimingRelated(line)){
                 storeLastSubTitle(tempSubTitle);
                 tempSubTitle = buildSubTitleFromTiming(line);
                 previousLineWasAboutTiming = true;
@@ -139,7 +148,7 @@ public class SRTObject {
         SubTitle subTitle = new SubTitle();
         subTitle.setLanguage(language);
         subTitle.setSRTObject(this);
-
+        subTitle.setDecayInMilliSeconds(decayInMilliSeconds);
         try {
             subTitle.setStartDateFromLine(line);
             subTitle.setEndDateFromLine(line);
@@ -169,11 +178,18 @@ public class SRTObject {
         String fileNameWithNoExt = fileName.substring(0, fileName.lastIndexOf('.'));
         String code = getPotentialLanguage(fileNameWithNoExt);
 
-        if(!fileNameWithNoExt.contains(".") || !isSecondaryLanguageCode(code)){
-            return Locale.ENGLISH.getLanguage();
+        if(!isSecondaryLanguageCode(code) || isPotentialPrimaryLanguage(code)){
+            return SRTObjects.REF_LANGUAGE;
         }
 
-        return fileNameWithNoExt.substring(fileNameWithNoExt.lastIndexOf('.') + 1).toLowerCase();
+        return fileNameWithNoExt.substring(getLastSeparatorPosition(fileNameWithNoExt) + 1).toLowerCase();
+    }
+
+    private boolean isPotentialPrimaryLanguage(String code) {
+        if(code.equalsIgnoreCase(SRTObjects.REF_LANGUAGE)){
+            return true;
+        }
+        return false;
     }
 
     private boolean isSecondaryLanguageCode(String code){
@@ -181,7 +197,16 @@ public class SRTObject {
     }
 
     private String getPotentialLanguage(String fileNameWithNoExt){
-        return fileNameWithNoExt.substring(fileNameWithNoExt.lastIndexOf('.')+1).toLowerCase();
+        return fileNameWithNoExt.substring(getLastSeparatorPosition(fileNameWithNoExt) + 1).toLowerCase();
+    }
+
+    private static int getLastSeparatorPosition(String fileNameWithNoExt){
+        int lastSeperatorPosition = fileNameWithNoExt.lastIndexOf('_');
+
+        if(fileNameWithNoExt.lastIndexOf('.') > lastSeperatorPosition){
+            lastSeperatorPosition =  fileNameWithNoExt.lastIndexOf('.');
+        }
+        return lastSeperatorPosition;
     }
 
     public SubTitle lookupForMatchingSubTitleFrame(SubTitle stReference) {
@@ -191,6 +216,14 @@ public class SRTObject {
                     .filter(s -> s.hasNotForbiddenCharacters())
                     .findFirst()
                     .orElse(null);
+    }
+
+    public Integer getDecayInMilliSeconds() {
+        return decayInMilliSeconds;
+    }
+
+    public void setDecayInMilliSeconds(Integer decay) {
+        this.decayInMilliSeconds = decay;
     }
 
     public SubTitle getLastSubTitle(){
